@@ -1,0 +1,353 @@
+<html layout:decorate="~{layout2}">
+
+<th:block layout:fragment="content">
+
+	<link rel="stylesheet" type="text/css" href="/css/login.css" />
+
+	<style>
+.login-box {
+	background: #fff;
+	padding: 20px;
+	max-width: 480px;
+	margin: 25% auto;
+	text-align: center;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.login-box:hover {
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+.login-box h2 {
+	margin: 20px 0 20px;
+	padding: 0;
+	text-transform: uppercase;
+	color: #4688F1;
+}
+
+.social-button {
+	background-position: 25px 0px;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 3px;
+	margin: 10px auto;
+	outline: rgb(255, 255, 255) none 0px;
+	padding-left: 20%;
+	transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#facebook-connect {
+	background: rgb(255, 255, 255)
+		url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook.svg?sanitize=true')
+		no-repeat scroll 5px 0px/30px 50px padding-box border-box;
+	border: 1px solid rgb(60, 90, 154);
+}
+
+#facebook-connect:hover {
+	border-color: rgb(60, 90, 154);
+	background: rgb(60, 90, 154)
+		url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook-white.svg?sanitize=true')
+		no-repeat scroll 5px 0px/30px 50px padding-box border-box;
+	-webkit-transition: all .8s ease-out;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease-out;
+}
+
+#facebook-connect span {
+	box-sizing: border-box;
+	color: rgb(60, 90, 154);
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0px none rgb(255, 255, 255);
+	outline: rgb(255, 255, 255) none 0px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#facebook-connect:hover span {
+	color: #FFF;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#google-connect {
+	background: rgb(255, 255, 255)
+		url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus.png')
+		no-repeat scroll 5px 0px/50px 50px padding-box border-box;
+	border: 1px solid rgb(220, 74, 61);
+}
+
+#google-connect:hover {
+	border-color: rgb(220, 74, 61);
+	background: rgb(220, 74, 61)
+		url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus-white.png')
+		no-repeat scroll 5px 0px/50px 50px padding-box border-box;
+	-webkit-transition: all .8s ease-out;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease-out;
+}
+
+#google-connect span {
+	box-sizing: border-box;
+	color: rgb(220, 74, 61);
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0px none rgb(220, 74, 61);
+	outline: rgb(255, 255, 255) none 0px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#google-connect:hover span {
+	color: #FFF;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#twitter-connect {
+	background: rgb(255, 255, 255)
+		url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/twitter.png')
+		no-repeat scroll 5px 1px/45px 45px padding-box border-box;
+	border: 1px solid rgb(85, 172, 238);
+}
+
+#twitter-connect:hover {
+	border-color: rgb(85, 172, 238);
+	background: rgb(85, 172, 238)
+		url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/twitter-white.png')
+		no-repeat scroll 5px 1px/45px 45px padding-box border-box;
+	-webkit-transition: all .8s ease-out;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease-out;
+}
+
+#twitter-connect span {
+	box-sizing: border-box;
+	color: rgb(85, 172, 238);
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0px none rgb(220, 74, 61);
+	outline: rgb(255, 255, 255) none 0px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#twitter-connect:hover span {
+	color: #FFF;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#linkedin-connect {
+	background: rgb(255, 255, 255)
+		url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/linkedin.svg?sanitize=true')
+		no-repeat scroll 13px 0px/28px 45px padding-box border-box;
+	border: 1px solid rgb(0, 119, 181);
+}
+
+#linkedin-connect:hover {
+	border-color: rgb(0, 119, 181);
+	background: rgb(0, 119, 181)
+		url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/linkedin-white.svg?sanitize=true')
+		no-repeat scroll 13px 0px/28px 45px padding-box border-box;
+	-webkit-transition: all .8s ease-out;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease-out;
+}
+
+#linkedin-connect span {
+	box-sizing: border-box;
+	color: rgb(0, 119, 181);
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0px none rgb(0, 119, 181);
+	outline: rgb(255, 255, 255) none 0px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#linkedin-connect:hover span {
+	color: #FFF;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+</style>
+
+	<br />
+	<br />
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<main>
+		<div class="login-wrap">
+			<div class="login-html">
+				<link rel="stylesheet" href="style.css">
+				<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label
+					for="tab-1" class="tab">로그인</label> <input id="tab-2" type="radio"
+					name="tab" class="sign-up"><label for="tab-2" class="tab">회원가입</label>
+
+
+				<div class="login-form">
+					<form th:action="@{/login}" method="post">
+						<div class="sign-in-htm">
+							<div class="group">
+								<label for="mid" class="label">아이디</label> <input name="mid"
+									id="mid" value="" type="text" class="input">
+							</div>
+							<div class="group">
+								<label for="password" class="label">비밀번호</label> <input
+									name="password" id="password" value="" type="password"
+									class="input" data-type="password">
+							</div>
+							<div class="group">
+								<input id="check" type="checkbox" class="check"> <label
+									for="check"><span class="icon"></span> 로그인 정보 저장 </label>
+							</div>
+							<div class="group">
+								<input type="submit" class="button" value="로그인">
+							</div>
+						</div>
+					</form>
+
+
+
+					<form th:action="@{/signup}" th:object="${memberCreateForm}"
+						method="post">
+						<div class="sign-up-htm">
+
+							<div class="group">
+								<label for="mid" class="label">아이디</label> <input name="mid"
+									id="mid" value="" type="text" class="input">
+							</div>
+
+							<div class="group">
+								<label for="password1" class="label">비밀번호</label> <input
+									name="password1" id="password1" value="" type="password"
+									class="input" data-type="password">
+							</div>
+
+							<div class="group">
+								<label for="password2" class="label">비밀번호 확인</label> <input
+									name="password2" id="password2" value="" type="password"
+									class="input" data-type="password">
+							</div>
+
+							<div class="group">
+								<label for="mname" class="label">이름</label> <input name="mname"
+									id="mname" value="" type="text" class="input">
+							</div>
+
+							<div class="group">
+								<label for="email" class="label">이메일</label> <input name="email"
+									id="email" value="" type="email" class="input">
+							</div>
+
+							<div class="group">
+								<label for="address" class="label">주소</label> <input
+									name="address" id="address" value="" type="text" class="input">
+							</div>
+
+							<div class="group">
+								<input type="submit" class="button" value="회원가입">
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="login-box">
+			<h2>SNS 계정으로 로그인</h2>
+			<a href="#" class="social-button" id="facebook-connect"> <span>FACEBOOK
+					으로 로그인</span></a> <a href="#" class="social-button" id="google-connect"> <span>Google
+					로 로그인</span>
+			</a> <a href="#" class="social-button" id="twitter-connect"> <span>Twitter
+					로 로그인</span></a> <a href="#" class="social-button" id="linkedin-connect">
+				<span>LinkedIn 으로 로그인</span>
+			</a>
+		</div>
+	</main>
+
+	<br>
+	<br>
+
+</th:block>
+
+<th:block layout:fragment="script">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+</th:block>
+
+</html>

@@ -1,0 +1,97 @@
+<html layout:decorate="~{admin_layout}">
+
+
+<th:block layout:fragment="content">
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<!-- Page Heading -->
+		<h1 class="h3 mb-2 text-gray-800">시설 상세 정보</h1>
+		<p class="mb-4">
+			DataTables is a third party plugin that is used to generate the demo
+			table below. For more information about DataTables, please visit the
+			<a target="_blank" href="https://datatables.net">official
+				DataTables documentation</a>.
+		</p>
+
+		<!-- DataTales Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<span class="m-0 font-weight-bold text-primary" 
+				th:text="${facility.fid}"></span>
+				
+				<!-- 수정, 삭제 버튼
+				<a th:href="@{|/memberModify/${member.seq}|}"
+					class="btn btn-dark">수정</a>
+				
+				<button class="btn btn-dark">수정</button>
+				<button class="btn btn-danger">삭제</button>
+				 -->
+			</div>
+			
+			<div class="card-body">
+			
+			<div class="card-text" style="white-space: pre-line;" th:utext="${@commonUtil.markdown(facility.fid)}"></div>
+				<div class="table-responsive">
+				
+					<table class="table table-bordered" 
+					width="100%" cellspacing="0"
+					>
+						
+						<tbody>
+							<tr>
+								<th th:if="${facility.fname != null}">
+								시설 이름</th>
+								<td th:text="${facility.fname}"></td>
+							</tr>
+							
+							<tr th:if="${facility.ftype != null}">
+								<th>시설 타입</th>
+								<td th:text="${facility.ftype}"></td>
+							</tr>
+							
+							<tr th:if="${facility.fprice != null}">
+								<th>시설 가격</th>
+								<td th:text="${facility.fprice}"></td>
+							</tr>
+							
+						</tbody>
+					</table>
+					
+
+					
+				</div>
+			</div>
+		</div>
+		<a class="btn btn-dark" th:href="@{/facilityList}">뒤로가기</a>
+        
+        <a th:href="@{|/facilityModify/${facility.fid}|}"          	
+         th:text ="수정"
+         class="btn btn-dark">          	
+	    </a>
+	           	
+	    <a href="javascript:void(0)"
+	     th:data-uri="@{|/facilityDelete/${facility.fid}|}"
+	     th:text="삭제"
+	     class="delete btn btn-dark">	           	
+	    </a>
+	    
+	    
+	    <script layout:fragment="script" type='text/javascript'>
+const delete_elements = document.getElementsByClassName("delete");
+Array.from(delete_elements).forEach(function(element) {
+    element.addEventListener('click', function() {
+        if(confirm("정말로 삭제하시겠습니까?")) {
+            location.href = this.dataset.uri;
+        };
+    });
+});
+
+</script>
+	</div>
+	<!-- /.container-fluid -->
+	<!-- End of Main Content -->
+
+</th:block>
+
+
+</html>

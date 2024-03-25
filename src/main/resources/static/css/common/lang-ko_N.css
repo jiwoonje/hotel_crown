@@ -1,0 +1,238 @@
+/* 한국어 CSS Document */
+
+/* 국문 서울 GNB 시작  */
+.headSeoul .gnbMenu .menu{ position:absolute; left:52px; top:0;}
+.headSeoul .gnbMenu ul li a{background:url(../../images/ko/seoul/main/gnbMenu.gif) no-repeat; text-indent:-9999%; overflow:hidden;}
+.headSeoul .gnbMenu ul li a:hover,
+.headSeoul .gnbMenu ul li a:focus,
+.headSeoul .gnbMenu ul li a.on{ background-image:url(../../images/ko/seoul/main/gnbMenuOn.gif)}
+.headSeoul .gnbMenu ul li.m1 a{ width:165px; background-position:-52px 0px;}
+.headSeoul .gnbMenu ul li.m2 a{ width:118px; background-position:-217px 0px;}
+.headSeoul .gnbMenu ul li.m3 a{ width:131px; background-position:-335px 0px;}
+.headSeoul .gnbMenu ul li.m4 a{ width:179px; background-position:-466px 0px;}
+.headSeoul .gnbMenu ul li.m5 a{ width:166px; background-position:-645px 0px;}
+.headSeoul .gnbMenu ul li.m6 a{ width:131px; background-position:-811px 0px;}
+.headSeoul .gnbMenu ul .sm li a{ background-image:url(../../images/ko/seoul/main/gnbMenuSub.gif)}
+.headSeoul .gnbMenu ul .sm li a:hover,
+.headSeoul .gnbMenu ul .sm li a:focus,
+.headSeoul .gnbMenu ul .sm li a.on{ background-image:url(../../images/ko/seoul/main/gnbMenuSubOn.gif)}
+
+.btnGnbReservation{ background-image:url(../../images/ko/seoul/main/btnGnbReservation.gif)}
+
+.headSeoul .gnbMenu ul .m1 .sm li.s1 a{ width:85px; background-position:0px 0px}
+.headSeoul .gnbMenu ul .m1 .sm li.s2 a{ width:60px; background-position:-85px 0px}
+
+.headSeoul .gnbMenu ul .m2 .sm li.s1 a{ width:74px; background-position:0px -30px}
+.headSeoul .gnbMenu ul .m2 .sm li.s2 a{ width:96px; background-position:-74px -30px}
+.headSeoul .gnbMenu ul .m2 .sm li.s3 a{ width:63px; background-position:-170px -30px}
+.headSeoul .gnbMenu ul .m2 .sm li.s4 a{ width:145px; background-position:-233px -30px}
+.headSeoul .gnbMenu ul .m2 .sm li.s5 a{ width:95px; background-position:-378px -30px}
+
+.headSeoul .gnbMenu ul .m3 .sm li.s1 a{ width:75px; background-position:0px -60px}
+.headSeoul .gnbMenu ul .m3 .sm li.s2 a{ width:89px; background-position:-75px -60px}
+.headSeoul .gnbMenu ul .m3 .sm li.s3 a{ width:70px; background-position:-164px -60px}
+
+.headSeoul .gnbMenu ul .m4 .sm li.s1 a{ width:88px; background-position:0px -90px}
+.headSeoul .gnbMenu ul .m4 .sm li.s2 a{ width:53px; background-position:-88px -90px}
+.headSeoul .gnbMenu ul .m4 .sm li.s3 a{ width:74px; background-position:-141px -90px}
+.headSeoul .gnbMenu ul .m4 .sm li.s4 a{ width:63px; background-position:-215px -90px}
+.headSeoul .gnbMenu ul .m4 .sm li.s5 a{ width:51px; background-position:-278px -90px}
+
+.headSeoul .gnbMenu ul .m5 .sm li.s1 a{ width:52px; background-position:0px -120px}
+.headSeoul .gnbMenu ul .m5 .sm li.s2 a{ width:74px; background-position:-52px -120px}
+.headSeoul .gnbMenu ul .m5 .sm li.s3 a{ width:129px; background-position:-126px -120px}
+.headSeoul .gnbMenu ul .m5 .sm li.s4 a{ width:80px; background-position:-125px -120px}
+
+.headSeoul .gnbMenu ul .m6 .sm li.s1 a{ width:53px; background-position:0px -150px}
+.headSeoul .gnbMenu ul .m6 .sm li.s2 a{ width:60px; background-position:-52px -150px}
+.headSeoul .gnbMenu ul .m6 .sm li.s3 a{ width:105px; background-position:-159px -150px}
+/* 국문 서울 GNB 끝  */
+
+/* 국문 제주 GNB 시작  */
+.headJeju .gnbMenu .menu{ position:absolute; left:77px; top:0px;}
+.headJeju .gnbMenu ul li a{background:url(../../images/ko/jeju/main/gnbMenu.gif) no-repeat; text-indent:-9999%; overflow:hidden;}
+.headJeju .gnbMenu ul li a:hover,
+.headJeju .gnbMenu ul li a:focus,
+.headJeju .gnbMenu ul li a.on{ background-image:url(../../images/ko/jeju/main/gnbMenuOn.gif)}
+.headJeju .gnbMenu ul li.m1 a{ width:166px; background-position:-77px 0px;}
+.headJeju .gnbMenu ul li.m2 a{ width:118px; background-position:-243px 0px;}
+.headJeju .gnbMenu ul li.m3 a{ width:131px; background-position:-361px 0px;}
+.headJeju .gnbMenu ul li.m4 a{ width:146px; background-position:-492px 0px;}
+.headJeju .gnbMenu ul li.m5 a{ width:147px; background-position:-638px 0px;}
+.headJeju .gnbMenu ul li.m6 a{ width:130px; background-position:-785px 0px;}
+.headJeju .gnbMenu ul .sm li a{ background-image:url(../../images/ko/jeju/main/gnbMenuSub.gif)}
+.headJeju .gnbMenu ul .sm li a:hover,
+.headJeju .gnbMenu ul .sm li a:focus,
+.headJeju .gnbMenu ul .sm li a.on{ background-image:url(../../images/ko/jeju/main/gnbMenuSubOn.gif)}
+
+.headSeoul .btnGnbReservation{ background-image:url(../../images/ko/jeju/main/btnGnbReservation.gif)}
+.headJeju .btnGnbReservation{ background-image:url(../../images/ko/jeju/main/btnGnbReservation.gif)}
+
+.headJeju .gnbMenu ul .m1 .sm li.s1 a{ width:85px; background-position:0px 0px}
+.headJeju .gnbMenu ul .m1 .sm li.s2 a{ width:63px; background-position:-85px 0px}
+
+.headJeju .gnbMenu ul .m2 .sm li.s1 a{ width:74px; background-position:0px -30px}
+.headJeju .gnbMenu ul .m2 .sm li.s2 a{ width:75px; background-position:-74px -30px}
+.headJeju .gnbMenu ul .m2 .sm li.s3 a{ width:63px; background-position:-148px -30px}
+.headJeju .gnbMenu ul .m2 .sm li.s4 a{ width:100px; background-position:-211px -30px}
+
+.headJeju .gnbMenu ul .m3 .sm li.s1 a{ width:75px; background-position:0px -60px}
+.headJeju .gnbMenu ul .m3 .sm li.s2 a{ width:89px; background-position:-75px -60px}
+.headJeju .gnbMenu ul .m3 .sm li.s3 a{ width:75px; background-position:-163px -60px}
+
+.headJeju .gnbMenu ul .m4 .sm li.s1 a{ width:99px; background-position:0px -90px}
+.headJeju .gnbMenu ul .m4 .sm li.s2 a{ width:125px; background-position:-99px -90px}
+.headJeju .gnbMenu ul .m4 .sm li.s3 a{ width:74px; background-position:-224px -90px}
+.headJeju .gnbMenu ul .m4 .sm li.s4 a{ width:74px; background-position:-298px -90px}
+.headJeju .gnbMenu ul .m4 .sm li.s5 a{ width:77px; background-position:-372px -90px}
+.headJeju .gnbMenu ul .m4 .sm li.s6 a{ width:88px; background-position:-449px -90px}
+.headJeju .gnbMenu ul .m4 .sm li.s7 a{ width:74px; background-position:-537px -90px}
+.headJeju .gnbMenu ul .m4 .sm li.s8 a{ width:140px; background-position:-611px -90px}
+
+.headJeju .gnbMenu ul .m5 .sm li.s1 a{ width:92px; background-position:0px -120px}
+.headJeju .gnbMenu ul .m5 .sm li.s2 a{ width:62px; background-position:-92px -120px}
+.headJeju .gnbMenu ul .m5 .sm li.s3 a{ width:53px; background-position:-154px -120px}
+/* GNB 라운지에스 숨김*/
+.headJeju .gnbMenu ul .m5 .sm li.s4 a{ display:none; width:88px; background-position:-207px -120px}
+.headJeju .gnbMenu ul .m5 .sm li.s5 a{ width:64px; background-position:-295px -120px}
+.headJeju .gnbMenu ul .m5 .sm li.s6 a{ width:99px; background-position:-359px -120px}
+.headJeju .gnbMenu ul .m5 .sm li.s7 a{ width:75px; background-position:-458px -120px}
+.headJeju .gnbMenu ul .m5 .sm li.s8 a{ width:62px; background-position:-533px -120px}
+
+.headJeju .gnbMenu ul .m6 .sm li.s1 a{ width:52px; background-position:0px -150px}
+.headJeju .gnbMenu ul .m6 .sm li.s2 a{ width:60px; background-position:-52px -150px}
+/* 국문 제주 GNB 끝  */
+
+/* 국문 서울 title 시작  */
+/*SpOffer타이틀*/
+.subWrapSeoul .ctnSpOffer .headTit .tit{background:url(../../images/ko/seoul/main/subTitleSpOffer.gif) no-repeat;}
+.subWrapSeoul .ctnPackage .headTit .tit{ background-position:0px 0px;}
+.subWrapSeoul .ctnEvent .headTit .tit{ background-position:0px -50px;}
+
+/*Retreat타이틀*/
+.subWrapSeoul .ctnRetreat .headTit .tit{ background:url(../../images/ko/seoul/main/subTitleRetreat_ko.gif) no-repeat;}
+.subWrapSeoul .ctnRetreat.ctnOpUrbanIsland  .headTit .tit{ background-position:0px 0px;}
+.subWrapSeoul .ctnRetreat.ctnSpGuerlainSpa  .headTit .tit{ background-position:0px -50px;}
+.subWrapSeoul .ctnRetreat.ctnSpProgram  .headTit .tit{ background-position:0px -100px;}
+.subWrapSeoul .ctnRetreat.ctnFnPool  .headTit .tit{ background-position:0px -150px;}
+.subWrapSeoul .ctnRetreat.ctnFnGym  .headTit .tit{ background-position:0px -200px;}
+.subWrapSeoul .ctnRetreat.ctnFnIndoorGolfRange  .headTit .tit{ background-position:0px -250px;}
+.subWrapSeoul .ctnRetreat.ctnFnJoggingTrack  .headTit .tit{ background-position:0px -300px;}
+.subWrapSeoul .ctnRetreat.ctnFnSauna  .headTit .tit{ background-position:0px -350px;}
+.subWrapSeoul .ctnRetreat.ctnSculpturePark  .headTit .tit{ background-position:0px -400px;}
+
+/*Facil타이틀*/
+.subWrapSeoul .ctnFacil .headTit .tit{ background:url(../../images/ko/seoul/main/subTitleFacil_ko.gif) no-repeat;}
+.subWrapSeoul .ctnFacil.ctnArcade .headTit .tit{ background-position:0px 0px;}
+.subWrapSeoul .ctnFacil.ctnDutyFreeShop .headTit .tit{ background-position:0px -50px;}
+.subWrapSeoul .ctnFacil.ctnLifeStyle .headTit .tit{ background-position:0px -100px;}
+
+/*20151221 Introduction타이틀*/
+.subWrapSeoul .ctnIntroduction .headTit .tit{ background:url(../../images/ko/seoul/main/subTitleIntroduction.gif) no-repeat;}
+.subWrapSeoul .ctnIntroduction.ctnConcept .headTit .tit{ background-position:0px -50px;}
+.subWrapSeoul .ctnIntroduction.ctnFactSheet .headTit .tit{ background-position:0px -100px;}
+.subWrapSeoul .ctnIntroduction.ctnMobile .headTit .tit{ background-position:0px -150px;}
+.subWrapSeoul .ctnIntroduction.ctnhotelMap .headTit .tit{ background-position:0px -200px;}
+.subWrapSeoul .ctnIntroduction.ctnLocation .headTit .tit{ background-position:0px -250px;}
+
+/*20151221 mbsh타이틀*/
+.subWrapSeoul .ctnMembership .headTit .tit{ background:url(../../images/ko/seoul/main/subTitleMembership_ko.gif) no-repeat;}
+.subWrapSeoul .ctnMembership.ctnDynasty .headTit .tit{ background-position:0px -205px;}
+.subWrapSeoul .ctnMembership.ctnCardSpoint .headTit .tit{ background-position:0px -100px;}
+.subWrapSeoul .ctnMembership.ctnShillaS .headTit .tit{ background-position:0px -150px;}
+.subWrapSeoul .ctnMembership.ctnSillaFitness .headTit .tit{ background-position:0px -200px;}
+
+/*Inquires타이틀*/
+.subWrapSeoul .ctnInquires.ctnQna .headTit .tit{ background:url(../../images/ko/seoul/main/subTitleInquires_ko.gif) no-repeat;background-position:0px -396px;}
+.subWrapSeoul .ctnInquires.ctnhotelMap .headTit .tit{ background-position:0px 0px;}
+.subWrapSeoul .ctnInquires.ctnContactus .headTit .tit{ background-position:0px -200px;}
+.subWrapSeoul .ctnInquires.ctnCustomer .headTit .tit{ background-position:0px -250px;}
+
+/*acc타이틀*/
+.subWrapSeoul .ctnAcmdIndex .conTitle { background: url("../../images/ko/seoul/accommodation/standardTit_ko.gif") 0 0 no-repeat; height: 19px; margin-top: 50px; }
+.subWrapSeoul .ctnAcmdIndex .conTitle.titMid { background: url("../../images/ko/seoul/accommodation/eflTit_ko.gif") 0 0 no-repeat  !important; height: 19px; }
+.subWrapSeoul .ctnAcmdIndex .conTitle.titBtm { background: url("../../images/ko/seoul/accommodation/suiteTit_ko.gif") 0 0 no-repeat  !important; height: 19px; }
+/* 국문 서울 title 끝  */
+
+/* 국문 제주 title 시작  */
+/*SpOffer타이틀*/
+.subWrapJeju .ctnSpOffer .headTit .tit{ background:url(../../images/ko/jeju/main/subTitleSpOffer.gif) no-repeat;}
+.subWrapJeju .ctnSpOffer.ctnPackage .headTit .tit{ background-position:0px 0px;}
+.subWrapJeju .ctnSpOffer.ctnEvent .headTit .tit{ background-position:0px -50px;}
+.subWrapJeju .ctnSpOffer.ctnRdTheme .headTit .tit{ background-position:0px -100px;}
+.subWrapJeju .ctnSpOffer.ctnRdCourse .headTit .tit{ background-position:0px -150px;}
+
+/*Retreat타이틀*/
+.subWrapJeju .ctnRetreat .headTit .tit{ background:url(../../images/ko/jeju/main/subTitleRetreat_ko.gif) no-repeat;}
+.subWrapJeju .ctnRetreat.ctnOpSoombi .headTit .tit{ background-position:0px 0px;}
+.subWrapJeju .ctnRetreat.ctnOpCabana .headTit .tit{ background-position:0px -50px;}
+.subWrapJeju .ctnRetreat.ctnSpShillaSpa .headTit .tit{ background-position:0px -100px;}
+.subWrapJeju .ctnRetreat.ctnSpProgram .headTit .tit{ background-position:0px -150px;}
+.subWrapJeju .ctnRetreat.ctnLoungeS .headTit .tit{ background-position:0px -200px;}
+.subWrapJeju .ctnRetreat.ctnPrivateOceanTerrace .headTit .tit{ background-position:0px -250px;}
+
+
+/*20151221 멤버십타이틀*/
+.subWrapJeju .ctnMembership .headTit .tit{ background:url(../../images/ko/jeju/main/subTitleMembership_ko.gif) no-repeat;}
+.subWrapJeju .ctnMembership.ctnJejuGold .headTit .tit{ background-position:0px -244px;}
+.subWrapJeju .ctnMembership.ctnJejuBlue .headTit .tit{ background-position:0px -50px;}
+.subWrapJeju .ctnMembership.ctnJejuFitness .headTit .tit{ background-position:0px -100px;}
+.subWrapJeju .ctnMembership.ctnJejuFitness .headTit .tit{ background-position:0px -100px;}
+.subWrapJeju .ctnMembership.ctnShillaSpa .headTit .tit{ background-position:0px -150px;}
+.ctnMembership.ctnFitnessSpa .headTit .tit{ background-position:0px -200px;}
+
+/*20151221 Inquires타이틀*/
+.subWrapJeju .ctnInquires .headTit .tit{ background:url(../../images/ko/jeju/main/subTitleInquires_ko.gif) no-repeat;}
+.subWrapJeju .ctnInquires.ctnhotelMap .headTit .tit{ background-position:0px 0px;}
+.subWrapJeju .ctnInquires.ctnLocation .headTit .tit{ background-position:0px -50px;}
+.subWrapJeju .ctnInquires.ctnContactus .headTit .tit{ background-position:0px -200px;}
+.subWrapJeju .ctnInquires.ctnCustomer .headTit .tit{ background-position:0px -250px;}
+.subWrapJeju .ctnInquires.ctnQna .headTit .tit{ background-position:0px -396px;}
+
+/*20151221 Introduction타이틀*/
+.subWrapJeju .ctnIntroduction .headTit .tit{ background:url(../../images/ko/jeju/main/subTitleIntroduction.gif) no-repeat;}
+.subWrapJeju .ctnIntroduction.ctnAboutShilla .headTit .tit{ background-position:0px -0px;}
+.subWrapJeju .ctnIntroduction.ctnFactSheet .headTit .tit{ background-position:0px -50px;}
+.subWrapJeju .ctnIntroduction.ctnMobile .headTit .tit{ background-position:0px -100px;}
+.subWrapJeju .ctnIntroduction.ctnhotelMap .headTit .tit{ background-position:0px -150px;}
+.subWrapJeju .ctnIntroduction.ctnLocation .headTit .tit{ background-position:0px -200px;}
+
+/*20151223 acc타이틀*/
+.subWrapJeju .ctnAcmdIndex .conTitleJeju { background: url("../../images/ko/jeju/accommodation/standardTit_ko.gif") 0 0 no-repeat; height: 20px; margin-top: 50px; }
+.subWrapJeju .ctnAcmdIndex .Suite .conTitle { background: url("../../images/ko/jeju/accommodation/suiteTit_ko.gif") 0 0 no-repeat; height: 19px; }
+.subWrapJeju .ctnAcmdIndex .conTitle.titMidJeju { background: url("../../images/ko/jeju/accommodation/PremierTit_ko.gif") 0 0 no-repeat  !important; height: 20px; }
+.subWrapJeju .ctnAcmdIndex .conTitle.titBtmJeju { background: url("../../images/ko/jeju/accommodation/suiteTit_ko.gif") 0 0 no-repeat  !important; height: 20px; }
+
+/*왼쪽링크배너*/
+.subWrapSeoul .lnbArea .lnbLink li a{ display:block; background:url(../../images/ko/seoul/main/lnbLink_ko.gif) no-repeat; text-indent:-9999%; overflow:hidden;}
+.subWrapSeoul .lnbArea .lnbLink li.b1 a{ height:54px; background-position: 0 -0px;}
+.subWrapSeoul .lnbArea .lnbLink li.b2 a{ height:52px; background-position: 0 -54px;}
+
+.subWrapJeju .lnbArea .lnbLink li a{ display:block; background:url(../../images/ko/jeju/main/lnbLink_ko.gif) no-repeat; text-indent:-9999%; overflow:hidden;}
+.subWrapJeju .lnbArea .lnbLink li.b1 a{ height:54px; background-position: 0 -0px;}
+.subWrapJeju .lnbArea .lnbLink li.b2 a{ height:52px; background-position: 0 -54px;}
+
+.headSeoul.head .header .hotelBox{ position:absolute; left:0px; top:10px;  width:106px; height:47px;background: #f1e3c4 url(../../images/ko/seoul/main/hotolIcon_ko.png) no-repeat 0px 0px; z-index:20;}/*20180307 호텔찾기 가로형 변경*/
+.headSeoul.head .header .hotelBox.on { background:#3e2b2c url(../../images/ko/seoul/main/hotolIcon_ko_on.png) no-repeat 0px 0px;}
+.headSeoul .head .header .topNavi .list li a{ display:block; height:17px; display:block; font-size:9px;background: url(../../images/ko/seoul/main/topNavi_ko.gif) no-repeat; text-indent:-9999%; overflow:hidden;}
+.headSeoul .head .header .topNavi .list li.login a{ width:48px; background-position:-65px 0px}
+.headSeoul .head .header .topNavi .list li.join a{ width:50px; background-position:-113px 0px}
+
+.subWrapSeoul .ctnSiteMap .headTit .tit { background: url("../../images/ko/seoul/main/subTitleSiteMap_ko.gif") no-repeat 0 0; }
+.subWrapJeju .ctnSiteMap .headTit .tit {background: url("../../images/ko/jeju/main/subTitleSiteMap_ko.gif") no-repeat 0 0;}
+
+.head .header .topNavi .list li a{ display:block; height:17px; display:block; font-size:9px;background: url(../../images/ko/seoul/main/topNavi_ko.gif) no-repeat; text-indent:-9999%; overflow:hidden;}
+.head .header .topNavi .list li.login a{ width:48px; background-position:-48px 0px}
+.head .header .topNavi .list li.join a{ width:50px; background-position:-96px 0px}
+/*20150625 수정 시작*/
+.head .header .topNavi .list li.charge a{ width:94px;background-position:-162px 0px}
+.head .header .topNavi .list li.logout a{ width:58px; background-position:0px -40px}
+/*20150625 수정 시작*/
+.head .header .topNavi .list li.mypage a{ width:70px; background-position:-131px -40px}
+.head .header .topNavi .list li.membership a{ width:80px; background-position:-257px 0px}
+
+.ctnInquires.ctnContactus .btnHotelmap{ margin:-20px 0 0 0 ; background:url(../../images/ko/jeju/inquires/contactusBtnHotelmap_ko.gif) no-repeat; width:106px; height:34px; vertical-align:middle; display:inline-block; line-height:100px; overflow:hidden;}
+.popLayerMkPlanPop .popHead .tit{ background:url(../../images/ko/jeju/makeplan/popHeadTitMkPlan_ko.gif) no-repeat 0 0; line-height:100px; overflow:hidden;}
+
+/* 메인 예약바 */
+.mainVisual .new_rsvBox .rsvSchHotel .rsvSchCont.htCheck{width: 375px; margin: 0 31px 0 43px;}

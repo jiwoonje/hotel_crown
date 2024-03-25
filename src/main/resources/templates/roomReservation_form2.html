@@ -1,0 +1,80 @@
+<html layout:decorate="~{admin_layout}">
+
+
+<th:block layout:fragment="content">
+
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<!-- Page Heading -->
+		<h1 class="h3 mb-2 text-gray-800">객실 예약 수정</h1>
+
+		<!-- DataTales Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<span class="m-0 font-weight-bold text-primary"></span>
+				
+				<!-- 수정, 삭제 버튼
+				<a th:href="@{|/memberModify/${member.seq}|}"
+					class="btn btn-dark">수정</a>
+				
+				<button class="btn btn-dark">수정</button>
+				<button class="btn btn-danger">삭제</button>
+				 -->
+			</div>
+			<div class="card-body">
+			<form  method="post" th:object="${roomReservationForm}">
+				<div class="table-responsive">
+				
+					<table class="table table-bordered" width="100%" cellspacing="0">
+						
+						<tbody>
+
+							
+							<tr>
+								<th for="rid">방 타입</th>
+								<td>
+								<textarea name="rid" id="rid" value="rid">
+								</textarea>
+								</td>
+							</tr>
+							<tr>
+								<th for="sdate">체크인</th>
+								<td>
+								<input type="date" name="sdate" id="sdate" value="sdate">
+								</td>
+							</tr>
+							<tr>
+								<th for="edate">체크아웃</th>
+								<td>
+								<input type="date" name="edate" id="edate" value="edate">
+								</td>
+							</tr>
+							<tr>
+								<th for="cnt">인원수</th>
+								<td>
+								<textarea name="cnt" id="cnt" value="cnt">
+								</textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<input type="submit" value="수정하기" class="btn btn-primary my-2">
+				</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<!-- /.container-fluid -->
+	<!-- End of Main Content -->
+	
+
+
+</script>
+
+	
+	
+
+</th:block>
+
+</html>

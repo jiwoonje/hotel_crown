@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"
+		th:fragment="navbarFragment">
+			<div class="container">
+				<a class="navbar-brand cinzel" th:href="@{/}"><img width="30px" src="/img/footerlogo.png">
+					&nbsp;Crown hotel</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+					aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="oi oi-menu"></span> Menu
+				</button>
+				<div class="col-xl-2 col-lg-2"></div>
+				<div class="collapse navbar-collapse" id="ftco-nav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item noto-sans">
+							<a class="nav-link" th:href="@{/admin}">관리자</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle"
+							id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" 
+								aria-expanded="false"
+								>
+								객실 <i class="ti-angle-down"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item"  th:href="@{/room_all}"> 방 소개</a>
+
+								<a class="dropdown-item" th:href="@{/room_classic}">Classic</a>
+								<a class="dropdown-item" th:href="@{/room_deluxe}">Deluxe</a>
+								<a class="dropdown-item" th:href="@{/room_family}">Family</a>
+								<a class="dropdown-item" th:href="@{/room_superior}">Superior</a>
+								<a class="dropdown-item" th:href="@{/room_suite}">Suite</a>
+								<a class="dropdown-item" th:href="@{/room_luxury}">Luxury</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" 
+							href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+								>
+								시설 <i class="ti-angle-down"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" th:href="@{/facility_all}">시설소개</a>
+
+								<a class="dropdown-item" th:href="@{/facility_pool}">수영장</a>
+								<a class="dropdown-item" th:href="@{/facility_restaurant}">식당</a>
+								<a class="dropdown-item" th:href="@{/facility_golf}">골프장</a>
+
+								<a class="dropdown-item" th:href="@{/facility_health}">헬스장</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a th:href="@{/getCsList}" class="nav-link">문의하기</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle"
+							sec:authorize="isAuthenticated()" 
+							href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								마이페이지<i class="ti-angle-down"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" th:href="@{/myPage}">
+									마이페이지</a>
+								<a class="dropdown-item" th:href="@{/myBookList_room}">
+									내 객실 예약</a>
+								<a class="dropdown-item" th:href="@{/myBookList_facility}">
+									내 시설 예약</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/Login}">로그인</a>
+							<a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/Logout}">로그아웃</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>

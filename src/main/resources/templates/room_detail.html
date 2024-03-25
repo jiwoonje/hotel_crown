@@ -1,0 +1,101 @@
+<html layout:decorate="~{admin_layout}">
+
+
+<th:block layout:fragment="content">
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<!-- Page Heading -->
+		<h1 class="h3 mb-2 text-gray-800">방 상세 정보</h1>
+		<p class="mb-4">
+			DataTables is a third party plugin that is used to generate the demo
+			table below. For more information about DataTables, please visit the
+			<a target="_blank" href="https://datatables.net">official
+				DataTables documentation</a>.
+		</p>
+
+		<!-- DataTales Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<span class="m-0 font-weight-bold text-primary" 
+				th:text="${room.rid}"></span>
+				
+				<!-- 수정, 삭제 버튼
+				<a th:href="@{|/memberModify/${member.seq}|}"
+					class="btn btn-dark">수정</a>
+				
+				<button class="btn btn-dark">수정</button>
+				<button class="btn btn-danger">삭제</button>
+				 -->
+			</div>
+			<div class="card-body">
+			
+			<div class="card-text" style="white-space: pre-line;" th:utext="${@commonUtil.markdown(room.rid)}"></div>
+				<div class="table-responsive">
+				
+					<table class="table table-bordered" 
+					width="100%" cellspacing="0"
+					>
+						
+						<tbody>
+							<tr>
+								<th th:if="${room.rname != null}">
+								방 이름</th>
+								<td th:text="${room.rname}"></td>
+							</tr>
+							
+							<tr th:if="${room.rtype != null}">
+								<th>방 타입</th>
+								<td th:text="${room.rtype}"></td>
+							</tr>
+							
+							<tr th:if="${room.rnum != null}">
+								<th>방 호수</th>
+								<td th:text="${room.rnum}"></td>
+							</tr>
+							
+							<tr th:if="${room.rprice != null}">
+								<th>방 가격</th>
+								<td th:text="${room.rprice}"></td>
+							</tr>
+							
+						</tbody>
+					</table>
+					
+
+					
+				</div>
+			</div>
+		</div>
+		<a class="btn btn-dark" th:href="@{/roomList}">뒤로가기</a>
+        
+        <a th:href="@{|/roomModify/${room.rid}|}"          	
+         th:text ="수정"
+         class="btn btn-dark">          	
+	    </a>
+	           	
+	    <a href="javascript:void(0)"
+	     th:data-uri="@{|/roomDelete/${room.rid}|}"
+	     th:text="삭제"
+	     class="delete btn btn-dark">	           	
+	    </a>
+	    
+	    
+	    <script layout:fragment="script" type='text/javascript'>
+const delete_elements = document.getElementsByClassName("delete");
+Array.from(delete_elements).forEach(function(element) {
+    element.addEventListener('click', function() {
+        if(confirm("정말로 삭제하시겠습니까?")) {
+            location.href = this.dataset.uri;
+        };
+    });
+});
+
+</script>
+	</div>
+	<!-- /.container-fluid -->
+	<!-- End of Main Content -->
+
+</th:block>
+
+
+</html>

@@ -1,0 +1,87 @@
+<html layout:decorate="~{admin_layout}">
+
+
+<th:block layout:fragment="content">
+
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<!-- Page Heading -->
+		<h1 class="h3 mb-2 text-gray-800">객실 예약 수정</h1>
+
+		<!-- DataTales Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<span class="m-0 font-weight-bold text-primary"></span>
+				
+				<!-- 수정, 삭제 버튼
+				<a th:href="@{|/memberModify/${member.seq}|}"
+					class="btn btn-dark">수정</a>
+				
+				<button class="btn btn-dark">수정</button>
+				<button class="btn btn-danger">삭제</button>
+				 -->
+			</div>
+			<div class="card-body">
+			<form method="post" th:object="${roomCreateForm}">
+				<div class="table-responsive">
+				
+					<table class="table table-bordered" width="100%" cellspacing="0">
+						
+						<tbody>
+
+							
+							<tr>
+								<th for="rname">방 이름</th>
+								<td>
+								<textarea name="rname" id="rname" value="rname">
+								</textarea>
+								</td>
+							</tr>
+							
+							<tr>
+								<th for="rtype">방 종류</th>
+								<td>
+								<textarea name="rtype" id="rtype" value="rtype">
+								</textarea>
+								</td>
+							</tr>
+
+							<tr>
+								<th for="rnum">방 호수</th>
+								<td>
+								<textarea name="rnum" id="rnum" value="rnum">
+								</textarea>
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th for="rprice">방 가격</th>
+								<td>
+								<textarea name="rprice" id="rprice" value="rprice">
+								</textarea>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<input type="submit" value="생성하기" class="btn btn-primary my-2">
+				</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<!-- /.container-fluid -->
+	<!-- End of Main Content -->
+	
+
+
+</script>
+
+	
+	
+
+</th:block>
+
+</html>

@@ -1,0 +1,104 @@
+<html layout:decorate="~{admin_layout}">
+
+
+<th:block layout:fragment="content">
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<!-- Page Heading -->
+		<h1 class="h3 mb-2 text-gray-800">예약 취소 상세 정보</h1>
+		<p class="mb-4">
+			DataTables is a third party plugin that is used to generate the demo
+			table below. For more information about DataTables, please visit the
+			<a target="_blank" href="https://datatables.net">official
+				DataTables documentation</a>.
+		</p>
+
+		<!-- DataTales Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<span class="m-0 font-weight-bold text-primary" 
+				th:text="${cancel.seq}"></span>
+				
+				<!-- 수정, 삭제 버튼
+				<a th:href="@{|/memberModify/${member.seq}|}"
+					class="btn btn-dark">수정</a>
+				
+				<button class="btn btn-dark">수정</button>
+				<button class="btn btn-danger">삭제</button>
+				 -->
+			</div>
+			<div class="card-body">
+			
+			<div class="card-text" style="white-space: pre-line;" th:utext="${@commonUtil.markdown(cancel.seq)}"></div>
+				<div class="table-responsive">
+				
+					<table class="table table-bordered" 
+					width="100%" cellspacing="0"
+					>
+						
+						<tbody>
+							<tr>
+								<th th:if="${cancel.save_mid != null}">
+								예약한 회원</th>
+								<td th:text="${cancel.save_mid}"></td>
+							</tr>
+							
+							<tr th:if="${cancel.save_rid != null}">
+								<th>예약한 방 번호</th>
+								<td th:text="${cancel.save_rid}"></td>
+							</tr>
+							
+							<tr th:if="${cancel.save_fid != null}">
+								<th>예약한 시설 번호</th>
+								<td th:text="${cancel.save_fid}"></td>
+							</tr>
+							
+							<tr th:if="${cancel.save_sdate != null}">
+								<th>예약 시작 날짜</th>
+								<td type="date" th:text="${cancel.save_sdate}"></td>
+							</tr>
+							
+							<tr th:if="${cancel.save_edate != null}">
+								<th>예약 종료 날짜</th>
+								<td type="date" th:text="${cancel.save_edate}"></td>
+							</tr>
+							
+							<tr th:if="${cancel.save_cnt}">
+								<th>예약 인원수</th>
+								<td type="date" th:text="${cancel.save_cnt}"></td>
+							</tr>
+							
+						</tbody>
+					</table>
+					
+
+					
+				</div>
+			</div>
+		</div>
+		<a class="btn btn-dark" th:href="@{/getCancelList}">뒤로가기</a>
+		<a href="javascript:void(0)"
+	    th:data-uri="@{|/deleteCancel/${cancel.seq}|}"	           		
+	    th:text="삭제"
+	    class="btn btn-dark delete">	           	
+	    </a>
+	    
+	    <script layout:fragment="script" type='text/javascript'>
+const delete_elements = document.getElementsByClassName("delete");
+Array.from(delete_elements).forEach(function(element) {
+    element.addEventListener('click', function() {
+        if(confirm("정말로 삭제하시겠습니까?")) {
+            location.href = this.dataset.uri;
+        };
+    });
+});
+
+</script>
+	</div>
+	<!-- /.container-fluid -->
+	<!-- End of Main Content -->
+
+</th:block>
+
+
+</html>

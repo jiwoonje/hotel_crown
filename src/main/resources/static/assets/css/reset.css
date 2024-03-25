@@ -1,0 +1,375 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+@font-face{
+    font-family:'Pretendard';
+    src: url("../fonts/Pretendard-Light.woff");
+    src: url("../fonts/Pretendard-Light.woff") format('woff'),
+    url("../fonts/Pretendard-Light.woff2") format('woff2');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../fonts/Pretendard-Regular.woff");
+    src: url("../fonts/Pretendard-Regular.woff") format('woff'),
+    url("../fonts/Pretendard-Regular.woff2") format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../fonts/Pretendard-Medium.woff");
+    src: url("../fonts/Pretendard-Medium.woff") format('woff'),
+    url("../fonts/Pretendard-Medium.woff2") format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../fonts/Pretendard-SemiBold.woff");
+    src: url("../fonts/Pretendard-SemiBold.woff") format('woff'),
+    url("../fonts/Pretendard-SemiBold.woff2") format('woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../fonts/Pretendard-Bold.woff");
+    src: url("../fonts/Pretendard-Bold.woff") format('woff'),
+    url("../fonts/Pretendard-Bold.woff2") format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Jeju Myeongjo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @font-face{
+    font-family:'Montserrat';
+    src: url("../fonts/Montserrat-Light.ttf");
+    src: url("../fonts/Montserrat-Light.ttf") format('truetype'),
+    url("../fonts/Montserrat-Light.otf") format('opentype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+    url("../fonts/Montserrat-Regular.otf") format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype'),
+    url("../fonts/Montserrat-SemiBold.otf") format('opentype');
+    font-weight: 600;
+} */
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoThin/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoThin/font.woff') format('woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: "AgathoLight";
+    src: url('../fonts/webFonts/AgathoLight/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoLight/font.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoNarrow/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoNarrow/font.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoMedium/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoMedium/font.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoBold/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoBold/font.woff') format('woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoBlack/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoBlack/font.woff') format('woff');
+    font-weight: 900;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');*/
+    
+/* reset */
+*{margin: 0;padding: 0;border: 0;outline-style: none;box-sizing: border-box;}
+html{-webkit-tap-highlight-color:transparent !important;-webkit-text-size-adjust: none;-webkit-appearance: none;scroll-behavior: smooth;}
+body{min-width: 320px;max-width: 100%;font-family: 'Agatho', 'Pretendard', 'Montserrat', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;color: #242424;overflow-x:hidden;}
+ol,ul,li{list-style: none;}
+table,th,td{border-collapse: collapse;/*border-spacing: 0;*/}
+input{-webkit-appearance: none;-webkit-border-radius: 0;border-radius: 0;}
+input[type=checkbox]{display:none;}
+input[type=text]::-ms-clear, 
+input[type=tel]::-ms-clear{display: none;}
+select{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+select::-ms-expand{display: none;}/* IE 10, 11의 네이티브 화살표 숨기기 */
+button{border: none;background: none;cursor: pointer;outline: none;}
+label{cursor: pointer;}
+label img{pointer-events: none;}
+a{text-decoration: none;color: #222222;}
+button{border: none;background: none;cursor: pointer;-webkit-transform: translate3d(0,0,0);outline: none;}
+/* img{display: block;border: 0;} */
+
+/* common */
+.ir_text{overflow: hidden;position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);}
+.clearfix:after{content: '';display: block;clear: both;height: 0;visibility: visible;}
+.bl_txt{font-weight: bold;}
+.scrollDisable{height: 100%;min-height: 100%;overflow: hidden !important;touch-action: none;}
+
+.red_font{color: #FF0000;}
+
+.f_Agatho{font-family: 'Agatho', sans-serif !important;}
+.f_Montserrat{font-family: 'Montserrat', sans-serif !important;}
+
+#loading{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.4);z-index:999999999;}
+#loading p{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100px;height:100px;}
+#loading p img{width:100%;}
+
+
+/* style.css로 옮겨야함 */
+#weddingView #viewContets .cont_wrap .info_sec.two_box .cont_box .info_box .right_box .info_text .info_list{position:relative;display:block;margin-bottom:10px;font-family: 'Pretendard';font-size:17px;line-height:17px;}
+#weddingView #viewContets .cont_wrap .info_sec.two_box .cont_box .info_box .right_box .info_text .info_list.mg_t_25{margin-top:20px;}
+#weddingView #viewContets .cont_wrap .info_sec.two_box .cont_box .info_box .right_box .info_text .info_list:last-child{margin-bottom:0;}
+#weddingView #viewContets .cont_wrap .info_sec.two_box .cont_box .info_box .right_box .info_text .info_list::after{position:absolute;top: 6px;left: -8px;display:block;content:'';width: 3px;height: 3px;border-radius: 100px;background-color:#222222;}
+
+
+#afterPartyPop{font-family: 'Pretendard'; width: 490px;height: auto;top: 90px;left: -435px; display: none;}
+#afterPartyPop .text_title{padding-bottom: 30px;}
+#afterPartyPop .main_title{font-family: 'Pretendard';font-size: 28px;font-weight: 400;line-height: 28px;}
+#afterPartyPop .small_title{font-size: 17px;line-height: 17px; font-weight: 400;padding-top: 11px;}
+#afterPartyPop .text_box{padding: 30px; border-top: 1px solid #222222;border-bottom: 1px solid #C5C5C5;}
+#afterPartyPop .text_box::after{display: block;content: '';clear: both;height: 0;visibility: hidden;}
+#afterPartyPop .text_box .right_box{float: left;padding-right: 65px;}
+#afterPartyPop .text_box .right_box p{font-size: 22px;font-weight: 500;}
+#afterPartyPop .text_box .left_box{float: left;font-size: 16px;font-weight: 400;line-height: 29px;color: #585858;}
+#afterPartyPop .btn_box_1{width: 180px;height: 50px; border: 1px solid #707070;margin:30px auto 0;}
+#afterPartyPop .btn_box_1 a{display: block; width: 180px;height: 50px; line-height: 50px;text-align: center;}
+
+#familyPartyPop{font-family: 'Pretendard'; width: 490px;height: auto;top: 90px;left: -435px; display: none;}
+#familyPartyPop .text_title{padding-bottom: 30px;}
+#familyPartyPop .main_title{font-family: 'Pretendard';font-size: 28px;font-weight: 400;line-height: 28px;}
+#familyPartyPop .small_title{font-size: 17px;line-height: 17px; font-weight: 400;padding-top: 11px;}
+#familyPartyPop .text_box{padding: 30px; border-top: 1px solid #222222;border-bottom: 1px solid #C5C5C5;}
+#familyPartyPop .text_box .table_box{width:100%;margin:35px 0;}
+#familyPartyPop .text_box .table_box::after{display: block;content: '';clear: both;height: 0;visibility: hidden;}
+#familyPartyPop .text_box .right_box{float: left;padding-right: 65px;}
+#familyPartyPop .text_box .right_box p{font-size: 22px;font-weight: 500;}
+#familyPartyPop .text_box .left_box{float: left;font-size: 16px;font-weight: 400;line-height: 29px;color: #585858;}
+#familyPartyPop .btn_box_1{width: 180px;height: 50px; border: 1px solid #707070;margin:30px auto 0;}
+#familyPartyPop .btn_box_1 a{display: block; width: 180px;height: 50px; line-height: 50px;text-align: center;}
+
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+@font-face{
+    font-family:'Pretendard';
+    src: url("../fonts/Pretendard-Light.woff");
+    src: url("../fonts/Pretendard-Light.woff") format('woff'),
+    url("../fonts/Pretendard-Light.woff2") format('woff2');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../fonts/Pretendard-Regular.woff");
+    src: url("../fonts/Pretendard-Regular.woff") format('woff'),
+    url("../fonts/Pretendard-Regular.woff2") format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../fonts/Pretendard-Medium.woff");
+    src: url("../fonts/Pretendard-Medium.woff") format('woff'),
+    url("../fonts/Pretendard-Medium.woff2") format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../fonts/Pretendard-SemiBold.woff");
+    src: url("../fonts/Pretendard-SemiBold.woff") format('woff'),
+    url("../fonts/Pretendard-SemiBold.woff2") format('woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../fonts/Pretendard-Bold.woff");
+    src: url("../fonts/Pretendard-Bold.woff") format('woff'),
+    url("../fonts/Pretendard-Bold.woff2") format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Jeju Myeongjo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/jejumyeongjo/v3/JejuMyeongjo-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @font-face{
+    font-family:'Montserrat';
+    src: url("../fonts/Montserrat-Light.ttf");
+    src: url("../fonts/Montserrat-Light.ttf") format('truetype'),
+    url("../fonts/Montserrat-Light.otf") format('opentype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+    url("../fonts/Montserrat-Regular.otf") format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype'),
+    url("../fonts/Montserrat-SemiBold.otf") format('opentype');
+    font-weight: 600;
+} */
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoThin/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoThin/font.woff') format('woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: "AgathoLight";
+    src: url('../fonts/webFonts/AgathoLight/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoLight/font.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoNarrow/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoNarrow/font.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoMedium/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoMedium/font.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoBold/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoBold/font.woff') format('woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Agatho";
+    src: url('../fonts/webFonts/AgathoBlack/font.woff2') format('woff2'), 
+    url('../fonts/webFonts/AgathoBlack/font.woff') format('woff');
+    font-weight: 900;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');*/
+    
+/* reset */
+*{margin: 0;padding: 0;border: 0;outline-style: none;box-sizing: border-box;}
+html{-webkit-tap-highlight-color:transparent !important;-webkit-text-size-adjust: none;-webkit-appearance: none;scroll-behavior: smooth;}
+body{min-width: 320px;max-width: 100%;font-family: 'Agatho', 'Pretendard', 'Montserrat', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;color: #242424;overflow-x:hidden;}
+ol,ul,li{list-style: none;}
+table,th,td{border-collapse: collapse;/*border-spacing: 0;*/}
+input{-webkit-appearance: none;-webkit-border-radius: 0;border-radius: 0;}
+input[type=checkbox]{display:none;}
+input[type=text]::-ms-clear, 
+input[type=tel]::-ms-clear{display: none;}
+select{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+select::-ms-expand{display: none;}/* IE 10, 11의 네이티브 화살표 숨기기 */
+button{border: none;background: none;cursor: pointer;outline: none;}
+label{cursor: pointer;}
+label img{pointer-events: none;}
+a{text-decoration: none;color: #222222;}
+button{border: none;background: none;cursor: pointer;-webkit-transform: translate3d(0,0,0);outline: none;}
+/* img{display: block;border: 0;} */
+
+/* common */
+.ir_text{overflow: hidden;position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);}
+.clearfix:after{content: '';display: block;clear: both;height: 0;visibility: visible;}
+.bl_txt{font-weight: bold;}
+.scrollDisable{height: 100%;min-height: 100%;overflow: hidden !important;touch-action: none;}
+
+.red_font{color: #FF0000;}
+
+.f_Agatho{font-family: 'Agatho', sans-serif !important;}
+.f_Montserrat{font-family: 'Montserrat', sans-serif !important;}
+
+#loading{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.4);z-index:999999999;}
+#loading p{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100px;height:100px;}
+#loading p img{width:100%;}
+
+
+/* style.css로 옮겨야함 */
+#weddingView #viewContets .cont_wrap .info_sec.two_box .cont_box .info_box .right_box .info_text .info_list{position:relative;display:block;margin-bottom:10px;font-family: 'Pretendard';font-size:17px;line-height:17px;}
+#weddingView #viewContets .cont_wrap .info_sec.two_box .cont_box .info_box .right_box .info_text .info_list.mg_t_25{margin-top:20px;}
+#weddingView #viewContets .cont_wrap .info_sec.two_box .cont_box .info_box .right_box .info_text .info_list:last-child{margin-bottom:0;}
+#weddingView #viewContets .cont_wrap .info_sec.two_box .cont_box .info_box .right_box .info_text .info_list::after{position:absolute;top: 6px;left: -8px;display:block;content:'';width: 3px;height: 3px;border-radius: 100px;background-color:#222222;}
+
+
+#afterPartyPop{font-family: 'Pretendard'; width: 490px;height: auto;top: 90px;left: -435px; display: none;}
+#afterPartyPop .text_title{padding-bottom: 30px;}
+#afterPartyPop .main_title{font-family: 'Pretendard';font-size: 28px;font-weight: 400;line-height: 28px;}
+#afterPartyPop .small_title{font-size: 17px;line-height: 17px; font-weight: 400;padding-top: 11px;}
+#afterPartyPop .text_box{padding: 30px; border-top: 1px solid #222222;border-bottom: 1px solid #C5C5C5;}
+#afterPartyPop .text_box::after{display: block;content: '';clear: both;height: 0;visibility: hidden;}
+#afterPartyPop .text_box .right_box{float: left;padding-right: 65px;}
+#afterPartyPop .text_box .right_box p{font-size: 22px;font-weight: 500;}
+#afterPartyPop .text_box .left_box{float: left;font-size: 16px;font-weight: 400;line-height: 29px;color: #585858;}
+#afterPartyPop .btn_box_1{width: 180px;height: 50px; border: 1px solid #707070;margin:30px auto 0;}
+#afterPartyPop .btn_box_1 a{display: block; width: 180px;height: 50px; line-height: 50px;text-align: center;}
+
+#familyPartyPop{font-family: 'Pretendard'; width: 490px;height: auto;top: 90px;left: -435px; display: none;}
+#familyPartyPop .text_title{padding-bottom: 30px;}
+#familyPartyPop .main_title{font-family: 'Pretendard';font-size: 28px;font-weight: 400;line-height: 28px;}
+#familyPartyPop .small_title{font-size: 17px;line-height: 17px; font-weight: 400;padding-top: 11px;}
+#familyPartyPop .text_box{padding: 30px; border-top: 1px solid #222222;border-bottom: 1px solid #C5C5C5;}
+#familyPartyPop .text_box .table_box{width:100%;margin:35px 0;}
+#familyPartyPop .text_box .table_box::after{display: block;content: '';clear: both;height: 0;visibility: hidden;}
+#familyPartyPop .text_box .right_box{float: left;padding-right: 65px;}
+#familyPartyPop .text_box .right_box p{font-size: 22px;font-weight: 500;}
+#familyPartyPop .text_box .left_box{float: left;font-size: 16px;font-weight: 400;line-height: 29px;color: #585858;}
+#familyPartyPop .btn_box_1{width: 180px;height: 50px; border: 1px solid #707070;margin:30px auto 0;}
+#familyPartyPop .btn_box_1 a{display: block; width: 180px;height: 50px; line-height: 50px;text-align: center;}
+
+
+
+
+
+
+
+
+
+
+

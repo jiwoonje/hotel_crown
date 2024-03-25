@@ -1,0 +1,4639 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.selector.focus {
+	outline: 1px dotted #0066FF;
+}
+
+.subWrap {
+
+}
+
+.mainWrap .subWrap {
+	/* height:142px;background:url(../../images/ko/seoul/main/hdBga.gif) repeat-x; */
+
+}
+
+.head {
+	background: url(../../images/ko/seoul/main/hdBga.gif) 0 0 repeat-x;
+	height: 178px;
+	position: relative;
+	z-index: 20;
+}
+
+.mainWrap .head {
+	background: url(../../images/ko/seoul/main/headBg.png) repeat-x;
+	height: 142px;
+	position: relative;
+	z-index: 20;
+}
+
+.head .header {
+	width: 1200px;
+	margin: 0 auto 0 auto;
+	height: 90px;
+	position: relative;
+	z-index: 30;
+}
+
+.mainWrap .head .header {
+	width: 1200px;
+	margin: 0 auto 0 auto;
+	height: 90px;
+	position: relative;
+}
+
+.head .header .logo {
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	width: 202px;
+	margin: 0 0 0 -101px;
+}
+
+.head .header .logo a {
+	display: block;
+	height: 90px;
+	background: url(../../images/ko/seoul/main/logo.gif);
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.subBody {
+	min-width: 1200px;
+}
+
+/* 20170221 find a hotel ���� 20180307 ȣ��ã�� ������ ���� */
+.head .header .hotelBox {
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	width: 111px;
+	height: 47px;
+	background: #f1e3c4 url(../../../images/ko/seoul/main/hotolIcon.png)
+	no-repeat 0px 0px;
+	z-index: 20;
+}
+.head .header .hotelBox.on {
+	background: #3e2b2c url(../../images/ko/seoul/main/hotolIcon_ko_on.png)
+	no-repeat 0px 0px;
+}
+.head .header .hotelBox .btn {
+	display: inline-block;
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	font-size: 12px;
+	height: 47px;
+	font-weight: bold;
+	color: #5d4930;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+.head .header .hotelBox .list {
+	position: absolute;
+	top: 47px;
+	display: none;
+	width: 542px;
+	margin: 0;
+	background: #3e2b2c;
+}
+.head .header .hotelBox .list .hotel {
+	float: left;
+	width: 180px;
+}
+.head .header .hotelBox .list .stay {
+	float: left;
+	width: 361px;
+	border-left: 1px solid #322223;
+}
+.head .header .hotelBox .list .hotelListBox {
+	padding: 10px 0;
+}
+.head .header .hotelBox .list a {
+	display: block;
+	padding: 9px 0 9px 15px;
+	font-size: 12px;
+	color: #f1ebd6;
+}
+.head .header .hotelBox .list a:hover {
+	text-decoration: underline;
+	color: #f1ebd6;
+}
+.head .header .hotelBox .list .tit {
+	display: block;
+	padding: 8px 0 7px 15px;
+	background-color: #322223;
+	font-weight: bold;
+}
+.head .header .hotelBox .list .stay h3 .tit {
+	margin-left: -1px;
+	border-left: 1px solid #3e2b2c;
+}
+.head .header .hotelBox .list span.tit {
+	background-color: transparent;
+	font-weight: bold;color:#ac8a6e;
+}
+.head .header .hotelBox .list .stay .stayListBox > li {
+	float: left;
+	width: 180px;
+	padding: 10px 0;
+}
+.head .header .hotelBox .list .stay .stayListBox > li:first-child {
+	border-right: 1px solid #322223;
+}
+/* 20170221 find a hotel �� 20180307 ȣ��ã�� ������ ���� //end */
+
+/* 20150625 membership ��ư ���� ���� */
+.head .header .topNavi {
+	position: absolute;
+	right: 130px;
+	top: 25px;
+}
+/* 20150625 membership ��ư ���� ���� */
+.head .header .topNavi .list {
+
+}
+
+.head .header .topNavi .list li {
+	float: left;
+	margin: 0 0 0 2px;
+}
+
+.head .header .topNavi .list li a {
+	display: block;
+	height: 17px;
+	display: block;
+	font-size: 9px;
+	background: url(../../images/ko/seoul/main/topNavi.gif) no-repeat;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.head .header .topNavi .list li.login a {
+	width: 50px;
+	background-position: 0px 0px
+}
+
+.head .header .topNavi .list li.join a {
+	width: 45px;
+	background-position: -50px 0px
+}
+/*20150625 ���� ����*/
+.head .header .topNavi .list li.charge a {
+	width: 161px;
+	background-position: -95px 0px
+}
+
+.head .header .topNavi .list li.logout a {
+	width: 58px;
+	background-position: 0px -40px
+}
+/*20150625 ���� ����*/
+.head .header .topNavi .list li.mypage a {
+	width: 63px;
+	background-position: -59px -40px
+}
+
+.head .header .topNavi .list li.membership a {
+	width: 80px;
+	background-position: -257px 0px
+}
+
+.head .header .callNumber {
+	position: absolute;
+	right: 0px;
+	top: 64px;
+	width: 130px;
+	height: 20px;
+	background: url(../../images/ko/seoul/main/topNavi.gif) no-repeat -207px
+	-41px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+/*20150625 ��� �� �Ŷ�, ����Ŷ�ȣ��, ���ֽŶ�ȣ�� ��ư ����*/
+.newLink {
+	display: block;
+	padding-top: 22px;
+}
+
+.newLink li {
+	float: left;
+}
+
+.newLink li a {
+	display: block;
+	height: 17px;
+	background: url(../../images/ko/seoul/main/topLink_new.gif) no-repeat
+	0px 0px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.newLink li a:hover {
+	display: block;
+	height: 17px;
+	background: url(../../images/ko/seoul/main/topLink_new_over2.gif)
+	no-repeat 0px 0px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.newLink li.on a {
+	display: block;
+	height: 17px;
+	background: url(../../images/ko/seoul/main/topLink_new_over.gif)
+	no-repeat 0px 0px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.newLink li.theShillaBtn a {
+	width: 74px;
+	background-position: 0px 0px;
+}
+
+.newLink li.SeoulBtn a {
+	width: 95px;
+	background-position: -74px 0px;
+}
+
+.newLink li.JejuBtn a {
+	width: 95px;
+	background-position: -169px 0px;
+}
+/*20150625 ��� �� �Ŷ�, ����Ŷ�ȣ��, ���ֽŶ�ȣ�� ��ư ��*/
+.gnbMenuWrap {
+	background: #4e361a;
+	opacity: 0.8px;
+}
+
+.gnbMenu {
+	width: 1200px;
+	height: 52px;
+	margin: 0 auto 0 auto;
+	position: relative;
+}
+
+.gnbMenu .menu {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 10
+}
+
+.gnbMenu ul li {
+	float: left;
+	position: relative;
+}
+
+.gnbMenu ul li a {
+	display: block;
+	height: 50px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.gnbMenu ul li.m1 a {
+	width: 143px;
+	background-position: 0px 0px;
+}
+
+.gnbMenu ul li.m2 a {
+	width: 203px;
+	background-position: -143px 0px;
+}
+
+.gnbMenu ul li.m3 a {
+	width: 134px;
+	background-position: -346px 0px;
+}
+
+.gnbMenu ul li.m4 a {
+	width: 141px;
+	background-position: -480px 0px;
+}
+
+.gnbMenu ul li.m5 a {
+	width: 206px;
+	background-position: -621px 0px;
+}
+
+.gnbMenu ul li.m6 a {
+	width: 165px;
+	background-position: -827px 0px;
+}
+.gnbMenu ul li.m6 .sm li{display:none;} /*230704 gnb 갤러리 동영상 숨김처리*/
+.lnbAreaGallery .lnbMenu .menu .m2{display:none;} /*230704 갤러리 lnb 동영상 메뉴 숨김처리*/
+
+.gnbMenu ul li a.on {
+	font-weight: bold;
+}
+
+.gnbMenu ul li a span {
+	display: block;
+	line-height: 100px;
+	height: 0;
+	overflow: hidden;
+}
+
+.gnbMenu ul .sm {
+	display: none;
+	padding: 4px 0 4px 0;
+}
+
+.gnbMenu ul .sm li {
+
+}
+
+.gnbMenu ul .sm li a {
+	background: #efefef;
+	display: block;
+	text-align: center;
+	padding: 0;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.gnbMenu ul  a.on .sm {
+	display: block;
+}
+
+.gnbMenu ul .sm {
+	position: absolute;
+	position: absolute;
+	left: 30px;
+	top: 50px;
+	width: 500px;
+}
+
+.gnbMenu ul .sm li a {
+	background: url(../../images/ko/seoul/main/gnbMenuSub.gif) no-repeat;
+	height: 30px;
+}
+
+.gnbMenu ul .sm li a:hover,.gnbMenu ul .sm li a:focus,.gnbMenu ul .sm li a.on
+{
+	background-image: url(../../images/ko/seoul/main/gnbMenuSubOn.gif)
+}
+
+.gnbMenu ul .m1 .sm {
+	left: 30px;
+}
+
+.gnbMenu ul .m6 .sm {
+	width: 340px;
+}
+
+.gnbMenu ul .m1 .sm li.s1 a {
+	width: 78px;
+	background-position: 0px 0px
+}
+
+.gnbMenu ul .m1 .sm li.s2 a {
+	width: 61px;
+	background-position: -78px 0px
+}
+
+.gnbMenu ul .m2 .sm li.s1 a {
+	width: 74px;
+	background-position: 0px -30px
+}
+
+.gnbMenu ul .m2 .sm li.s2 a {
+	width: 96px;
+	background-position: -74px -30px
+}
+
+.gnbMenu ul .m2 .sm li.s3 a {
+	width: 63px;
+	background-position: -170px -30px
+}
+
+.gnbMenu ul .m2 .sm li.s4 a {
+	width: 145px;
+	background-position: -233px -30px
+}
+
+.gnbMenu ul .m2 .sm li.s5 a {
+	width: 95px;
+	background-position: -378px -30px
+}
+
+.gnbMenu ul .m3 .sm li.s1 a {
+	width: 93px;
+	background-position: 0px -60px
+}
+
+.gnbMenu ul .m3 .sm li.s2 a {
+	width: 110px;
+	background-position: -93px -60px
+}
+
+.gnbMenu ul .m3 .sm li.s3 a {
+	width: 109px;
+	background-position: -203px -60px
+}
+
+.gnbMenu ul .m3 .sm li.s4 a {
+	width: 68px;
+	background-position: -312px -60px
+}
+
+.gnbMenu ul .m4 .sm li.s1 a {
+	width: 103px;
+	background-position: 0px -90px
+}
+
+.gnbMenu ul .m4 .sm li.s2 a {
+	width: 53px;
+	background-position: -103px -90px
+}
+
+.gnbMenu ul .m4 .sm li.s3 a {
+	width: 72px;
+	background-position: -157px -90px
+}
+
+.gnbMenu ul .m4 .sm li.s4 a {
+	width: 122px;
+	background-position: -229px -90px
+}
+
+.gnbMenu ul .m4 .sm li.s5 a {
+	width: 47px;
+	background-position: -288px -90px
+}
+
+.gnbMenu ul .m5 .sm li.s1 a {
+	width: 85px;
+	background-position: 0px -120px
+}
+
+.gnbMenu ul .m5 .sm li.s2 a {
+	width: 82px;
+	background-position: -52px -120px
+}
+
+.gnbMenu ul .m5 .sm li.s3 a {
+	width: 129px;
+	background-position: -126px -120px
+}
+
+.gnbMenu ul .m5 .sm li.s4 a {
+	width: 103px;
+	background-position: -165px -120px
+}
+
+.gnbMenu ul .m6 .sm li.s1 a {
+	width: 52px;
+	background-position: 0px -150px
+}
+
+.gnbMenu ul .m6 .sm li.s2 a {
+	width: 60px;
+	background-position: -52px -150px
+}
+
+.gnbMenu ul .m6 .sm li.s3 a {
+	width: 109px;
+	background-position: -187px -150px
+}
+
+.btnGnbReservation {
+	position: absolute;
+	left: 992px;
+	top: -3px;
+	background: url(../../images/ko/seoul/main/btnGnbReservation.gif)
+	no-repeat;
+	width: 208px;
+	height: 53px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.btnGnbReservation:hover,.btnGnbReservation:focus,.btnGnbReservation.on
+{
+	background-position: 0px -60px;
+}
+
+.topVisual {
+	background: #C96;
+	display: none;
+}
+
+.topVisual .visual {
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+	background: #3CC;
+	height: 100px;
+}
+
+.location {
+	text-align: right;
+	padding: 2px 10px 2px;
+}
+
+.location .list {
+	display: inline;
+	font-size: 11px;
+}
+
+.location .list .crPosit {
+	position: absolute;
+	left: -9999%;
+}
+
+.contain {
+	padding: 55px 0 0 0;
+	z-index: 10;
+}
+
+.contain .container {
+	width: 1200px;
+	margin: auto;
+	zoom: 1;
+	margin: 0 auto 100px auto;
+}
+
+.contain .container:after {
+	clear: both;
+	content: "";
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	visibility: hidden
+}
+
+.lnbArea {
+	float: left;
+}
+
+.lnbArea .lnbMenu>.tit {
+	margin: 0 0 29px 0;
+	height: 53px;
+	background: url(../../images/ko/seoul/main/lnbTitle.gif);
+	display: block;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.lnbMenu {
+	width: 216px;
+	border: #e9dab8 solid 1px;
+	background: #f1e3c4;
+	padding: 23px;
+	margin: 0 0 30px 0;
+}
+
+.lnbMenu li {
+	margin: 0 0 26px 0;
+}
+
+.lnbMenu li a {
+	background: #9CC;
+	height: 21px;
+	display: block;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.lnbMenu li a.on {
+	font-weight: bold;
+}
+
+.lnbMenu li li {
+	margin: 0;
+}
+
+.lnbMenu li li a {
+	background: #CC6;
+	display: block;
+}
+
+.lnbMenu li li a.on {
+	font-weight: bold;
+}
+.lnbAreaIntroduction .lnbMenu ul.menu li.m4{display:none;}/*221124 모바일서비스 숨김처리*/
+
+/*���ʸ޴� Ÿ��Ʋ*/
+.lnbAreaSpOffer .lnbMenu .tit {
+	background-position: 0 0px;
+}
+
+.lnbAreaAcmd .lnbMenu .tit {
+	background-position: 0 -100px;
+}
+
+.lnbAreaDining .lnbMenu .tit {
+	background-position: 0 -200px;
+}
+
+.lnbAreaRetreat .lnbMenu .tit {
+	background-position: 0 -300px;
+}
+
+.lnbAreaMeetingEvent .lnbMenu .tit {
+	background-position: 0 -400px;
+}
+
+.lnbAreaFacil .lnbMenu .tit {
+	background-position: 0 -1300px;
+}
+
+.lnbAreaMembership .lnbMenu .tit {
+	background-position: 0 -600px;
+}
+
+.lnbAreaMypage .lnbMenu .tit {
+	background-position: 0 -700px;
+}
+
+.lnbAreaIntroduction .lnbMenu .tit {
+	background-position: 0 -800px;
+}
+
+.lnbAreaInquires .lnbMenu .tit {
+	background-position: 0 -1200px;
+}
+
+.lnbAreaGallery .lnbMenu .tit {
+	background-position: 0 -1000px;
+}
+
+/*���ʸ�ũ���*/
+.lnbArea .lnbLink {
+	width: 264px
+}
+
+.lnbArea .lnbLink li {
+
+}
+
+.lnbArea .lnbLink li a {
+	display: block;
+	background: url(../../images/ko/seoul/main/lnbLink.gif) no-repeat;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.lnbArea .lnbLink li.b1 a {
+	height: 54px;
+	background-position: 0 -0px;
+}
+
+.lnbArea .lnbLink li.b2 a {
+	height: 52px;
+	background-position: 0 -54px;
+}
+
+.lnbAreaSpOffer .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbSpOffer.gif) no-repeat;
+}
+
+.lnbAreaSpOffer .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbSpOfferOn.gif);
+}
+
+.lnbAreaAcmd .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbAcmd.gif) no-repeat;
+}
+
+.lnbAreaAcmd .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbAcmdOn.gif);
+}
+
+.lnbAreaDining .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbDining.gif) no-repeat;
+}
+
+.lnbAreaDining .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbDiningOn.gif)
+}
+
+.lnbAreaMeetingEvent .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbMeetingEvent.gif)
+	no-repeat;
+}
+
+.lnbAreaMeetingEvent .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbMeetingEventOn.gif)
+}
+
+.lnbAreaMeetingEvent .menu li:last-child li:nth-child(2) {
+    display: none;
+}
+
+.ctnWeddingHall .whIntroBox:last-child .mtsubBox4:nth-child(2) {
+    display: none;
+}
+
+.lnbAreaFacil .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbFacil.gif) no-repeat;
+}
+
+.lnbAreaFacil .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbFacilOn.gif)
+}
+
+.lnbAreaMembership .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbMembership.gif) no-repeat;
+}
+
+.lnbAreaMembership .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbMembershipOn.gif)
+}
+
+.lnbAreaMypage .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbMypage.gif) no-repeat;
+}
+
+.lnbAreaMypage .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbMypageOn.gif)
+}
+
+.lnbAreaIntroduction .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbIntroduction.gif)
+	no-repeat;
+}
+
+.lnbAreaIntroduction .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbIntroductionOn.gif)
+}
+
+.lnbAreaInquires .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbInquires.gif) no-repeat;
+}
+
+.lnbAreaInquires .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbInquiresOn.gif)
+}
+
+.lnbAreaGallery .lnbMenu .menu>li>a {
+	background: url(../../images/ko/seoul/main/lnbGallery.gif) no-repeat;
+}
+
+.lnbAreaGallery .lnbMenu .menu>li>a.on {
+	background-image: url(../../images/ko/seoul/main/lnbGalleryOn.gif)
+}
+
+.lnbArea .lnbMenu .menu li.m1 a {
+	background-position: 0px 0px
+}
+
+.lnbArea .lnbMenu .menu li.m2 a {
+	background-position: 0px -50px
+}
+
+.lnbArea .lnbMenu .menu li.m3 a {
+	background-position: 0px -100px
+}
+
+.lnbArea .lnbMenu .menu li.m4 a {
+	background-position: 0px -150px
+}
+
+.lnbArea .lnbMenu .menu li.m5 a {
+	background-position: 0px -200px
+}
+
+.lnbArea .lnbMenu .menu li.m6 a {
+	background-position: 0px -250px
+}
+
+.lnbArea .lnbMenu .sMenu {
+	padding: 13px 0 0 0;
+	margin: 0 0 24px 0;
+	background: url(../../images/ko/seoul/main/lnbMenuDotLine.gif) no-repeat;
+}
+
+.lnbArea .lnbMenu .sMenu li a {
+	height: 21px;
+	margin: 0 0 1px 0;
+}
+
+.lnbAreaSpOffer .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmSpOffer.gif) no-repeat;
+}
+
+.lnbArelnbAreaSpOfferaAcmd .lnbMenu .sMenu li a.on {
+	background-image: url(../../images/seoul/main/lnbSmSpOfferOn.gif)
+}
+
+.lnbAreaSpOffer .lnbMenu .m3 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaSpOffer .lnbMenu .m3 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaAcmd .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmAcmd.gif) no-repeat;
+}
+
+.lnbAreaAcmd .lnbMenu .sMenu li a.on {
+	background-image: url(../../images/ko/seoul/main/lnbSmAcmdOn.gif)
+}
+
+.lnbAreaAcmd .lnbMenu .m1 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaAcmd .lnbMenu .m1 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaAcmd .lnbMenu .m2 .sMenu li.s1 a {
+	background-position: 0 -75px
+}
+
+.lnbAreaAcmd .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmAcmd.gif) no-repeat;
+}
+
+.lnbAreaAcmd .lnbMenu .sMenu li a.on {
+	background-image: url(../../images/ko/seoul/main/lnbSmAcmdOn.gif)
+}
+
+.lnbAreaAcmd .lnbMenu .m1 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaAcmd .lnbMenu .m1 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaAcmd .lnbMenu .m1 .sMenu li.s4 a {
+	background-position: 0 -50px
+}
+
+.lnbAreaAcmd .lnbMenu .m1 .sMenu li.s3 a {
+	background-position: 0 -75px
+}
+
+.lnbAreaAcmd .lnbMenu .m2 .sMenu li.s1 a {
+	background-position: 0 -125px
+}
+
+.lnbAreaAcmd .lnbMenu .m2 .sMenu li.s2 a {
+	background-position: 0 -150px
+}
+
+.lnbAreaAcmd .lnbMenu .m2 .sMenu li.s3 a {
+	background-position: 0 -124px
+}
+
+.lnbAreaAcmd .lnbMenu .m3 .sMenu li.s1 a {
+	background-position: 0 -200px
+}
+
+.lnbAreaAcmd .lnbMenu .m3 .sMenu li.s2 a {
+	background-position: 0 -225px
+}
+
+.lnbAreaAcmd .lnbMenu .m3 .sMenu li.s3 a {
+	background-position: 0 -250px
+}
+
+.lnbAreaAcmd .lnbMenu .m3 .sMenu li.s4 a {
+	background-position: 0 -275px
+}
+
+.lnbAreaAcmd .lnbMenu .m3 .sMenu li.s5 a {
+	background-position: 0 -300px
+}
+
+.lnbAreaAcmd .lnbMenu .m3 .sMenu li.s6 a {
+	background-position: 0 -325px
+}
+
+.lnbAreaAcmd .lnbMenu .m3 .sMenu li.s7 a {
+	background-position: 0 -350px
+}
+
+.lnbAreaAcmd .btnAllRooms {
+	display: block;
+	width: 216px;
+	height: 46px;
+	margin: 54px 0 0 0;
+	background: url(../../images/ko/seoul/main/lnbSmAcmd.gif) 0 -527px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.lnbAreaDining .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmDining.gif) no-repeat;
+}
+
+.lnbAreaDining .lnbMenu .sMenu li a.on {
+	background-image: url(../../images/ko/seoul/main/lnbSmDiningOn.gif);
+}
+
+.lnbAreaDining .lnbMenu .m1 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaDining .lnbMenu .m1 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaDining .lnbMenu .m1 .sMenu li.s3 a {
+	background-position: 0 -50px
+}
+
+.lnbAreaDining .lnbMenu .m1 .sMenu li.s4 a {
+	background-position: 0 -75px
+}
+
+.lnbAreaDining .lnbMenu .m1 .sMenu li.s5 a {
+	background-position: 0 -100px
+}
+
+.lnbAreaDining .lnbMenu .m2 .sMenu li.s1 a {
+	background-position: 0 -150px
+}
+
+.lnbAreaDining .lnbMenu .m2 .sMenu li.s2 a {
+	background-position: 0 -175px
+}
+
+.lnbAreaDining .lnbMenu .m3 .sMenu li.s1 a {
+	background-position: 0 -225px
+}
+
+.lnbAreaFacil .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmFacil.gif) no-repeat;
+}
+
+.lnbAreaFacil .lnbMenu .sMenu li a.on {
+	background-image: url(../../images/ko/seoul/main/lnbSmFacilOn.gif);
+}
+
+.lnbAreaFacil .lnbMenu .m1 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaFacil .lnbMenu .m1 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaFacil .lnbMenu .m2 .sMenu li.s1 a {
+	background-position: 0 -75px
+}
+
+.lnbAreaFacil .lnbMenu .m2 .sMenu li.s2 a {
+	background-position: 0 -100px
+}
+
+.lnbAreaFacil .lnbMenu .m3 .sMenu li.s1 a {
+	background-position: 0 -150px
+}
+
+.lnbAreaFacil .lnbMenu .m3 .sMenu li.s2 a {
+	background-position: 0 -175px
+}
+
+.lnbAreaFacil .lnbMenu .m3 .sMenu li.s3 a {
+	background-position: 0 -200px
+}
+
+.lnbAreaFacil .lnbMenu .m3 .sMenu li.s4 a {
+	background-position: 0 -225px
+}
+
+.lnbAreaFacil .lnbMenu .m3 .sMenu li.s5 a {
+	background-position: 0 -250px
+}
+
+.lnbAreaFacil .lnbMenu .m5 .sMenu li.s1 a {
+	background-position: 0 -300px
+}
+
+.lnbAreaFacil .lnbMenu .m5 .sMenu li.s2 a {
+	background-position: 0 -325px
+}
+
+.lnbAreaMeetingEvent .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmMeetingEvent.gif)
+	no-repeat;
+}
+
+.lnbAreaMeetingEvent .lnbMenu .sMenu li a.on {
+	background-image:
+	url(../../images/ko/seoul/main/lnbSmMeetingEventOn.gif);
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m1 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m1 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m1 .sMenu li.s3 a {
+	background-position: 0 -50px
+}
+
+<!--
+.lnbAreaMeetingEvent .lnbMenu .m2 .sMenu li.s1 a {
+	background-position: 0 -100px
+}
+
+-->
+.lnbAreaMeetingEvent .lnbMenu .m2 .sMenu li.s2 a {
+	background-position: 0 -100px
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m2 .sMenu li.s3 a {
+	background-position: 0 -125px
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m2 .sMenu li.s4 a {
+	background-position: 0 -150px
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m3 .sMenu li.s1 a {
+	background-position: 0 -225px
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m4 .sMenu li.s1 a {
+	background-position: 0 -250px
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m4 .sMenu li.s2 a {
+	background-position: 0 -275px
+}
+
+.lnbAreaMeetingEvent .lnbMenu .m4 .sMenu li.s3 a {
+	background-position: 0 -300px
+}
+
+.lnbAreaIntroduction .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmIntroduction.gif)
+	no-repeat;
+}
+
+.lnbAreaIntroduction .lnbMenu .sMenu li a.on {
+	background-image:
+	url(../../images/ko/seoul/main/lnbSmIntroductionOn.gif);
+}
+
+.lnbAreaIntroduction .lnbMenu .m1 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaIntroduction .lnbMenu .m1 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaIntroduction .lnbMenu .m1 .sMenu li.s3 a {
+	background-position: 0 -50px
+}
+
+.lnbAreaIntroduction .lnbMenu .m1 .sMenu li.s4 a {
+	background-position: 0 -75px
+}
+
+.lnbAreaIntroduction .m2 {
+	display:none;
+}
+
+.lnbAreaInquires .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmInquires.gif) no-repeat;
+}
+
+.lnbAreaInquires .lnbMenu .sMenu li a.on {
+	background-image: url(../../images/ko/seoul/main/lnbSmInquiresOn.gif);
+}
+
+.lnbAreaInquires .lnbMenu .m3 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaInquires .lnbMenu .m3 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaInquires .lnbMenu .m4 .sMenu li.s1 a {
+	background-position: 0 -75px
+}
+
+.lnbAreaInquires .lnbMenu .m4 .sMenu li.s2 a {
+	background-position: 0 -100px
+}
+
+.lnbAreaInquires .lnbMenu .m4 .sMenu li.s3 a {
+	background-position: 0 -125px
+}
+
+.lnbAreaInquires .lnbMenu .m4 .sMenu li.s4 a {
+	background-position: 0 -150px
+}
+
+.lnbAreaInquires .lnbMenu .m4 .sMenu li.s5 a {
+	background-position: 0 -175px
+}
+
+.lnbAreaInquires .lnbMenu .m4 .sMenu li.s6 a {
+	background-position: 0 -200px
+}
+
+.lnbAreaMypage .lnbMenu .sMenu li a {
+	background: url(../../images/ko/seoul/main/lnbSmMypage.gif) no-repeat;
+}
+
+.lnbAreaMypage .lnbMenu .sMenu li a.on {
+	background-image: url(../../images/ko/seoul/main/lnbSmMypageOn.gif);
+}
+
+.lnbAreaMypage .lnbMenu .m2 .sMenu li.s1 a {
+	background-position: 0 0
+}
+
+.lnbAreaMypage .lnbMenu .m2 .sMenu li.s2 a {
+	background-position: 0 -25px
+}
+
+.lnbAreaMypage .lnbMenu .m2 .sMenu li.s3 a {
+	background-position: 0 -50px
+}
+
+/*Ǫ��*/
+.foot {
+
+}
+
+.footer {
+	width: 1200px;
+	margin: 0 auto 0 auto;
+	height: 160px;
+	padding-bottom:20px;
+	position: relative;
+	background: url(../../images/ko/seoul/main/footerBg.gif) repeat-x;
+	overflow: hidden;
+}
+
+.foot .localBox {
+	background: url(../../images/ko/seoul/main/localBoxBg.gif) repeat-x;
+	height: 172px;
+}
+
+.foot .localBox .localBoxer {
+	width: 1200px;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+}
+
+.foot .localBox .compInfo {
+	float: left;
+	width: 230px;
+	height: 172px;
+	position: relative;
+	background: url(../../images/ko/seoul/main/localBoxCompInfo.gif)
+	no-repeat;
+}
+
+.foot .localBox .compInfo .logo {
+	position: absolute;
+	left: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .compInfo .address {
+	position: absolute;
+	left: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .compInfo .phoneNum {
+	position: absolute;
+	left: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .linkInfo {
+	float: left;
+	width: 510px;
+	height: 103px;
+	position: relative;
+}
+
+.foot .localBox .linkInfo .introduction {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+.foot .localBox .linkInfo .introduction .dt {
+	float: left;
+	width: 74px;
+	height: 20px;
+	background: url(../../images/ko/seoul/main/localBoxLinkInfo.gif)
+	no-repeat -30px -30px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .linkInfo .introduction dd {
+	float: left;
+	margin: 0 0px 0 0;
+}
+
+.foot .localBox .linkInfo .introduction dd.d1 a {
+	width: 60px;
+	background-position: -103px -30px;
+}
+
+.foot .localBox .linkInfo .introduction dd.d2 a {
+	width: 70px;
+	background-position: -162px -30px;
+}
+
+.foot .localBox .linkInfo .introduction dd.d3 a {
+	width: 82px;
+	background-position: -232px -30px;
+}
+
+.foot .localBox .linkInfo .introduction dd.d4 a {
+	width: 65px;
+	background-position: -314px -30px;
+}
+
+.foot .localBox .linkInfo .introduction a {
+	display: block;
+	height: 20px;
+	background: url(../../images/ko/seoul/main/localBoxLinkInfo.gif)
+	no-repeat -30px -30px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .linkInfo .inquiries {
+	position: absolute;
+	left: 30px;
+	top: 62px;
+}
+
+.foot .localBox .linkInfo .inquiries .dt {
+	float: left;
+	width: 74px;
+	height: 20px;
+	background: url(../../images/ko/seoul/main/localBoxLinkInfo.gif)
+	no-repeat -30px -61px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .linkInfo .inquiries dd {
+	float: left;
+	margin: 0 0px 0 0;
+}
+
+.foot .localBox .linkInfo .inquiries dd.d1 a {
+	width: 47px;
+	background-position: -103px -61px;
+}
+
+.foot .localBox .linkInfo .inquiries dd.d2 a {
+	width: 48px;
+	background-position: -150px -61px;
+}
+
+.foot .localBox .linkInfo .inquiries dd.d3 a {
+	width: 65px;
+	background-position: -198px -61px;
+}
+
+.foot .localBox .linkInfo .inquiries dd.d4 a {
+	width: 85px;
+	background-position: -330px -61px;
+}
+
+.foot .localBox .linkInfo .inquiries a {
+	display: block;
+	height: 20px;
+	background: url(../../images/ko/seoul/main/localBoxLinkInfo.gif)
+	no-repeat -20px -35px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .snsNews {
+	float: left;
+	width: 163px;
+	height: 103px;
+	position: relative;
+	background: url(../../images/ko/seoul/main/localBoxSnsNewsBg.gif)
+	no-repeat;
+}
+
+.foot .localBox .snsNews .sns {
+	position: absolute;
+	right: 0px;
+	top: 30px;
+}
+
+.foot .localBox .snsNews .sns .dt {
+	margin: 0 0 6px 0;
+	background: url(../../images/ko/seoul/main/localBoxSnsNews.gif)
+	no-repeat -26px -35px;
+	width: 40px;
+	height: 20px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .snsNews .sns dd {
+	float: left;
+	margin: 0 0 0 5px
+}
+
+
+.foot .localBox .snsNews .sns .facebook a,.foot .localBox .snsNews .sns .twitter a,.foot .localBox .snsNews .sns .trip a,.foot .localBox .snsNews .sns .blog a,.foot .localBox .snsNews .sns .weibo a,.foot .localBox .snsNews .sns .google a,.foot .localBox .snsNews .sns .instagram a,.foot .localBox .snsNews .sns .youtube a,.foot .localBox .snsNews .sns .post a
+{
+	width: 23px;
+	height: 23px;
+	background: url(../../images/ko/seoul/main/localBoxSnsNews.gif);
+	vertical-align: middle;
+	display: block;
+	overflow: hidden;
+	line-height: 90px;
+}
+.foot .localBox .snsNews .sns .instagram {margin-left: 0;} /*2212 인스타그램 위치 조정*/
+
+.foot .localBox .snsNews .sns .facebook a {
+	background-position: -26px -61px
+}
+
+.foot .localBox .snsNews .sns .twitter a {
+	background-position: -54px -61px
+}
+
+.foot .localBox .snsNews .sns .trip	 a {
+	background-position: -54px -61px
+}
+
+.foot .localBox .snsNews .sns .weibo a {
+	background-position: -82px -61px; display:none;
+}/*웨이보 삭제*/
+
+.foot .localBox .snsNews .sns .google a {
+	display:none; background-position: -110px -61px
+}
+
+.foot .localBox .snsNews .sns .instagram a {
+	background-position: -138px -61px; 
+}
+
+.foot .localBox .snsNews .sns .youtube a {
+	background-position: -166px -61px
+}
+.foot .localBox .snsNews .sns .youtube {display:none;} /*230704 푸터 유튜브 숨김처리*/
+
+.foot .localBox .snsNews .sns .post a {
+	background-position: -195px -61px
+}
+
+.foot .localBox .snsNews .newsLetter {
+	position: absolute;
+	left: 135px;
+	top: 35px;
+}
+
+.foot .localBox .snsNews .newsLetter .dt {
+	margin: 0 0 6px 0;
+	background: url(../../images/ko/seoul/main/localBoxSnsNews.gif)
+	no-repeat -145px -35px;
+	width: 70px;
+	height: 20px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.foot .localBox .snsNews .newsLetter label.newsEmail {
+	position: absolute;
+	left: -9999%;
+}
+
+.foot .localBox .snsNews .newsLetter .newsEmail {
+	position: absolute;
+	left: -1px;
+	top: 26px;
+	width: 103px;
+	height: 11px;
+	margin: 0;
+	line-height: 12px;
+	background: url(../../images/ko/seoul/main/localBoxSnsNews.gif)
+	no-repeat -147px -62px;
+}
+
+.foot .localBox .snsNews .newsLetter .newsEmail.uiFocus {
+	background: #FFF;
+}
+
+.foot .localBox .snsNews .newsLetter .btnRequest {
+	position: absolute;
+	left: 111px;
+	top: 26px;
+	width: 50px;
+	height: 23px;
+	background: url(../../images/ko/seoul/main/localBoxSnsNews.gif)
+	no-repeat -257px -61px;
+	display: block;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.footer .linkBox {
+	position: absolute;
+	left: 0px;
+	top: 18px;
+}
+
+.footer .linkBox li {
+	float: left;
+	margin: 0 0px 0 0
+}
+
+.footer .linkBox li a {
+	height: 25px;
+	display: block;
+	background: url(../../images/ko/seoul/main/footLinkBox.gif) no-repeat;
+	text-indent: -9999%;
+	line-height: 200px;
+	overflow: hidden;
+}
+
+.footer .linkBox li.link1 a {
+	width: 61px;
+
+	background-position: 0px 0px
+}
+
+.footer .linkBox li.link2 a {
+	width: 76px;
+	background-position: -61px 0px
+}
+
+.footer .linkBox li.link3 a {
+	width: 120px;
+	background-position: -137px 0px
+}
+
+.footer .linkBox li.link4 a {
+	width: 130px;
+	background-position: -257px 0px
+}
+
+.footer .linkBox li.link5 a {
+	width: 171px;
+	background-position: -387px 0px
+}
+
+.footer .selectLang {
+	position: absolute;
+	right: -7px;
+	top: 19px;
+}
+
+.footer .selectLang li {
+	float: left;
+	margin: 0 0px 0 0;
+}
+
+.footer .selectLang li a {
+	background: url(../../images/ko/seoul/main/footSelectLang.gif) no-repeat;
+	height: 25px;
+	display: block;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.footer .selectLang li.ko a {
+	width: 58px;
+	background-position: 0px 0px
+}
+
+.footer .selectLang li.en a {
+	width: 68px;
+	background-position: -58px 0px
+}
+
+.footer .selectLang li.ja a {
+	width: 50px;
+	background-position: -126px 0px
+}
+
+.footer .selectLang li.zh a {
+	width: 70px;
+	background-position: -176px 0px
+}
+
+.footer .adressBox {
+	position: absolute;
+	left: 0px;
+	top: 76px;
+	/*height: 67px;*/
+	width: 1100px;
+	background: url(../../images/ko/seoul/main/footCopyright.gif) no-repeat	0 0;
+	display: block;
+	line-height: 100px;
+	overflow: hidden;
+	text-indent:-9999px; 
+}
+
+.footer .adressBox * {
+	line-height: 100px;
+	overflow: hidden;
+}
+
+.footer .adressBox .footLinkbtn{width:88px;height: 17px;position:absolute;left: 332px;background: url(../../images/ko/seoul/main/footLinkbtn.gif) no-repeat 0;top: 24px;} /*��������������ư�߰�*/
+
+/*20180618 ����������ũ �߰�-20190213 ������Ʈ*/
+.footer .certiMark { position:absolute; right:0; top: 82px; width:575px; height: 71px; background: url(../../images/ko/seoul/main/mark_seoul.gif) no-repeat 0 0;}
+.footer .certiMark p{overflow:hidden; text-indent:-9999px; }
+/*������ũ �߰� ��*/
+
+.footer .copyright {
+	position: absolute;
+	left: 0px;
+	top: 143px;
+	width:450px;
+	height: 16px;
+	background: url(../../images/ko/seoul/main/footCopyright.gif) no-repeat
+	0 -67px;
+	display: block;
+	overflow: hidden;
+	text-indent:-9999px; 
+
+}
+
+.clsBox {
+	line-height: 30px;
+}
+
+.clsBox p {
+	line-height: 30px;
+}
+
+.contents {
+	float: right;
+	width: 866px;
+	padding: 0;
+	background: #FFF;
+	min-height: 440px;
+}
+
+.contents .headTit {
+	position: relative;
+	z-index: 8;
+	height: 47px;
+	border-bottom: #432c10 solid 5px;
+	width: 866px;
+}
+
+.contents .headTit .tit {
+	float: left;
+	width: 430px;
+	height: 35px;
+	line-height: 100px;
+	overflow: hidden;
+}
+
+.contents .headTit .info {
+	float: right;
+	display: none;
+}
+
+.contents .location {
+	float: right;
+	height: 20px;
+	padding: 9px 0 0 0;
+	margin: 0 0 -30px 0;
+	overflow: hidden;
+	z-index: 9;
+	position: relative;
+}
+
+.contents .location .list {
+	display: block;
+	font-size: 11px;
+	background: url(../../images/ko/seoul/main/locaton.gif) no-repeat 0 1px;
+	line-height: 12px;
+	padding: 0 0 0 17px;
+}
+
+.ff .contents .location .list {
+	background-position: 0 2px;
+}
+
+.contents .location .list strong {
+	color: #865009;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.contents .location .list .crPosit {
+	position: absolute;
+	left: -9999%;
+}
+
+/*ī�װ����� ����Ÿ��Ʋ*/
+/*SpOfferŸ��Ʋ*/
+.ctnSpOffer .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitleSpOffer.gif)
+	no-repeat;
+}
+
+.ctnPackage .headTit .tit {
+	background-position: 0px 0px;
+}
+
+.ctnEvent .headTit .tit {
+	background-position: 0px -50px;
+}
+
+/*RetreatŸ��Ʋ*/
+.ctnRetreat .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitleRetreat.gif)
+	no-repeat;
+}
+
+.ctnRetreat.ctnOpUrbanIsland  .headTit .tit {
+	background-position: 0px 0px;
+}
+
+.ctnRetreat.ctnSpGuerlainSpa  .headTit .tit {
+	background-position: 0px -50px;
+}
+
+.ctnRetreat.ctnSpProgram  .headTit .tit {
+	background-position: 0px -100px;
+}
+
+.ctnRetreat.ctnFnPool  .headTit .tit {
+	background-position: 0px -150px;
+}
+
+.ctnRetreat.ctnFnGym  .headTit .tit {
+	background-position: 0px -200px;
+}
+
+.ctnRetreat.ctnFnIndoorGolfRange  .headTit .tit {
+	background-position: 0px -250px;
+}
+
+.ctnRetreat.ctnFnJoggingTrack  .headTit .tit {
+	background-position: 0px -300px;
+}
+
+.ctnRetreat.ctnFnSauna  .headTit .tit {
+	background-position: 0px -350px;
+}
+
+.ctnRetreat.ctnSculpturePark  .headTit .tit {
+	background-position: 0px -400px;
+}
+
+/*MeetingEventŸ��Ʋ*/
+.ctnMeetingEvent .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitleMeetingEvent.gif)
+	no-repeat;
+}
+
+.ctnWeddingHall .headTit .tit {
+	background-position: 0px 0px;
+}
+
+
+.ctnFood .headTit .tit {
+	background-position: 0px -50px;
+}
+
+/*FacilŸ��Ʋ*/
+.ctnFacil .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitleFacil.gif) no-repeat;
+}
+
+.ctnFacil.ctnArcade .headTit .tit {
+	background-position: 0px 0px;
+}
+
+.ctnFacil.ctnDutyFreeShop .headTit .tit {
+	background-position: 0px -50px;
+}
+
+.ctnFacil.ctnLifeStyle .headTit .tit {
+	background-position: 0px -100px;
+}
+
+/*IntroductionŸ��Ʋ*/
+.ctnIntroduction .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitleIntroduction.gif)
+	no-repeat;
+}
+
+.ctnIntroduction.ctnConcept .headTit .tit {
+	background-position: 0px -50px;
+}
+
+.ctnIntroduction.ctnFactSheet .headTit .tit {
+	background-position: 0px -100px;
+}
+
+.ctnIntroduction.ctnNews .headTit .tit {
+	background-position: 0px -150px;
+}
+
+.ctnIntroduction.ctnPhoto .headTit .tit {
+	background-position: 0px -200px;
+}
+
+.ctnIntroduction.ctnMobile .headTit .tit {
+	background-position: 0px -150px;
+}
+
+.ctnIntroduction.ctnhotelMap .headTit .tit {
+	background-position: 0px -200px;
+}
+
+
+/*InquiresŸ��Ʋ*/
+.ctnInquires .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitleInquires.gif)
+	no-repeat;
+}
+
+.ctnInquires.ctnhotelMap .headTit .tit {
+	background-position: 0px -446px;
+}
+
+.ctnInquires.ctnContactus .headTit .tit {
+	background-position: 0px -200px;
+}
+
+.ctnInquires.ctnCustomer .headTit .tit {
+	background-position: 0px -250px;
+}
+
+.ctnInquires.ctnQna .headTit .tit {
+	background-position: 0px -396px;
+}
+
+/*�����Ÿ��Ʋ*/
+.ctnMembership .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitleMembership.gif)
+	no-repeat;
+}
+/*20150701 �Ʒ� ����*/
+.ctnMembership.ctnDynasty .headTit .tit {
+	background-position: 0px -205px;
+}
+
+.ctnMembership.ctnCardSpoint .headTit .tit {
+	background-position: 0px -50px;
+}
+
+.ctnMembership.ctnDoubleChoice .headTit .tit {
+	background-position: 0px -100px;
+}
+
+.ctnMembership.ctnSillaFitness .headTit .tit {
+	background-position: 0px -150px;
+}
+
+.ctnMembership.ctnShillaS .headTit .tit {
+	background-position: 0px -100px;
+}
+
+.ctnJoin .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitleJoin.gif) no-repeat;
+}
+
+.ctnJoin.ctnJoinStep1 .headTit .tit {
+	background-position: 0px 0px;
+}
+
+/* ������ Ÿ��Ʋ*/
+.ctnGallery .headTit .tit {
+	background: url(../../images/ko/seoul/main/subTitlegallery.gif)
+	no-repeat;
+}
+
+.ctnGallery.ctnPhoto .headTit .tit {
+	background-position: 0px 0px;
+}
+
+.ctnGallery.ctnVideo .headTit .tit {
+	background-position: 0px -50px;
+}
+
+/* �����̵� �ڽ� */
+.slidePhotoBox {
+	margin: 0 0 7px 0;
+}
+
+.slidePhotoBox .ad-gallery {
+	width: 866px;
+	overflow: hidden;
+	zoom: 1;
+	position: relative;
+}
+
+.slidePhotoBox .ad-gallery .ad-image-wrapper {
+	width: 866px;
+	height: 374px;
+	margin-bottom: 2px;
+	overflow: hidden;
+	z-index: 11;
+	zoom: 1;
+	background: #000;
+}
+
+.slidePhotoBox .ad-gallery .ad-image-wrapper .ad-image {
+
+}
+
+.slidePhotoBox .ad-gallery .ad-image-wrapper .ad-image img {
+	display: block;
+}
+
+.slidePhotoBox .ad-gallery .ad-image-wrapper .ad-prev {
+	top: 135px;
+	left: 0px;
+	margin: 0 0 0 0px;
+	position: absolute;
+	z-index: 10;
+	width: 60px;
+	height: 94px !important;
+	background: url(../../images/ko/seoul/main/slidePrev.png) no-repeat 0px
+	0px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.slidePhotoBox .ad-gallery .ad-image-wrapper .ad-prev:hover {
+	background-position: 0 -100px
+}
+
+.slidePhotoBox .ad-gallery .ad-image-wrapper .ad-next {
+	top: 135px;
+	right: 0px;
+	margin: 0 0 0 0px;
+	position: absolute;
+	z-index: 10;
+	width: 60px;
+	height: 94px !important;
+	background: url(../../images/ko/seoul/main/slideNext.png) no-repeat 0px
+	0px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.slidePhotoBox .ad-gallery .ad-image-wrapper .ad-next:hover {
+	background-position: 0 -100px
+}
+
+.slidePhotoBox .ad-gallery .ad-nav {
+	width: 868px;
+	overflow: hidden;
+	height: 94px;
+}
+
+.slidePhotoBox .ad-gallery .ad-nav .ad-thumbs {
+	width: 868px;
+	zoom: 1;
+}
+
+.slidePhotoBox .ad-gallery .ad-thumbs li {
+	padding-right: 0px;
+	background: #000;
+	position: relative;
+}
+
+.slidePhotoBox .ad-gallery .ad-thumbs li .mask {
+	width: 207px;
+	height: 84px;
+	border: #d4bf99 solid 5px;
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.slidePhotoBox .ad-gallery .ad-thumbs li a:hover .mask,.slidePhotoBox .ad-gallery .ad-thumbs li a.ad-active .mask
+{
+	display: block;
+}
+
+.slidePhotoBox .ad-gallery .ad-thumbs li a.ad-active img {
+	border: none;
+}
+
+.slidePhotoBox .ad-gallery .ad-thumbs li a img {
+	border: none;
+}
+
+.slidePhotoBox .ad-gallery .ad-controls {
+	display: none;
+}
+
+.slidePhotoBox .ad-gallery .ad-image-wrapper .ad-image .ad-image-description
+{
+	display: none;
+}
+
+.slidePhotoBox .ad-gallery .ad-forward {
+	display: none;
+	top: 0px;
+	right: 0px;
+	margin: 0 0 0 0px;
+	position: absolute;
+	z-index: 10;
+	width: 60px;
+	height: 94px !important;
+	background: url(../../images/ko/seoul/main/slideNext.png) no-repeat 0px
+	0px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.slidePhotoBox .ad-gallery .ad-forward:hover {
+	background-position: 0 -100px
+}
+
+.slidePhotoBox .ad-gallery .ad-back {
+	display: none;
+	top: 0px;
+	left: 0px;
+	margin: 0 0 0 0px;
+	position: absolute;
+	z-index: 10;
+	width: 60px;
+	height: 94px !important;
+	background: url(../../images/ko/seoul/main/slidePrev.png) no-repeat 0px
+	0px;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.slidePhotoBox .ad-gallery .ad-back:hover {
+	background-position: 0 -100px
+}
+
+/* ���������� */
+.mainBody {
+	min-width: 1320px;
+}
+
+.mainBody .head {
+	height: 142px;
+}
+
+.mainBody .contain {
+	padding: 0;
+}
+
+.gnbMain {
+	position: relative;
+	height: 52px;
+	background: url(../../images/ko/seoul/main/headBgMain.png) repeat-x;
+	z-index: 20;
+}
+
+.gnbMain.on:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 37px;
+	background: url(../../images/ko/seoul/main/gnbBg.gif) repeat-x;
+	position: absolute;
+	top: 50px;
+}
+
+.gnbMain .btnGnbReservation {
+	right: 0px;
+	top: -3px;
+}
+
+.mainBody .gnbReservationBox {
+	top: 50px;
+}
+
+/* mainVisual */
+.mainVisual {
+	position: relative;
+	height: 600px;
+	overflow: hidden;
+	margin-bottom: 100px;
+	margin-top: -2px;
+	background: #000;
+}
+
+.mainVisual .slides,.mainVisual .slides li {
+	height: 600px;
+	text-align: center;
+	background: #000;
+}
+
+.mainVisual .slides,.mainVisual .slides {
+	position: absolute;
+	left: 50%;
+	margin: 0 0 0 -960px;
+	width: 1920px;
+}
+
+.mainVisual .mainControl .flex-direction-nav{}
+.mainVisual .mainControl .flex-direction-nav li{height: 37px;position: absolute;top: 50%;margin: -19px 0 0 0;z-index: 2;}
+.mainVisual .mainControl .flex-direction-nav .flex-nav-prev{position: absolute;left: 50%;margin-left: -600px;}
+.mainVisual .mainControl .flex-direction-nav .flex-nav-next{position: absolute;right: 50%;margin-right: -600px;}
+.mainVisual .mainControl .flex-direction-nav .flex-nav-next a{background-position: right 0;}
+.mainVisual .mainControl a{display: inline-block;width: 23px;height: 37px;background: url(../../images/ko/common/icoSlideNav.png) no-repeat;overflow: hidden;line-height: 25;}
+.mainVisual .mainControl a:focus{border: 1px dotted blue;}
+/* ����� */
+.rsvHubWrapArea {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	width: 1200px;
+	margin-left: -600px;
+	z-index: 10;
+}
+
+.rsvHubWrapArea .rsvCalendarDate {
+	position: absolute;
+	top: -360px;
+	left: 260px;
+	height: 290px;
+	display: none;
+	border: none;
+}
+
+.rsvHubWrapArea.on .rsvCalendarDate {
+	display: block;
+}
+
+.rsvHubWrap {
+	margin: auto;
+	padding: 13px 30px;
+	background: #ececec;
+}
+
+.rsvHubWrap .selArea input[placeholder],[placeholder],*[placeholder] {
+	color: #444;
+	font-family: Dotum, '����', sans-serif;
+}
+
+.rsvHubWrap .selArea>ul {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.rsvHubWrap .selArea>ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.rsvHubWrap .selArea>ul>li {
+	float: left;
+	position: relative;
+	height: 37px;
+}
+
+.rsvHubWrap .selArea .findHtl>.jsSelect>.bg_right {
+	right: 19px;
+}
+
+.rsvHubWrap .selArea .findHtl.on:after,.rsvHubWrap .selArea .adultNum.on:after,.rsvHubWrap .selArea .childrenNum.on:after,.rsvHubWrap .selArea .babyNum.on:after
+{
+	position: absolute;
+	left: 0;
+	bottom: -16px;
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #81725f;
+	z-index: 10
+}
+
+.rsvHubWrap .selArea .rsvInput {
+	width: 165px;
+}
+
+.rsvHubWrap .selArea .rsvInput:before {
+	content: '';
+	width: 1px;
+	height: 23px;
+	background: #a9a9a9;
+	float: left;
+	vertical-align: middle;
+	margin: 7px 5px 0 0;
+}
+
+.rsvHubWrap .selArea .rsvInput.on:after {
+	position: absolute;
+	left: 0;
+	bottom: -16px;
+	content: '';
+	width: 165px;
+	height: 5px;
+	background: #81725f;
+	z-index: 10
+}
+
+.rsvHubWrap .selArea .adultNum,.rsvHubWrap .selArea .childrenNum {
+	width: 125px;
+}
+
+.rsvHubWrap .selArea .babyNum {
+	width: 120px;
+}
+
+.selArea {font-size:0;}
+
+div.jsSelect_on {
+	z-index: 100 !important;
+}
+
+div.jsSelect_on .itemList {
+	left: 0px !important;
+}
+
+div.jsSelect {
+	background: #ececec;
+	height: 33px;
+	color: rgb(99, 99, 99);
+	font-size: 11px;
+	vertical-align: middle;
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+	z-index: 10;
+	cursor: pointer;
+	_display: inline;
+}
+
+div.jsSelect .bg_left {
+	background: url("../../images/ko/seoul/main/bg_jsSelect.gif") no-repeat
+	0px 0px;
+	left: 0px;
+	top: 7px;
+	width: 80%;
+	height: 23px;
+	position: absolute;
+}
+
+div.jsSelect .bg_right {
+	background: url("../../images/ko/seoul/main/bg_jsSelect.gif") no-repeat
+	100% 0px;
+	top: 7px;
+	width: 15px;
+	height: 23px;
+	right: 10px;
+	position: absolute;
+	z-index: 30;
+}
+
+.babyNum div.jsSelect .bg_right {
+	right: 0;
+}
+
+div.jsSelect .value {
+	margin: 10px 10px 9px 14px;
+	position: relative;
+	z-index: 20;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #444;
+	display: inline-block;white-space: nowrap;overflow: hidden;width: 185px;text-overflow: ellipsis;
+}
+
+div.jsSelect a:hover {
+	text-decoration: none;
+}
+
+div.jsSelect a:active {
+	text-decoration: none;
+}
+
+div.jsSelect .itemList {
+	min-height: 90px;
+	left: -9999px;
+	bottom: 50px;
+	width: 100%;
+	overflow-y: auto;
+	position: absolute;
+	background: #fff;
+	padding: 5px;
+}
+
+div.jsSelect .itemList ul {
+	position: relative;
+	z-index: 1;
+	max-height: 350px;
+}
+
+div.jsSelect .itemList ul li {
+	height: 30px;
+	line-height: 30px;
+}
+
+div.jsSelect .itemList ul li a {
+	height: 30px;
+	padding-left: 15px;
+	display: block;
+	color: #444
+}
+
+div.jsSelect .itemList ul li a:hover {
+	background: #f1ebd6;
+}
+
+div.jsSelect {
+	-ms-scrollbar-face-color: rgb(203, 203, 203);
+	-ms-scrollbar-3dlight-color: rgb(203, 203, 203);
+	-ms-scrollbar-shadow-color: rgb(203, 203, 203);
+	-ms-scrollbar-highlight-color: rgb(203, 203, 203);
+	-ms-scrollbar-darkshadow-color: rgb(230, 230, 230);
+	-ms-scrollbar-arrow-color: rgb(203, 203, 203);
+	-ms-scrollbar-track-color: rgb(237, 237, 237);
+}
+/*20180202 �ǿ��� �ɼ� �߰�*/
+div.jsSelect .itemList.hotelList{overflow-x:hidden;overflow-y:auto;max-height:350px;}/*20180206 ����*/
+.hotelList li:first-child+*{margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid #cbcbcb;}
+.hotelList li a{height:30px;padding-left:10px;display:block;color:#444;line-height:30px;font-size:12px;}
+.hotelList li a:hover{background-color:#f1ebd6;}
+.hotelList li > span{display:block;padding-left:10px;background-color:#efefef;font-weight:700;font-size:12px;line-height:26px;color:#80715f;cursor:default;}/*20180206 ����*/
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: #444;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #444;
+	opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #444;
+	opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #444;
+}
+
+.selArea .rsvInput input {
+	display: inline-block;
+	width: 97px;
+	border: none;
+	background: #ececec;
+	padding: 10px 8px 9px 10px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.selArea .btnCal {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 20px;
+	text-indent: -9999px;
+	background: url(../../images/ko/seoul/main/icoCal.png) no-repeat;
+	cursor: pointer;
+}
+
+.selArea .btnSrch {
+	display: inline-block;
+	vertical-align: middle;
+	width: 150px;
+	height: 44px;
+	margin-left: 46px;
+	background: url(../../images/ko/seoul/main/btnSrch.gif) no-repeat;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+.warnBalloon {
+	position: relative;
+	z-index: 10000000;
+}
+
+.warnBalloon .icoWarn {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background: url(../../images/ko/seoul/main/icoWarn.png) no-repeat;
+	cursor: pointer;
+	text-indent: -9999px;
+	margin: 0 0 0 4px;
+}
+
+.warnBalloon .warnBalloonInner {
+	position: absolute;
+	top: -94px;
+	left: -179px;
+	display: inline-block;
+	min-width: 195px;
+	color: #444;
+	line-height: 24px;
+	border: 1px solid #89745d;
+	background: #fff;
+	padding: 13px 15px;
+	display: none;
+	font-size:12px;
+}
+
+.warnBalloon .warnBalloonInner.on {
+	display: block;
+}
+
+.warnBalloon .warnBalloonInner:after {
+	position: absolute;
+	bottom: -8px;
+	right: 30px;
+	content: '';
+	display: inline-block;
+	width: 9px;
+	height: 8px;
+	background: url(../../images/ko/seoul/main/icoBalloonArrow.gif)
+	no-repeat;
+}
+
+/* specialOffer */
+.mainContent {
+	padding-bottom: 100px;
+}
+
+.specialOffer {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto 80px;
+}
+
+.specialOffer .offerTit,.specialOffer .eventTit {
+	margin: 0 0 30px
+}
+
+.specialOfferSlide {
+	position: relative;
+	width: 1200px;
+	height: 295px;
+	margin: 0 0 130px;
+}
+
+.specialOfferSlide .flex-viewport {
+	overflow: hidden;
+	width: 1200px;
+	height: 295px;
+}
+
+.specialOfferSlide .slides {
+
+}
+
+.specialOfferSlide .slides .slidesGroup {
+	overflow: hidden;
+	width: 1200px;
+}
+
+.specialOfferSlide .slides .slidesGroup li {
+	float: left;
+	margin-left: 30px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.specialOfferSlide .slides .slidesGroup li.first {
+	margin-left: 0;
+}
+
+.specialOfferSlide .flex-control-nav.flex-control-paging {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.specialOfferSlide .flex-control-nav.flex-control-paging li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.specialOfferSlide .flex-control-nav.flex-control-paging li+li {
+	margin-left: 15px;
+}
+
+.specialOfferSlide .flex-control-nav.flex-control-paging li a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url(../../images/ko/seoul/main//controlPaging.gif) no-repeat
+	0 0;
+	cursor: pointer;
+}
+
+.specialOfferSlide .flex-control-nav.flex-control-paging li a.flex-active
+{
+	background-position: 0 -20px;
+}
+
+.specialOfferSlide .flex-direction-nav {
+	overflow: hidden;
+	width: 100%;
+}
+
+.specialOfferSlide .flex-direction-nav .flex-nav-prev,.specialOfferSlide .flex-direction-nav .flex-nav-next
+{
+	display: inline-block;
+}
+
+.specialOfferSlide .flex-direction-nav .flex-nav-prev {
+	position: absolute;
+	top: 80px;
+	left: -60px;
+}
+
+.specialOfferSlide .flex-direction-nav .flex-nav-next {
+	position: absolute;
+	top: 80px;
+	right: -60px;
+}
+
+.specialOfferSlide .flex-direction-nav .flex-nav-prev .flex-prev {
+	display: inline-block;
+	width: 30px;
+	height: 51px;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url(../../images/ko/seoul/main/controlNav.gif) no-repeat 0 0;
+}
+
+.specialOfferSlide .flex-direction-nav .flex-nav-next .flex-next {
+	display: inline-block;
+	width: 30px;
+	height: 51px;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url(../../images/ko/seoul/main/controlNav.gif) no-repeat
+	right 0;
+}
+
+.specialOffer .btnOfferMore {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* packageSlide */
+.packageSlide {
+	background: #f4eee3;
+	height: 370px;
+	margin: 0 0 80px;
+}
+
+.packageSlide .packageSlideInner {
+	position: relative;
+	width: 1200px;
+	margin: auto;
+}
+
+.packageSlide .packageControlWrap {
+	position: absolute;
+	top: 282px;
+	left: 492px;
+	z-index: 10
+}
+
+.packageSlide .flex-viewport {
+	width: 1200px;
+	margin: 0 auto 80px;
+}
+
+.packageSlide .slides {
+	overflow: hidden;
+	width: 1200px;
+	height: 370px;
+	margin: auto
+}
+
+.packageSlide .slides li {
+	position: relative;
+	width: 1200px;
+	height: 370px;
+	margin: auto
+}
+
+.packageSlide .packageControl .flex-control-nav.flex-control-paging {
+	margin-top: 50px;
+}
+
+.packageSlide .packageControl .flex-control-nav.flex-control-paging a {
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.packageSlide .packageControl {
+	width: 212px;
+	height: 58px;
+	padding-top: 31px;
+	background: rgba(255, 255, 255, .9);
+	color: #ccc;
+	font-size: 18px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.packageSlide .packageControl .currentPaging {
+	font-size: 24px;
+	font-weight: 700;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	color: #666;
+}
+
+.packageSlide .packageControl .totalPaging {
+	color: #aaa;
+}
+
+.packageSlide .packageControl .currentPaging {
+	display: inline-block;
+	min-width: 26px;
+	height: 27px;
+	text-align: center;
+}
+
+.packageSlide .flex-direction-nav .flex-nav-prev,.packageSlide .flex-direction-nav .flex-nav-next
+{
+	display: inline-block;
+}
+
+.packageSlide .flex-direction-nav .flex-nav-prev {
+	position: absolute;
+	top: 31px;
+	left: 30px;
+}
+
+.packageSlide .flex-direction-nav .flex-nav-next {
+	position: absolute;
+	top: 31px;
+	right: 30px;
+}
+
+.packageSlide .flex-direction-nav .flex-nav-prev .flex-prev {
+	display: inline-block;
+	width: 14px;
+	height: 27px;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url(../../images/ko/seoul/main/packageControlNav.gif)
+	no-repeat 0 0;
+}
+
+.packageSlide .flex-direction-nav .flex-nav-next .flex-next {
+	display: inline-block;
+	width: 14px;
+	height: 27px;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url(../../images/ko/seoul/main/packageControlNav.gif)
+	no-repeat right 0;
+}
+
+.packageSlide .packageSlideInner li .btnPackMore {
+	position: absolute;
+	top: 285px;
+	left: 0;
+	z-index: 20;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* reward */
+.rewardsWrap {
+	background: #f6f6f6;
+	width: 1200px;
+	margin: 0 auto 30px;
+	border: 1px solid #e0e0e0;
+}
+
+.rewardsWrapInner {
+	overflow: hidden;
+	margin: auto;
+	padding: 50px;
+	position: relative;
+	height: 193px;
+}
+
+.rewardsWrapInner .rwTitle {
+	margin-bottom: 25px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.rewardsWrapInner .rwDesc {
+	overflow: hidden;
+	margin: 0 0 45px;
+}
+
+.rewardsWrapInner .rwDesc li {
+	float: left;
+	margin-left: 28px;
+	padding-left: 28px;
+	border-left: 1px solid #e4e4e4;
+	font-size: 0;
+	line-height: 0;
+}
+
+.rewardsWrapInner .rwDesc li.first {
+	margin-left: 0;
+	padding-left: 0;
+	border-right: none;
+}
+
+.rewardsWrapInner .rwBenefit {
+	position: relative;
+	width: 724px;
+}
+
+.rewardsWrapInner .rwBenefit .btnRwMore {
+	position: absolute;
+	top: 24px;
+	right: -25px;
+}
+
+.rewardsWrapInner .rwJoin {
+	position: absolute;
+	top: 110px;
+	right: 50px;
+	width: 230px;
+}
+
+.rewardsWrapInner .rwJoin .btnRwJoin {
+	display: block;
+	position: absolute;
+	top: 98px;
+	right: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* Preview The Shilla Seoul / Review */
+.hotelView {
+	width: 1200px;
+	height: 223px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.hotelView li {
+	float: left;
+	margin-left: 30px;
+	width: 585px;
+	height: 223px;
+}
+
+.hotelView li.first {
+	margin-left: 0;
+}
+
+.hotelView .preview {
+	position: relative;
+	height: 223px;
+	background: #000 url(../../images/ko/seoul/main/previewBg.png) no-repeat;
+}
+
+.hotelView .preview .youtube {
+	line-height: 0;
+	background: #000;
+}
+
+.hotelView .preview .previewVideo {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.hotelView .review {
+	position: relative;
+	height: 223px;
+	background: url(../../images/ko/seoul/main/reviewBg.png) no-repeat;
+}
+
+.hotelView .review #CDSWIDSSP {/*20180208 Ʈ���������� �ϴܶ��� �߸��� �κ� ����*/
+	width: 467px !important;
+	height: 200px;
+}
+
+.hotelView #CDSWIDSSP .widSSPData {
+	margin: 2px;
+}
+
+.hotelView .review .tripadvisor {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 467px;
+	height: 223px;
+}
+
+.hotelView .viewTit {
+	padding: 44px 0 0 25px;
+	display: inline-block;
+}
+
+.movieControl {
+	position: absolute;
+	top: 86px;
+	right: 173px;
+	z-index: 1000;
+}
+
+.movieControl a {
+	outline: 0;
+}
+
+.movieControl .btnMovPlay {
+	background: url(../../images/ko/seoul/main/btnMovPlay.png) no-repeat;
+	width: 52px;
+	height: 52px;
+	vertical-align: middle;
+	display: inline-block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.movieControl .btnMovPause {
+	background: url(../../images/ko/seoul/main/btnMovPause.png) no-repeat;
+	width: 52px;
+	height: 52px;
+	vertical-align: middle;
+	display: inline-block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+/* Preview The Shilla Seoul / Review end */
+.mainWrap .mainBox {
+	border-bottom: #ac8a6e solid 5px;
+	height: 353px;
+}
+
+.mainWrap .mainBox ul {
+	padding: 64px 0 0 59px;
+	height: 259px;
+}
+
+.mainWrap .mainBox ul li {
+	float: left;
+	margin: 0 39px 0 0;
+}
+
+.mainWrap .mainBox ul li .img {
+	vertical-align: middle;
+}
+
+.mainWrap .mainBox ul li .tit {
+
+}
+
+.mainWrap .mainBox ul li .photo {
+	margin: 0 0 20px 0;
+}
+
+.mainWrap .mainBox ul li .info {
+
+}
+
+.tempBoxTxt {
+	position: absolute;
+	right: 50%;
+	margin: 25px -605px 0 0px;
+	z-index: 30;
+}
+
+.tempBoxTxt .msgTxt {
+	width: 525px;
+	height: 47px;
+	margin: 0 0 15px 0;
+	background: url(../../images/ko/jeju/main/mainVisualText.png) no-repeat;
+	text-indent: -9999%;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+.tempBox {
+	position: absolute;
+	right: 50%;
+	margin: 0 -600px 0 0;
+	top: 38px;
+	z-index: 30;
+}
+
+.tempBox .msgTxt {
+	width: 300px;
+	height: 32px;
+	margin: 0 0 15px 0;
+	background: url(../../images/ko/seoul/main/mainVisualText.png) no-repeat;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.tempBox .data {
+	height: 20px;
+	text-align: right;
+}
+
+.tempBox .data .hour,.tempBox .data .dot,.tempBox .data .min,.tempBox .data .humB
+{
+	display: block;
+	float: left;
+	height: 32px;
+	background: #09F;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.tempBox .data .weather {
+	display: block;
+	float: left;
+	height: 21px;
+	background: #09F;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.tempBox .data .temp,.tempBox .data .tempCC,.tempBox .data .humA,.tempBox .data .pcnt
+{
+	display: block;
+	float: left;
+	height: 18px;
+	background: #09F;
+	text-indent: -9999%;
+	overflow: hidden;
+	text-align: right;
+}
+
+.tempBox .data .ampm {
+	display: block;
+	float: left;
+	height: 14px;
+	background: #09F;
+	text-indent: -9999%;
+	overflow: hidden;
+}
+
+.tempBox .timeArea {
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+}
+
+.tempBox .timeArea:after {
+	content: '';
+	width: 100%;
+	display: inline-block;
+	height: 1px;
+	background: rgba(255, 255, 255, .2);
+	margin: 8px 0 3px;
+}
+
+.tempBox .weatherArea {
+	font-size: 0;
+	line-height: 0;
+	display: inline-block;
+}
+
+.tempBox .data .hour {
+	background: url(../../images/ko/seoul/main/mvHour.png) no-repeat;
+	width: 38px;
+}
+
+.tempBox .data .dot {
+	background: url(../../images/ko/seoul/main/mvDot.png) no-repeat 0 0;
+	width: 17px;
+}
+
+.tempBox .data .min {
+	background: url(../../images/ko/seoul/main/mvMin.png) no-repeat;
+	width: 38px;
+}
+
+.tempBox .data .ampm {
+	background: url(../../images/ko/seoul/main/mvAmPm.png) no-repeat;
+	width: 18px;
+	margin: 0 8px 0 2px;
+}
+
+.tempBox .data .weather {
+	background: url(../../images/ko/seoul/main/mvWeather.png) no-repeat;
+	width: 32px;
+}
+
+.tempBox .data .temp {
+	background: url(../../images/ko/seoul/main/mvTemp.png) no-repeat;
+	width: 32px;
+	margin: 1px 0 0 7px
+}
+
+.tempBox .data .tempCC {
+	background: url(../../images/ko/seoul/main/mvCC.png) no-repeat;
+	width: 11px;
+	margin: 1px 0 0 3px;
+}
+
+.tempBox .data .humA {
+	background: url(../../images/ko/seoul/main/mvHumA.png) no-repeat;
+	width: 22px;
+	margin: 1px 0 0 6px;
+}
+
+.tempBox .data .pcnt {
+	background: url(../../images/ko/seoul/main/mvPcnt.png) no-repeat;
+	width: 11px;
+	margin: 1px 0 0 5px;
+}
+
+.tempBox .data .humB {
+	background: url(../../images/ko/seoul/main/mvHumB.png) no-repeat;
+	width: 21px;
+	margin: 1px 0 0 5px;
+}
+
+.tempBox .data .ampm {
+	background: url(../../images/ko/seoul/main/mvAmPm.png) no-repeat;
+	width: 30px;
+	margin: 14px 0 0 6px;
+}
+
+.tempBox .data .hour00 {
+	background-position: 0px 0px
+}
+
+.tempBox .data .hour01 {
+	background-position: 0px -32px
+}
+
+.tempBox .data .hour02 {
+	background-position: 0px -64px
+}
+
+.tempBox .data .hour03 {
+	background-position: 0px -96px
+}
+
+.tempBox .data .hour04 {
+	background-position: 0px -128px
+}
+
+.tempBox .data .hour05 {
+	background-position: 0px -160px
+}
+
+.tempBox .data .hour06 {
+	background-position: 0px -192px
+}
+
+.tempBox .data .hour07 {
+	background-position: 0px -224px
+}
+
+.tempBox .data .hour08 {
+	background-position: 0px -256px
+}
+
+.tempBox .data .hour09 {
+	background-position: 0px -288px
+}
+
+.tempBox .data .hour10 {
+	background-position: 0px -320px
+}
+
+.tempBox .data .hour11 {
+	background-position: 0px -352px
+}
+
+.tempBox .data .hour12 {
+	background-position: 0px -384px
+}
+
+.tempBox .data .hour13 {
+	background-position: 0px -416px
+}
+
+.tempBox .data .hour14 {
+	background-position: 0px -448px
+}
+
+.tempBox .data .hour15 {
+	background-position: 0px -480px
+}
+
+.tempBox .data .hour16 {
+	background-position: 0px -512px
+}
+
+.tempBox .data .hour17 {
+	background-position: 0px -544px
+}
+
+.tempBox .data .hour18 {
+	background-position: 0px -576px
+}
+
+.tempBox .data .hour19 {
+	background-position: 0px -608px
+}
+
+.tempBox .data .hour20 {
+	background-position: 0px -640px
+}
+
+.tempBox .data .hour21 {
+	background-position: 0px -672px
+}
+
+.tempBox .data .hour22 {
+	background-position: 0px -704px
+}
+
+.tempBox .data .hour23 {
+	background-position: 0px -736px
+}
+
+.tempBox .data .hour24 {
+	background-position: 0px -768px
+}
+
+.tempBox .data .min00 {
+	background-position: 0px 0px
+}
+
+.tempBox .data .min01 {
+	background-position: 0px -32px
+}
+
+.tempBox .data .min02 {
+	background-position: 0px -64px
+}
+
+.tempBox .data .min03 {
+	background-position: 0px -96px
+}
+
+.tempBox .data .min04 {
+	background-position: 0px -128px
+}
+
+.tempBox .data .min05 {
+	background-position: 0px -160px
+}
+
+.tempBox .data .min06 {
+	background-position: 0px -192px
+}
+
+.tempBox .data .min07 {
+	background-position: 0px -224px
+}
+
+.tempBox .data .min08 {
+	background-position: 0px -256px
+}
+
+.tempBox .data .min09 {
+	background-position: 0px -288px
+}
+
+.tempBox .data .min10 {
+	background-position: 0px -320px
+}
+
+.tempBox .data .min11 {
+	background-position: 0px -352px
+}
+
+.tempBox .data .min12 {
+	background-position: 0px -384px
+}
+
+.tempBox .data .min13 {
+	background-position: 0px -416px
+}
+
+.tempBox .data .min14 {
+	background-position: 0px -448px
+}
+
+.tempBox .data .min15 {
+	background-position: 0px -480px
+}
+
+.tempBox .data .min16 {
+	background-position: 0px -512px
+}
+
+.tempBox .data .min17 {
+	background-position: 0px -544px
+}
+
+.tempBox .data .min18 {
+	background-position: 0px -576px
+}
+
+.tempBox .data .min19 {
+	background-position: 0px -608px
+}
+
+.tempBox .data .min20 {
+	background-position: 0px -640px
+}
+
+.tempBox .data .min21 {
+	background-position: 0px -672px
+}
+
+.tempBox .data .min22 {
+	background-position: 0px -704px
+}
+
+.tempBox .data .min23 {
+	background-position: 0px -736px
+}
+
+.tempBox .data .min24 {
+	background-position: 0px -768px
+}
+
+.tempBox .data .min25 {
+	background-position: 0px -800px
+}
+
+.tempBox .data .min26 {
+	background-position: 0px -832px
+}
+
+.tempBox .data .min27 {
+	background-position: 0px -864px
+}
+
+.tempBox .data .min28 {
+	background-position: 0px -896px
+}
+
+.tempBox .data .min29 {
+	background-position: 0px -928px
+}
+
+.tempBox .data .min30 {
+	background-position: 0px -960px
+}
+
+.tempBox .data .min31 {
+	background-position: 0px -992px
+}
+
+.tempBox .data .min32 {
+	background-position: 0px -1024px
+}
+
+.tempBox .data .min33 {
+	background-position: 0px -1056px
+}
+
+.tempBox .data .min34 {
+	background-position: 0px -1088px
+}
+
+.tempBox .data .min35 {
+	background-position: 0px -1120px
+}
+
+.tempBox .data .min36 {
+	background-position: 0px -1152px
+}
+
+.tempBox .data .min37 {
+	background-position: 0px -1184px
+}
+
+.tempBox .data .min38 {
+	background-position: 0px -1216px
+}
+
+.tempBox .data .min39 {
+	background-position: 0px -1248px
+}
+
+.tempBox .data .min40 {
+	background-position: 0px -1280px
+}
+
+.tempBox .data .min41 {
+	background-position: 0px -1312px
+}
+
+.tempBox .data .min42 {
+	background-position: 0px -1344px
+}
+
+.tempBox .data .min43 {
+	background-position: 0px -1376px
+}
+
+.tempBox .data .min44 {
+	background-position: 0px -1408px
+}
+
+.tempBox .data .min45 {
+	background-position: 0px -1440px
+}
+
+.tempBox .data .min46 {
+	background-position: 0px -1472px
+}
+
+.tempBox .data .min47 {
+	background-position: 0px -1504px
+}
+
+.tempBox .data .min48 {
+	background-position: 0px -1536px
+}
+
+.tempBox .data .min49 {
+	background-position: 0px -1568px
+}
+
+.tempBox .data .min50 {
+	background-position: 0px -1600px
+}
+
+.tempBox .data .min51 {
+	background-position: 0px -1632px
+}
+
+.tempBox .data .min52 {
+	background-position: 0px -1664px
+}
+
+.tempBox .data .min53 {
+	background-position: 0px -1696px
+}
+
+.tempBox .data .min54 {
+	background-position: 0px -1728px
+}
+
+.tempBox .data .min55 {
+	background-position: 0px -1760px
+}
+
+.tempBox .data .min56 {
+	background-position: 0px -1792px
+}
+
+.tempBox .data .min57 {
+	background-position: 0px -1824px
+}
+
+.tempBox .data .min58 {
+	background-position: 0px -1856px
+}
+
+.tempBox .data .min59 {
+	background-position: 0px -1888px
+}
+
+.tempBox .data .am {
+	background-position: 0px 0px
+}
+
+.tempBox .data .pm {
+	background-position: 0px 100%
+}
+
+.tempBox .data .weather01 {
+	background-position: 0px 0px;
+	width: 35px;
+}
+
+.tempBox .data .weather02 {
+	background-position: 0px -21px;
+	width: 65px;
+}
+
+.tempBox .data .weather03 {
+	background-position: 0px -42px;
+	width: 35px;
+}
+
+.tempBox .data .weather04 {
+	background-position: 0px -63px;
+	width: 20px;
+}
+
+.tempBox .data .weather05 {
+	background-position: 0px -84px;
+	width: 20px;
+}
+
+.tempBox .data .weather06 {
+	background-position: 0px -105px;
+	width: 33px;
+}
+
+.tempBox .data .weather07 {
+	background-position: 0px -126px;
+	width: 50px;
+}
+
+.tempBox .data .weather08 {
+	background-position: 0px -147px;
+	width: 50px;
+}
+
+.tempBox .data .weather09 {
+	background-position: 0px -168px;
+	width: 33px;
+}
+
+.tempBox .data .weather10 {
+	background-position: 0px -189px;
+	width: 33px;
+}
+
+.tempBox .data .weather11 {
+	background-position: 0px -210px;
+	width: 90px;
+}
+
+.tempBox .data .weather12 {
+	background-position: 0px -231px;
+	width: 90px;
+}
+
+.tempBox .data .weather13 {
+	background-position: 0px -252px;
+	width: 70px;
+}
+
+.tempBox .data .weather14 {
+	background-position: 0px -273px;
+	width: 70px;
+}
+
+.tempBox .data .weather15 {
+	background-position: 0px -294px;
+	width: 90px;
+}
+
+.tempBox .data .weather16 {
+	background-position: 0px -315px;
+	width: 77px;
+}
+
+.tempBox .data .weather17 {
+	background-position: 0px -336px;
+	width: 77px;
+}
+
+.tempBox .data .weather18 {
+	background-position: 0px -357px;
+	width: 60px;
+}
+
+.tempBox .data .weather19 {
+	background-position: 0px -378px;
+	width: 60px;
+}
+
+.tempBox .data .weather20 {
+	background-position: 0px -399px;
+	width: 77px;
+}
+
+.tempBox .data .weather21 {
+	background-position: 0px -420px;
+	width: 65px;
+}
+
+.tempBox .data .weather22 {
+	background-position: 0px -441px;
+	width: 35px;
+}
+/*.tempBox .data .weather22{ background-position:0px -440px; }
+.tempBox .data .weather23{ background-position:0px -460px; width:63px;}
+.tempBox .data .weather24{ background-position:0px -480px; width:63px;}
+.tempBox .data .weather25{ background-position:0px -500px; width:78px;}
+.tempBox .data .weather26{ background-position:0px -520px; width:78px;}
+.tempBox .data .weather27{ background-position:0px -540px; width:72px;}
+.tempBox .data .weather28{ background-position:0px -560px; width:72px;}
+.tempBox .data .weather29{ background-position:0px -580px; width:72px;}
+.tempBox .data .weather30{ background-position:0px -600px; width:72px;}
+.tempBox .data .weather31{ background-position:0px -620px; width:72px;}
+.tempBox .data .weather32{ background-position:0px -640px; width:42px;}
+.tempBox .data .weather33{ background-position:0px -660px; width:77px;}
+.tempBox .data .weather34{ background-position:0px -680px; width:77px;}
+.tempBox .data .weather35{ background-position:0px -700px; width:77px;}
+.tempBox .data .weather36{ background-position:0px -720px; width:63px;}
+.tempBox .data .weather37{ background-position:0px -740px; width:63px;}
+.tempBox .data .weather38{ background-position:0px -760px; width:78px;}
+.tempBox .data .weather39{ background-position:0px -780px; width:78px;}
+.tempBox .data .weather40{ background-position:0px -800px; width:78px;}
+.tempBox .data .weather41{ background-position:0px -820px; width:78px;}
+.tempBox .data .weather42{ background-position:0px -840px; width:78px;}
+.tempBox .data .weather43{ background-position:0px -860px; width:78px;}
+.tempBox .data .weather44{ background-position:0px -880px; width:62px;}
+.tempBox .data .weather45{ background-position:0px -900px; width:62px;}
+.tempBox .data .weather46{ background-position:0px -920px; width:78px;}
+.tempBox .data .weather47{ background-position:0px -940px; width:78px;}
+.tempBox .data .weather48{ background-position:0px -960px; width:78px;}
+.tempBox .data .weather49{ background-position:0px -980px; width:78px;}
+.tempBox .data .weather50{ background-position:0px -1000px; width:78px;}
+.tempBox .data .weather51{ background-position:0px -1020px; width:78px;}
+.tempBox .data .weather52{ background-position:0px -1040px; width:78px;}
+.tempBox .data .weather53{ background-position:0px -1060px; width:78px;}
+.tempBox .data .weather54{ background-position:0px -1080px; width:44px;}
+.tempBox .data .weather55{ background-position:0px -1100px; width:44px;}
+.tempBox .data .weather56{ background-position:0px -1120px; width:73px;}
+.tempBox .data .weather57{ background-position:0px -1140px; width:73px;}
+.tempBox .data .weather58{ background-position:0px -1160px; width:42px;}
+.tempBox .data .weather59{ background-position:0px -1180px; width:57px;}
+.tempBox .data .weather60{ background-position:0px -1200px; width:44px;}
+.tempBox .data .weather61{ background-position:0px -1220px; width:63px;}
+.tempBox .data .weather62{ background-position:0px -1240px; width:63px;}
+.tempBox .data .weather63{ background-position:0px -1260px; width:45px;}
+.tempBox .data .weather64{ background-position:0px -1280px}
+.tempBox .data .weather65{ background-position:0px -1300px; width:65px;}
+.tempBox .data .weather66{ background-position:0px -1320px; width:67px;}
+.tempBox .data .weather67{ background-position:0px -1340px; width:81px;}
+.tempBox .data .weather68{ background-position:0px -1360px}
+.tempBox .data .weather69{ background-position:0px -1380px; width:66px;}
+.tempBox .data .weather70{ background-position:0px -1400px; width:72px;}
+.tempBox .data .weather71{ background-position:0px -1420px; width:66px;}
+.tempBox .data .weather72{ background-position:0px -1440px; width:81px;}*/
+.tempBox .data .temp-30 {
+	background-position: 0px 0px;
+	width: 32px;
+}
+
+
+.tempBox .data .temp-29 {
+	background-position: 0px -18px;
+	width: 32px;
+}
+
+.tempBox .data .temp-28 {
+	background-position: 0px -36px;
+	width: 32px;
+}
+
+.tempBox .data .temp-27 {
+	background-position: 0px -54px;
+	width: 32px;
+}
+
+.tempBox .data .temp-26 {
+	background-position: 0px -72px;
+	width: 32px;
+}
+
+.tempBox .data .temp-25 {
+	background-position: 0px -90px;
+	width: 32px;
+}
+
+.tempBox .data .temp-24 {
+	background-position: 0px -108px;
+	width: 32px;
+}
+
+.tempBox .data .temp-23 {
+	background-position: 0px -126px;
+	width: 32px;
+}
+
+.tempBox .data .temp-22 {
+	background-position: 0px -144px;
+	width: 32px;
+}
+
+.tempBox .data .temp-21 {
+	background-position: 0px -162px;
+	width: 32px;
+}
+
+.tempBox .data .temp-20 {
+	background-position: 0px -180px;
+	width: 32px;
+}
+
+.tempBox .data .temp-19 {
+	background-position: 0px -198px;
+	width: 32px;
+}
+
+.tempBox .data .temp-18 {
+	background-position: 0px -216px;
+	width: 32px;
+}
+
+.tempBox .data .temp-17 {
+	background-position: 0px -234px;
+	width: 32px;
+}
+
+.tempBox .data .temp-16 {
+	background-position: 0px -252px;
+	width: 32px;
+}
+
+.tempBox .data .temp-15 {
+	background-position: 0px -270px;
+	width: 32px;
+}
+
+.tempBox .data .temp-14 {
+	background-position: 0px -288px;
+	width: 32px;
+}
+
+.tempBox .data .temp-13 {
+	background-position: 0px -306px;
+	width: 32px;
+}
+
+.tempBox .data .temp-12 {
+	background-position: 0px -324px;
+	width: 32px;
+}
+
+.tempBox .data .temp-11 {
+	background-position: 0px -342px;
+	width: 32px;
+}
+
+.tempBox .data .temp-10 {
+	background-position: 0px -360px;
+	width: 32px;
+}
+
+.tempBox .data .temp-9 {
+	background-position: 0px -378px;
+	width: 20px;
+}
+
+.tempBox .data .temp-8 {
+	background-position: 0px -396px;
+	width: 20px;
+}
+
+.tempBox .data .temp-7 {
+	background-position: 0px -414px;
+	width: 20px;
+}
+
+.tempBox .data .temp-6 {
+	background-position: 0px -432px;
+	width: 20px;
+}
+
+.tempBox .data .temp-5 {
+	background-position: 0px -450px;
+	width: 20px;
+}
+
+.tempBox .data .temp-4 {
+	background-position: 0px -468px;
+	width: 20px;
+}
+
+.tempBox .data .temp-3 {
+	background-position: 0px -486px;
+	width: 20px;
+}
+
+.tempBox .data .temp-2 {
+	background-position: 0px -504px;
+	width: 20px;
+}
+
+.tempBox .data .temp-1 {
+	background-position: 0px -522px;
+	width: 20px;
+}
+
+.tempBox .data .temp0 {
+	background-position: 0px -540px;
+	width: 12px;
+}
+
+.tempBox .data .temp1 {
+	background-position: 0px -558px;
+	width: 12px;
+}
+
+.tempBox .data .temp2 {
+	background-position: 0px -576px;
+	width: 12px;
+}
+
+.tempBox .data .temp3 {
+	background-position: 0px -594px;
+	width: 12px;
+}
+
+.tempBox .data .temp4 {
+	background-position: 0px -612px;
+	width: 12px;
+}
+
+.tempBox .data .temp5 {
+	background-position: 0px -630px;
+	width: 12px;
+}
+
+.tempBox .data .temp6 {
+	background-position: 0px -648px;
+	width: 12px;
+}
+
+.tempBox .data .temp7 {
+	background-position: 0px -666px;
+	width: 12px;
+}
+
+.tempBox .data .temp8 {
+	background-position: 0px -684px;
+	width: 12px;
+}
+
+.tempBox .data .temp9 {
+	background-position: 0px -702px;
+	width: 12px;
+}
+
+.tempBox .data .temp10 {
+	background-position: 0px -720px;
+	width: 24px;
+}
+
+.tempBox .data .temp11 {
+	background-position: 0px -738px;
+	width: 24px;
+}
+
+.tempBox .data .temp12 {
+	background-position: 0px -756px;
+	width: 24px;
+}
+
+.tempBox .data .temp13 {
+	background-position: 0px -774px;
+	width: 24px;
+}
+
+.tempBox .data .temp14 {
+	background-position: 0px -792px;
+	width: 24px;
+}
+
+.tempBox .data .temp15 {
+	background-position: 0px -810px;
+	width: 24px;
+}
+
+.tempBox .data .temp16 {
+	background-position: 0px -828px;
+	width: 24px;
+}
+
+.tempBox .data .temp17 {
+	background-position: 0px -846px;
+	width: 24px;
+}
+
+.tempBox .data .temp18 {
+	background-position: 0px -864px;
+	width: 24px;
+}
+
+.tempBox .data .temp19 {
+	background-position: 0px -882px;
+	width: 24px;
+}
+
+.tempBox .data .temp20 {
+	background-position: 0px -900px;
+	width: 24px;
+}
+
+.tempBox .data .temp21 {
+	background-position: 0px -918px;
+	width: 24px;
+}
+
+.tempBox .data .temp22 {
+	background-position: 0px -936px;
+	width: 24px;
+}
+
+.tempBox .data .temp23 {
+	background-position: 0px -954px;
+	width: 24px;
+}
+
+.tempBox .data .temp24 {
+	background-position: 0px -972px;
+	width: 24px;
+}
+
+.tempBox .data .temp25 {
+	background-position: 0px -990px;
+	width: 24px;
+}
+
+.tempBox .data .temp26 {
+	background-position: 0px -1008px;
+	width: 24px;
+}
+
+.tempBox .data .temp27 {
+	background-position: 0px -1026px;
+	width: 24px;
+}
+
+.tempBox .data .temp28 {
+	background-position: 0px -1044px;
+	width: 24px;
+}
+
+.tempBox .data .temp29 {
+	background-position: 0px -1062px;
+	width: 24px;
+}
+
+.tempBox .data .temp30 {
+	background-position: 0px -1080px;
+	width: 24px;
+}
+
+.tempBox .data .temp31 {
+	background-position: 0px -1098px;
+	width: 24px;
+}
+
+.tempBox .data .temp32 {
+	background-position: 0px -1116px;
+	width: 24px;
+}
+
+.tempBox .data .temp33 {
+	background-position: 0px -1132px;
+	width: 24px;
+}
+
+.tempBox .data .temp34 {
+	background-position: 0px -1152px;
+	width: 24px;
+}
+
+.tempBox .data .temp35 {
+	background-position: 0px -1170px;
+	width: 24px;
+}
+
+.tempBox .data .temp36 {
+	background-position: 0px -1188px;
+	width: 24px;
+}
+
+.tempBox .data .temp37 {
+	background-position: 0px -1206px;
+	width: 24px;
+}
+
+.tempBox .data .temp38 {
+	background-position: 0px -1224px;
+	width: 24px;
+}
+
+.tempBox .data .temp39 {
+	background-position: 0px -1242px;
+	width: 24px;
+}
+
+.tempBox .data .temp40 {
+	background-position: 0px -1260px;
+	width: 24px;
+}
+
+.tempBox .data .temp41 {
+	background-position: 0px -1278px;
+	width: 24px;
+}
+
+.tempBox .data .temp42 {
+	background-position: 0px -1296px;
+	width: 24px;
+}
+
+.tempBox .data .temp43 {
+	background-position: 0px -1314px;
+	width: 24px;
+}
+
+.tempBox .data .temp44 {
+	background-position: 0px -1350px;
+	width: 24px;
+}
+
+.tempBox .data .temp45 {
+	background-position: 0px -1368px;
+	width: 24px;
+}
+
+.tempBox .data .temp46 {
+	background-position: 0px -1386px;
+	width: 24px;
+}
+
+.tempBox .data .temp47 {
+	background-position: 0px -1404px;
+	width: 24px;
+}
+
+.tempBox .data .temp48 {
+	background-position: 0px -1422px;
+	width: 24px;
+}
+
+.tempBox .data .temp49 {
+	background-position: 0px -1440px;
+	width: 24px;
+}
+
+.tempBox .data .temp50 {
+	background-position: 0px -1458px;
+	width: 24px;
+}
+
+.tempBox .data .humA0 {
+	background-position: 0px 0px;
+	width: 11px;
+}
+
+.tempBox .data .humA1 {
+	background-position: 0px -18px;
+	width: 11px;
+}
+
+.tempBox .data .humA2 {
+	background-position: 0px -36px;
+	width: 11px;
+}
+
+.tempBox .data .humA3 {
+	background-position: 0px -54px;
+	width: 11px;
+}
+
+.tempBox .data .humA4 {
+	background-position: 0px -72px;
+	width: 11px;
+}
+
+.tempBox .data .humA5 {
+	background-position: 0px -90px;
+	width: 11px;
+}
+
+.tempBox .data .humA6 {
+	background-position: 0px -108px;
+	width: 11px;
+}
+
+.tempBox .data .humA7 {
+	background-position: 0px -126px;
+	width: 11px;
+}
+
+.tempBox .data .humA8 {
+	background-position: 0px -144px;
+	width: 11px;
+}
+
+.tempBox .data .humA9 {
+	background-position: 0px -162px;
+	width: 11px;
+}
+
+.tempBox .data .humA10 {
+	background-position: 0px -180px
+}
+
+.tempBox .data .humA11 {
+	background-position: 0px -198px
+}
+
+.tempBox .data .humA12 {
+	background-position: 0px -216px
+}
+
+.tempBox .data .humA13 {
+	background-position: 0px -234px
+}
+
+.tempBox .data .humA14 {
+	background-position: 0px -252px
+}
+
+.tempBox .data .humA15 {
+	background-position: 0px -270px
+}
+
+.tempBox .data .humA16 {
+	background-position: 0px -288px
+}
+
+.tempBox .data .humA17 {
+	background-position: 0px -306px
+}
+
+.tempBox .data .humA18 {
+	background-position: 0px -324px
+}
+
+.tempBox .data .humA19 {
+	background-position: 0px -342px
+}
+
+.tempBox .data .humA20 {
+	background-position: 0px -360px
+}
+
+.tempBox .data .humA21 {
+	background-position: 0px -378px
+}
+
+.tempBox .data .humA22 {
+	background-position: 0px -396px
+}
+
+.tempBox .data .humA23 {
+	background-position: 0px -414px
+}
+
+.tempBox .data .humA24 {
+	background-position: 0px -432px
+}
+
+.tempBox .data .humA25 {
+	background-position: 0px -450px
+}
+
+.tempBox .data .humA26 {
+	background-position: 0px -468px
+}
+
+.tempBox .data .humA27 {
+	background-position: 0px -486px
+}
+
+.tempBox .data .humA28 {
+	background-position: 0px -504px
+}
+
+.tempBox .data .humA29 {
+	background-position: 0px -522px
+}
+
+.tempBox .data .humA30 {
+	background-position: 0px -540px
+}
+
+.tempBox .data .humA31 {
+	background-position: 0px -558px
+}
+
+.tempBox .data .humA32 {
+	background-position: 0px -576px
+}
+
+.tempBox .data .humA33 {
+	background-position: 0px -594px
+}
+
+.tempBox .data .humA34 {
+	background-position: 0px -612px
+}
+
+
+.tempBox .data .humA35 {
+	background-position: 0px -630px
+}
+
+.tempBox .data .humA36 {
+	background-position: 0px -648px
+}
+
+.tempBox .data .humA37 {
+	background-position: 0px -666px
+}
+
+.tempBox .data .humA38 {
+	background-position: 0px -684px
+}
+
+.tempBox .data .humA39 {
+	background-position: 0px -702px
+}
+
+.tempBox .data .humA40 {
+	background-position: 0px -720px
+}
+
+.tempBox .data .humA41 {
+	background-position: 0px -738px
+}
+
+.tempBox .data .humA42 {
+	background-position: 0px -756px
+}
+
+.tempBox .data .humA43 {
+	background-position: 0px -774px
+}
+
+.tempBox .data .humA44 {
+	background-position: 0px -792px
+}
+
+.tempBox .data .humA45 {
+	background-position: 0px -810px
+}
+
+.tempBox .data .humA46 {
+	background-position: 0px -828px
+}
+
+.tempBox .data .humA47 {
+	background-position: 0px -846px
+}
+
+.tempBox .data .humA48 {
+	background-position: 0px -864px
+}
+
+.tempBox .data .humA49 {
+	background-position: 0px -882px
+}
+
+.tempBox .data .humA50 {
+	background-position: 0px -900px
+}
+
+.tempBox .data .humA51 {
+	background-position: 0px -918px
+}
+
+.tempBox .data .humA52 {
+	background-position: 0px -936px
+}
+
+.tempBox .data .humA53 {
+	background-position: 0px -954px
+}
+
+.tempBox .data .humA54 {
+	background-position: 0px -972px
+}
+
+.tempBox .data .humA55 {
+	background-position: 0px -990px
+}
+
+.tempBox .data .humA56 {
+	background-position: 0px -1026px
+}
+
+.tempBox .data .humA58 {
+	background-position: 0px -1044px
+}
+
+.tempBox .data .humA59 {
+	background-position: 0px -1062px
+}
+
+.tempBox .data .humA60 {
+	background-position: 0px -1080px
+}
+
+.tempBox .data .humA61 {
+	background-position: 0px -1098px
+}
+
+.tempBox .data .humA62 {
+	background-position: 0px -1116px
+}
+
+.tempBox .data .humA63 {
+	background-position: 0px -1133px
+}
+
+.tempBox .data .humA64 {
+	background-position: 0px -1152px
+}
+
+.tempBox .data .humA65 {
+	background-position: 0px -1170px
+}
+
+.tempBox .data .humA66 {
+	background-position: 0px -1188px
+}
+
+.tempBox .data .humA67 {
+	background-position: 0px -1206px
+}
+
+.tempBox .data .humA68 {
+	background-position: 0px -1224px
+}
+
+.tempBox .data .humA69 {
+	background-position: 0px -1242px
+}
+
+.tempBox .data .humA70 {
+	background-position: 0px -1260px
+}
+
+.tempBox .data .humA71 {
+	background-position: 0px -1278px
+}
+
+.tempBox .data .humA72 {
+	background-position: 0px -1296px
+}
+
+.tempBox .data .humA73 {
+	background-position: 0px -1314px
+}
+
+.tempBox .data .humA74 {
+	background-position: 0px -1332px
+}
+
+.tempBox .data .humA75 {
+	background-position: 0px -1350px
+}
+
+.tempBox .data .humA76 {
+	background-position: 0px -1368px
+}
+
+.tempBox .data .humA77 {
+	background-position: 0px -1386px
+}
+
+.tempBox .data .humA78 {
+	background-position: 0px -1404px
+}
+
+.tempBox .data .humA79 {
+	background-position: 0px -1422px
+}
+
+.tempBox .data .humA80 {
+	background-position: 0px -1440px
+}
+
+.tempBox .data .humA81 {
+	background-position: 0px -1458px
+}
+
+
+.tempBox .data .humA82 {
+	background-position: 0px -1476px
+}
+
+.tempBox .data .humA83 {
+	background-position: 0px -1494px
+}
+
+.tempBox .data .humA84 {
+	background-position: 0px -1512px
+}
+
+.tempBox .data .humA85 {
+	background-position: 0px -1530px
+}
+
+.tempBox .data .humA86 {
+	background-position: 0px -1548px
+}
+
+.tempBox .data .humA87 {
+	background-position: 0px -1566px
+}
+
+.tempBox .data .humA88 {
+	background-position: 0px -1584px
+}
+
+.tempBox .data .humA89 {
+	background-position: 0px -1602px
+}
+
+.tempBox .data .humA90 {
+	background-position: 0px -1620px
+}
+
+.tempBox .data .humA91 {
+	background-position: 0px -1638px
+}
+
+.tempBox .data .humA92 {
+	background-position: 0px -1656px
+}
+
+.tempBox .data .humA93 {
+	background-position: 0px -1674px
+}
+
+.tempBox .data .humA94 {
+	background-position: 0px -1692px
+}
+
+.tempBox .data .humA95 {
+	background-position: 0px -1710px
+}
+
+.tempBox .data .humA96 {
+	background-position: 0px -1728px
+}
+
+.tempBox .data .humA97 {
+	background-position: 0px -1746px
+}
+
+.tempBox .data .humA98 {
+	background-position: 0px -1764px
+}
+
+.tempBox .data .humA99 {
+	background-position: 0px -1782px
+}
+
+.tempBox .data .humA100 {
+	background-position: 0px -1800px;
+	width: 36px;
+}
+
+.tempBox .data .humB50 {
+	background-position: 0px 0px
+}
+
+.tempBox .data .humB51 {
+	background-position: 0px -20px
+}
+
+.tempBox .data .humB52 {
+	background-position: 0px -40px
+}
+
+.tempBox .data .humB53 {
+	background-position: 0px -60px
+}
+
+.tempBox .data .humB54 {
+	background-position: 0px -80px
+}
+
+.tempBox .data .humB55 {
+	background-position: 0px -100px
+}
+
+.tempBox .data .humB56 {
+	background-position: 0px -120px
+}
+
+.tempBox .data .humB57 {
+	background-position: 0px -140px
+}
+
+.tempBox .data .humB58 {
+	background-position: 0px -160px
+}
+
+.tempBox .data .humB59 {
+	background-position: 0px -180px
+}
+
+.tempBox .data .humB60 {
+	background-position: 0px -200px
+}
+
+.tempBox .data .humB61 {
+	background-position: 0px -220px
+}
+
+.tempBox .data .humB62 {
+	background-position: 0px -240px
+}
+
+.tempBox .data .humB63 {
+	background-position: 0px -260px
+}
+
+.tempBox .data .humB64 {
+	background-position: 0px -280px
+}
+
+.tempBox .data .humB65 {
+	background-position: 0px -300px
+}
+
+.tempBox .data .humB66 {
+	background-position: 0px -320px
+}
+
+.tempBox .data .humB67 {
+	background-position: 0px -340px
+}
+
+.tempBox .data .humB68 {
+	background-position: 0px -360px
+}
+
+.tempBox .data .humB69 {
+	background-position: 0px -380px
+}
+
+.tempBox .data .humB70 {
+	background-position: 0px -400px
+}
+
+.tempBox .data .humB71 {
+	background-position: 0px -420px
+}
+
+.tempBox .data .humB72 {
+	background-position: 0px -440px
+}
+
+.tempBox .data .humB73 {
+	background-position: 0px -460px
+}
+
+.tempBox .data .humB74 {
+	background-position: 0px -480px
+}
+
+.tempBox .data .humB75 {
+	background-position: 0px -500px
+}
+
+.tempBox .data .humB76 {
+	background-position: 0px -520px
+}
+
+.tempBox .data .humB77 {
+	background-position: 0px -540px
+}
+
+.tempBox .data .humB78 {
+	background-position: 0px -560px
+}
+
+.tempBox .data .humB79 {
+	background-position: 0px -580px
+}
+
+.tempBox .data .humB80 {
+	background-position: 0px -600px
+}
+
+.tempBox .data .humB81 {
+	background-position: 0px -620px
+}
+
+.tempBox .data .humB82 {
+	background-position: 0px -640px
+}
+
+.tempBox .data .humB83 {
+	background-position: 0px -660px
+}
+
+.tempBox .data .humB84 {
+	background-position: 0px -680px
+}
+
+.tempBox .data .humB85 {
+	background-position: 0px -700px
+}
+
+.tempBox .data .humB86 {
+	background-position: 0px -720px
+}
+
+.tempBox .data .humB87 {
+	background-position: 0px -740px
+}
+
+.tempBox .data .humB88 {
+	background-position: 0px -760px
+}
+
+.tempBox .data .humB89 {
+	background-position: 0px -780px
+}
+
+.tempBox .data .humB90 {
+	background-position: 0px -800px
+}
+
+.tempBox .data .humB91 {
+	background-position: 0px -820px
+}
+
+.tempBox .data .humB92 {
+	background-position: 0px -840px
+}
+
+.tempBox .data .humB93 {
+	background-position: 0px -860px
+}
+
+.tempBox .data .humB94 {
+	background-position: 0px -880px
+}
+
+.tempBox .data .humB95 {
+	background-position: 0px -900px
+}
+
+.tempBox .data .humB96 {
+	background-position: 0px -920px
+}
+
+.tempBox .data .humB97 {
+	background-position: 0px -940px
+}
+
+.tempBox .data .humB98 {
+	background-position: 0px -960px
+}
+
+.tempBox .data .humB99 {
+	background-position: 0px -980px
+}
+
+.tempBox .data .humB100 {
+	background-position: 0px -1000px;
+	width: 30px;
+}
+
+/* 20170221 */
+/* top */
+.loginArea{position: absolute;top: 19px;right: 260px;}
+.loginArea > a{position: relative; float: left; color:#856f56;margin-right:15px;margin-left:15px;}
+.loginArea > a:before{position: absolute;top: 3px; right: -15px;content:'';display: inline-block;width: 1px;height: 10px;background: #d2c4a5;}
+
+.topMem {
+	position: absolute;
+	top: 16px;
+	right: 0;
+}
+
+.topMem a {
+	display: inline-block;
+	width: 68px;
+	height: 24px;
+	background: url(../../images/ko/seoul/main/topMem.gif) no-repeat 0 0;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.topMem a:hover {
+	background-position: 0 -24px;
+}
+
+/* footer */
+.brandWrap {
+	overflow: hidden;
+	line-height: 0
+}
+
+.brandWrap a {
+	float: left;
+}
+
+.brandWrap a.brandShilla {
+	display: inline-block;
+	width: 140px;
+	height: 68px;
+	background: url(../../images/ko/seoul/main/brandTit.gif) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.brandWrap a.brandMono {
+	display: inline-block;
+	width: 226px;
+	height: 68px;
+	background: url(../../images/ko/seoul/main/brandMono.gif) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.brandWrap a.brandStay {
+	display: inline-block;
+	width: 150px;
+	height: 68px;
+	background: url(../../images/ko/seoul/main/brandStay.gif) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+
+.brandWrap a:hover {
+	background-position: 0 -68px;
+}
+
+.brandWrap .brandShilla, .brandWrap .brandMono{
+	margin-right: 40px;
+}
+
+.InfoWrap {
+	float: left;
+	height: 104px;
+	background: url(../../images/ko/seoul/main/localBoxLinkInfoBg.gif)
+	repeat-x;
+}
+
+.InfoWrap .addressInfo {
+	float: left;
+	width: 294px;
+	height: 104px;
+	background: url(../../images/ko/seoul/main/addressInfo.gif) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+
+
+
+
+
+/*���� dining css*/
+
+/* ���� ����Ȯ�� ����Ʈ �ڽ� ���� �ҽ� */
+.head .header .resvConfirm{position: absolute;top: 10px;right: 171px;}
+.head .header .resvConBox{ display: inline-block;vertical-align: top;font-size:12px; width: 84px; background:#f1e3c4 url(../../images/ko/hub/main/resvConBox.jpg) no-repeat 50% 5px; z-index:20;position: relative;}
+.head .header .resvConBox.on{ background:#bfaf9d url(../../images/ko/hub/main/resvConBoxOn.jpg) no-repeat 50% 5px; z-index:20;}
+.head .header .resvConBox .btn{ display:inline-block; width:74px; height:24px;line-height: 24px;padding: 6px 0 5px 10px;color: #856f56;border-bottom: 1px solid #f1e3c4;}
+.head .header .resvConBox.on .btn{color:#fff;border-bottom: 1px solid #ac9d8d;}
+.head .header .resvConBox .list{ display:none;}
+.head .header .resvConBox .list li{background: url(../../images/ko/hub/main/icoDot.gif) no-repeat 13px 14px;}
+.head .header .resvConBox .list li a{display: block !important; height:31px;line-height: 31px; margin:1px 0 0 0;padding-left: 22px;text-align: left;color: #856f56;}
+.head .header .resvConBox .list li a:hover{font-weight: normal;text-decoration: underline;}
+.head .header .resvConBox.on .list li a{color: #fff;}
+.head .header .resvConBox .list li.st1 a{ background-position:-1px -26px;}
+.head .header .resvConBox .list li.st2 a{ background-position:-1px -44px;}
+
+
+/* 2020 ���̴� ���� ���� gnb */
+.gnbMain.on2:after{content: ''; display: block; width: 100%; height: 37px; background: url(../../images/ko/seoul/main/gnbBg2.jpg); position: absolute; top: 50px;}
+.resvMenu{position: relative; right: 0px; top: 0px; display: inline-block; width: 208px; height: 53px;}
+.resvMenu ul{display: none; position: absolute; left: 1040px; top: 50px; width: 113px; padding: 4px 0 4px 0; z-index: 11;}
+.resvMenu ul li{float: left; position: relative;}
+.headSeoul .resvMenu ul.sm li a{background-image: url(../../images/ko/seoul/main/ResvMenuSub.jpg); width: 52px; height: 30px; display: block; text-align: center; padding: 0; text-indent: -9999%; overflow: hidden;}
+.headSeoul .resvMenu ul.sm li.s2 a{width: 61px; background-position: -52px 0;}
+.headSeoul .resvMenu ul.sm li a:hover,
+.headSeoul .resvMenu ul.sm li a:focus,
+.headSeoul .resvMenu ul.sm li a.on{background-image: url(../../images/ko/seoul/main/ResvMenuSubOn.jpg);}
+
+/* 2020 ���̴� ���� ���� gnb */
+.subWrap .gnbSub{position: relative; top:0; left: 0;}
+.subWrap .gnbSub.on2:after{content: ''; display: block; width: 100%; height: 37px; background: url(../../images/ko/seoul/main/gnbBg2.jpg); position: absolute; top: 50px; z-index: 10;}
+
+/* ���� ���̴� ��� */
+.diningMainBanner{width: 1200px; margin: 50px auto 0;}
+
+.gnbMenu li.m4 ul li.s2{display:none;} /*gnb 스파 임시 숨김처리*/
+div.lnbAreaFacil ul li.m2{display:none;}/*lnb 스파 임시 숨김처리*/

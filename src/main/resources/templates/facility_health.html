@@ -1,0 +1,445 @@
+<html layout:decorate="~{layout2}">
+
+<th:block layout:fragment="content">
+
+	<script type="text/javascript" src="/assets/js/jquery-1.12.4.min.js"></script>
+	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script type="text/javascript" src="/assets/js/script.js?ver=1.0"></script>
+	<script type="text/javascript"
+		src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="/assets/js/jquery.simplyscroll.js"></script>
+	<script type="text/javascript"
+		src="/assets/js/moment-with-locales.min.js"></script>
+	<script src="../assets/js/daterangepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/calendar.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="stylesheet" type="text/css"
+		href="/assets/css/jquery.simplyscroll.css" />
+	<link rel="stylesheet" type="text/css"
+		href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet"
+		href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<meta property="og:type" content="website" />
+	<meta property="og:image"
+		content="https://www.mayfield.co.kr/assets/share/share_img_v1.png">
+	<meta property="og:url" content="https://www.mayfield.co.kr/">
+	<link rel="shortcut icon" href="/fav/favicon.ico">
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-35441728-1"></script>
+
+	<!-- END nav -->
+	<div id="roomsView">
+
+		<div id="rmVisual" class="rm_visual">
+			<div class="vis_box">
+				<div class="vis_slide_box">
+					<div class="vis_slide"
+						style="background: url(/images/health\(5\).jpg) no-repeat center center;">
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="slide_control">
+			<div class="control_box">
+				<div class="slide_info">
+					<p class="arr_left arr_btn"></p>
+					<p class="slide_info_box">
+						<span class="slide_cur cinzel">01</span>/<span class="slide_ea cinzel">03</span>
+					</p>
+					<p class="arr_right arr_btn">
+						<a href="javascript:void(0);"> <img
+							src="/img/slide_arr_white_l.png" alt="slide_left_arrow">
+						</a>
+					</p>
+					<div class="play_pause"></div>
+				</div>
+			</div>
+			<div class="progress_bar">
+				<span class="progress_ing"> </span>
+			</div>
+		</div>
+		<div id="Viewcont">
+			<div class="view_reserve_box">
+				<div class="box_wrap">
+					<div class="name_box reserve_box">
+						<p class="this_name">헬스장</p>
+						<div class="this_info_box reserve_box"></div>
+					</div>
+					<div class="btn_box reserve_box">
+						<div class="member_share">
+							<a href="javascript:void(0);" class="btn_s member_btn"
+								data-pop="popBenepit"> <img
+								src="/assets/images/view_btn_member (1).svg" alt="member_info">
+							</a> <a href="javascript:void(0);" class="btn_s share_btn"
+								data-pop="popShare"> <img
+								src="/assets/images/view_btn_share.svg" alt="share">
+							</a>
+						</div>
+						<div class="reservation_btn">
+
+							<a th:href="@{/facility_reservation}"
+								class="btn_l reserve_home" data-pop="popalert"
+								data-id="standard" data-type="room"> <span>예약하기</span>
+							</a> <a href="tel:010-1234-5678" class="btn_l reserve_tel"
+								data-pop="popTel"> <span>전화 예약</span>
+							</a>
+						</div>
+						<div id="popBenepit" class="pop_box">
+							<a href="javascript:void(0);" class="close_btn"><img
+								src="/assets/images/dining/Close.svg" alt="닫기"></a>
+							<div class="text_title">
+								<p class="small_title">다양한 라이프스타일에 맞춘 품격있는 멤버십</p>
+							</div>
+							<div class="text_box">
+								<div class="right_box">
+									<p>제공 혜택</p>
+								</div>
+								<div class="left_box">
+									· 객실 숙박권<br> · F&B 식음권 및 할인권<br> · 부대시설 할인권<br>
+									· 패키지 할인 혜택
+								</div>
+							</div>
+							<div class="btn_box_1">
+								<a href="/membership/list.html?num=1">자세히 보기</a>
+							</div>
+						</div>
+						<div id="popShare" class="pop_box">
+
+							<a href="javascript:void(0);" class="close_btn"><img
+								src="/assets/images/dining/Close.svg" alt="닫기"></a>
+							<div class="text_title">
+								<p>공유하기</p>
+							</div>
+							<div class="share_btn">
+								<a href="javascript:void(0);"><img
+									src="/assets/images/dining/kakao.svg" alt="카카오톡">카카오톡</a> <a
+									href="javascript:void(0);"><img
+									src="/assets/images/dining/URL.svg" alt="카카오톡">URL 공유</a>
+							</div>
+						</div>
+						<div id="popReser" class="pop_box">
+							<a href="javascript:void(0);" class="close_btn"><img
+								src="/assets/images/dining/Close.svg" alt="닫기"></a>
+							<div class="text_title">
+								<p>예약하기</p>
+							</div>
+							<div class="reser_btn"></div>
+						</div>
+						<div id="popTel" class="pop_box">
+							<p>
+								<img src="/assets/images/dining/tel.svg" alt="전화기"> <span>02.2660.9000</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="viewContets" class="view_cont">
+				<div class="cont_wrap">
+					<div class="info_sec info_sec_01">
+						<div class="title_box">
+							<p class="info_tit">헬스장</p>
+						</div>
+						<div class="text_box">
+							<p class="info_text">
+								헬스장은 PT Studio, GX Studio 등의 최신 시설을 갖추고 있습니다. <br> 다양한 운동
+								프로그램을 통해 건강하고 즐거운 삶을 만들어 가세요.<br> <br> 최신 3D 기구인
+								KINESIS Station, 인체 공학적 설계 및 첨단 기능을 갖춘 이태리 테크노 짐(Technogym)을 비롯해
+								<br> 90여 대의 최신 장비가 효과적인 운동법을 제안합니다.<br> <br> 또한,
+								다양한 목적에 맞는 Cardio Zone, Weight Zone, Free Weight Zone, Stretch
+								Zone <br> 등의 공간이 최적의 편리함을 제공합니다.
+							</p>
+						</div>
+						<div class="info_list_box">
+							<div class="info_box info_box_1">
+								<p class="info_tit">시설 타입</p>
+								<p class="info_text">헬스장</p>
+							</div>
+							<div class="info_box info_box_2">
+								<p class="info_tit">위치</p>
+								<p class="info_text">CROWN HOTEL 1F</p>
+							</div>
+							<div class="info_box info_box_3">
+								<p class="info_tit">이용시간</p>
+								<p class="info_text">
+									06:00~22:00 <br> 매월 마지막 주 월요일 휴무.
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="info_sec info_sec_02">
+						<div class="title_box">
+							<p class="info_tit">추가 정보</p>
+						</div>
+						<div class="table_box">
+							<table>
+								<colgroup>
+									<col width="33%">
+									<col width="33%">
+									<col width="33%">
+
+								</colgroup>
+
+								<tr>
+									<td>
+										<div class="td_box">
+											<div>
+												<p>
+													PT Studio <br> 고객의 스케줄에 맞춰 운동효과를 극대화하는 개인 헬스 <br>
+													트레이너의 1:1 맞춤형 운동 프로그램<br> 및 신규 그룹 PT 프로그램
+												</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="td_box">
+											<div>
+												<p>
+													GX Studio <br> 몸의 균형과 유연성을 키워주는 스트레칭 프로그램
+												</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="td_box">
+											<div>
+												<p>만 16세 미만 고객은 이용이 제한됩니다.</p>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="info_sec info_sec_03">
+						<div class="title_box">
+							<p class="info_tit">스페셜 서비스</p>
+						</div>
+
+
+
+
+						<section class="ftco-section bg-light">
+							<div class="container">
+								<div class="row justify-content-center mb-5 pb-3">
+									<div class="col-md-7 heading-section text-center ftco-animate">
+										<h2 class="mb-4">시설 할인 서비스 50% Discount</h2>
+									</div>
+								</div>
+								<div class="row">
+
+
+
+									<div class="col-sm col-md-6 col-lg-4 ftco-animate">
+										<div class="room">
+											<a href="rooms.html"
+												class="img d-flex justify-content-center align-items-center"
+												style="background-image: url(img/restaurant2.jpg)">
+												<div
+													class="icon d-flex justify-content-center align-items-center">
+													<span class="icon-search2"></span>
+												</div>
+											</a>
+											<div class="text p-3 text-center">
+												<h3 class="mb-3">
+													<a href="rooms.html">레스토랑</a>
+												</h3>
+												&nbsp;
+												<p>
+													<span class="price mr-2 cinzel">$ &nbsp;300</span> <span
+														class="per">1식</span>
+												</p>
+												<hr />
+												<p class="pt-1">
+													<a href="room_luxury.html" class="btn-custom">
+														<ul class="noto-sans">운영 시간 : 06:00~22:00 | CROWN HOTEL의 세련된 업스케일 뷔페
+															레스토랑 'MFB'에서는 국내 외 전문 셰프들이 즉석에서 선보이는 200여 가지의 요리를 경험할 수
+															있습니다. 아시안식, 일식, 양식, 누들, 콜드밀, 코리안 그릴, 디저트, BAR 등등
+														</ul> <span class="icon-long-arrow-right"></span>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm col-md-6 col-lg-4 ftco-animate">
+										<div class="room">
+											<a href="rooms.html"
+												class="img d-flex justify-content-center align-items-center"
+												style="background-image: url(img/swim4.jpg)">
+												<div
+													class="icon d-flex justify-content-center align-items-center">
+													<span class="icon-search2"></span>
+												</div>
+											</a>
+											<div class="text p-3 text-center">
+												<h3 class="mb-3">
+													<a href="facility_pool_reservation.html">수영장</a>
+												</h3>
+												&nbsp;
+												<p>
+													<span class="price mr-2 cinzel">$ &nbsp;3,000</span> <span
+														class="per">일일권</span>
+												</p>
+												<hr />
+												<p class="pt-1">
+													<a href="room_suite.html" class="btn-custom">
+														<ul>
+															<li class="info_list noto-sans">운영 시간 : 주중 및 주말 06:00 ~ 21:30
+																(매월 두 번째, 네 번째 월요일 정기 휴관)</li>
+															<li class="info_list noto-sans">깨끗한 수질관리를 위하여 샤워 후 입수 바라며, 입수
+																시 수영모를 착용하여 주시기 바랍니다.</li>
+															<li class="info_list noto-sans">체크아웃 당일에는 11시까지 이용 가능하며, 이용을
+																원하실 경우 10시 전에 입장하여 주시기 바랍니다.</li>
+															<li class="info_list noto-sans">만 13세 미만 자녀 성인풀 이용 시에는 부모 동반 및
+																자유수영에 한해 이용이 가능합니다.<br> 단, 튜브 및 보호장비 착용은 불가하며 자유수영
+																외 물놀이는 금지합니다.
+															</li>
+
+														</ul> <span class="icon-long-arrow-right"></span>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm col-md-6 col-lg-4 ftco-animate">
+										<div class="room">
+											<a href="rooms.html"
+												class="img d-flex justify-content-center align-items-center"
+												style="background-image: url(img/golf4.jpg)">
+												<div
+													class="icon d-flex justify-content-center align-items-center">
+													<span class="icon-search2"></span>
+												</div>
+											</a>
+											<div class="text p-3 text-center">
+												<h3 class="mb-3">
+													<a href="rooms.html">골프장</a>
+												</h3>
+												&nbsp;
+												<p>
+													<span class="price mr-2 cinzel">$ &nbsp;5,000</span> <span
+														class="per">일일권</span>
+												</p>
+												<hr />
+												<p class="pt-1">
+													<a href="room_luxury.html" class="btn-custom">
+														<ul class="noto-sans">운영 시간 : 일출 ~ 일몰 (매월 네 번째 월요일 정기 휴관) 선착순으로 입장하며 사전
+															예약은 불가능합니다. 평일 기준 1인 플레이가 가능하며 주말 및 공휴일은 불가능합니다.
+														</ul> <span class="icon-long-arrow-right"></span>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="info_sec info_sec_04 two_box rooms_service_info">
+				</div>
+			</div>
+		</div>
+	</div>
+</th:block>
+
+<th:block layout:fragment="script">
+	<script>
+		var offerSlide = "";
+		var currentSlide;
+		var slidesCount;
+
+		var updateSliderCounterOffer = function(slick, currentIndex) {
+			currentSlide = slick.slickCurrentSlide() + 1;
+			slidesCount = slick.slideCount;
+
+			if (currentSlide == slidesCount - 2) {
+				$(
+						'#viewBottom .view_offer .cont_wrap .slide_info .arr_btn.arr_right a')
+						.addClass('slick-disabled');
+			}
+			if (currentSlide < 10) {
+				currentSlide = '0' + currentSlide;
+			}
+			if (slidesCount < 10) {
+				slidesCount = '0' + slidesCount;
+			}
+			$(
+					'#viewBottom .view_offer .cont_wrap .slide_info .slide_info_box .slide_cur')
+					.html(currentSlide);
+			$(
+					'#viewBottom .view_offer .cont_wrap .slide_info .slide_info_box .slide_ea')
+					.html(slidesCount);
+		};
+
+		function slick_start() {
+
+			offerSlide.on('init', function(event, slick) {
+				updateSliderCounterOffer(slick);
+			});
+
+			var $progressBar = $('.view_offer .slide_bar');
+			var $progressBarLabel = $('.view_offer .slide_bar_cont');
+			offerSlide.on('afterChange', function(event, slick, currentSlide,
+					nextSlide) {
+				updateSliderCounterOffer(slick, currentSlide);
+
+				var calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
+				console.log(currentSlide);
+				$progressBarLabel.css('width', calc)
+						.attr('aria-valuenow', calc);
+
+				//$progressBarLabel.text( calc + '% completed' );
+			});
+
+			offerSlide
+					.slick({
+						infinite : false,
+						dots : true,
+						slidesToShow : 3,
+						slidesToScroll : 1,
+						arrows : true,
+						variableWidth : true,
+						prevArrow : $('#viewBottom .view_offer .cont_wrap .slide_info .arr_btn.arr_left a'),
+						nextArrow : $('#viewBottom .view_offer .cont_wrap .slide_info .arr_btn.arr_right a'),
+					});
+		}
+
+		$(document).ready(function() {
+			offerSlide = $('#viewBottom .offer_slide');
+
+			if ($('#wellnessView').length > 0) {
+				$('.view_offer').css('display', 'none');
+			} else {
+				special_include_list();
+			}
+		});
+	</script>
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start' : new Date().getTime(),
+				event : 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l='
+					+ l
+					: '';
+			j.async = true;
+			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-P3GCMXK');
+	</script>
+</th:block>
+
+</html>

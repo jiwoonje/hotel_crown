@@ -1,0 +1,506 @@
+<html layout:decorate="~{layout2}">
+
+<th:block layout:fragment="content">
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/calendar.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="stylesheet" type="text/css"
+		href="/assets/css/jquery.simplyscroll.css" />
+	<link rel="stylesheet" type="text/css"
+		href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet"
+		href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<meta property="og:type" content="website" />
+	<meta property="og:image"
+		content="https://www.mayfield.co.kr/assets/share/share_img_v1.png">
+	<meta property="og:url" content="https://www.mayfield.co.kr/">
+	<link rel="shortcut icon" href="/fav/favicon.ico">
+
+	<!-- Google Tag Manager -->
+
+	<div id="roomsView">
+
+		<div id="rmVisual" class="rm_visual">
+			<div class="vis_box">
+				<div class="vis_slide_box">
+					<div class="vis_slide"
+						style="background: url(/images/2bed\(10\).jpg) no-repeat center center;">
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="slide_control">
+			<div class="control_box">
+				<div class="slide_info">
+					<p class="arr_left arr_btn"></p>
+					<p class="slide_info_box">
+						<span class="slide_cur cinzel">01</span>/<span class="slide_ea cinzel">03</span>
+					</p>
+					<p class="arr_right arr_btn">
+						<a href="javascript:void(0);"> <img
+							src="/img/slide_arr_white_l.png" alt="slide_left_arrow">
+						</a>
+					</p>
+					<div class="play_pause"></div>
+				</div>
+			</div>
+			<div class="progress_bar">
+				<span class="progress_ing"> </span>
+			</div>
+		</div>
+		<div id="Viewcont">
+			<div class="view_reserve_box">
+				<div class="box_wrap">
+					<div class="name_box reserve_box">
+						<p class="this_name">Family(패밀리)</p>
+						<div class="this_info_box reserve_box">
+							<p class="this_info">
+								<img src="/assets/images/building_icon.svg " alt=" 건물 아이콘">
+								<span>패밀리</span>
+							</p>
+							<p class="this_info">
+								<img src="/assets/images/bed_icon.svg" alt="침대 아이콘"> <span>더블
+									or 트윈(더블, 싱글)</span>
+							</p>
+						</div>
+					</div>
+					<div class="btn_box reserve_box">
+						<div class="member_share">
+							<a href="javascript:void(0);" class="btn_s member_btn"
+								data-pop="popBenepit"> <img
+								src="/assets/images/view_btn_member (1).svg" alt="member_info">
+							</a> <a href="javascript:void(0);" class="btn_s share_btn"
+								data-pop="popShare"> <img
+								src="/assets/images/view_btn_share.svg" alt="share">
+							</a>
+						</div>
+						<div class="reservation_btn">
+
+							
+							<a th:href="@{/room_reservation}"
+								class="btn_l reserve_home" data-pop="popalert"
+								data-id="standard" data-type="room"> <span>예약하기</span>
+							</a>
+							
+							<a href="tel:010-1234-5678" class="btn_l reserve_tel"
+								data-pop="popTel"> <span>유선 예약</span>
+							</a>
+						</div>
+						<div id="popBenepit" class="pop_box">
+							<a href="javascript:void(0);" class="close_btn"><img
+								src="/assets/images/dining/Close.svg" alt="닫기"></a>
+							<div class="text_title">
+								<p class="small_title">다양한 라이프스타일에 맞춘 품격있는 멤버십</p>
+							</div>
+							<div class="text_box">
+								<div class="right_box">
+									<p>제공 혜택</p>
+								</div>
+								<div class="left_box">
+									· 객실 숙박권<br> · F&B 식음권 및 할인권<br> · 부대시설 할인권<br>
+									· 패키지 할인 혜택
+								</div>
+							</div>
+							<div class="btn_box_1">
+								<a href="/membership/list.html?num=1">자세히 보기</a>
+							</div>
+						</div>
+
+
+
+
+
+
+
+						<div id="popShare" class="pop_box">
+
+
+							<a href="javascript:void(0);" class="close_btn"><img
+								src="/assets/images/dining/Close.svg" alt="닫기"></a>
+							<div class="text_title">
+								<p>공유하기</p>
+							</div>
+							<div class="share_btn">
+								<a href="javascript:void(0);"><img
+									src="/assets/images/dining/kakao.svg" alt="카카오톡">카카오톡</a> <a
+									href="javascript:void(0);"><img
+									src="/assets/images/dining/URL.svg" alt="카카오톡">URL 공유</a>
+							</div>
+						</div>
+						<div id="popReser" class="pop_box">
+							<a href="javascript:void(0);" class="close_btn"><img
+								src="/assets/images/dining/Close.svg" alt="닫기"></a>
+							<div class="text_title">
+								<p>예약하기</p>
+							</div>
+							<div class="reser_btn"></div>
+						</div>
+						<div id="popTel" class="pop_box">
+							<p>
+								<img src="/assets/images/dining/tel.svg" alt="전화기"> <span>02.1234.5647</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="viewContets" class="view_cont">
+				<div class="cont_wrap">
+					<div class="info_sec info_sec_01">
+						<div class="title_box">
+							<p class="info_tit">Familiy</p>
+						</div>
+
+						<div class="text_box">
+							<p class="info_text">패밀리 : 편안함을 주는 톤온톤 객실은 어디에서도 경험할 수 없는
+								안락하면서도 럭셔리한 휴식을 제공합니다. 넓은 공간과 세련된 분위기를 추구하는 비즈니스 고객과 여행객 모두에게
+								최고의 만족을 선사합니다.</p>
+						</div>
+						<div class="info_list_box">
+							<div class="info_box info_box_1">
+								<p class="info_tit">방 타입</p>
+								<p class="info_text">디럭스</p>
+							</div>
+							<div class="info_box info_box_2">
+								<p class="info_tit">객실 구성</p>
+								<p class="info_text">침실 1, 욕실 1</p>
+							</div>
+							<div class="info_box info_box_3">
+								<p class="info_tit">침대타입</p>
+								<p class="info_text">더블</p>
+							</div>
+						</div>
+						<div class="info_list_box">
+							<div class="info_box info_box_1">
+								<p class="info_tit size">객실 면적</p>
+								<p class="info_text">
+									200.3<sup>2</sup> (61평)
+								</p>
+							</div>
+							<div class="info_box info_box_2">
+								<p class="info_tit">체크-인 / 체크-아웃</p>
+								<p class="info_text">15:00 / 11:00</p>
+							</div>
+							<div class="info_box info_box_3 link">
+								<p class="info_tit">전망</p>
+								<p class="info_text">오션뷰</p>
+							</div>
+						</div>
+					</div>
+					<div class="info_sec info_sec_02">
+						<div class="title_box">
+							<p class="info_tit">객실 어메니티</p>
+						</div>
+						<div class="table_box">
+							<table>
+								<colgroup>
+									<col width="50%">
+									<col width="50%">
+								</colgroup>
+								<tr>
+									<th>ROOM</th>
+									<th>BATH</th>
+								</tr>
+								<tr>
+									<td>
+										<div class="td_box">
+											<div>
+												<p>WIFI</p>
+												<p>개인용 금고</p>
+												<p>생수(1일 2병)</p>
+											</div>
+											<div>
+												<p>커피, 녹차, 홍차</p>
+												<p>커피포트</p>
+												<p>체중계</p>
+											</div>
+											<div>
+												<p>슬리퍼</p>
+												<p>옷걸이</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="td_box">
+											<div>
+												<p>헤어드라이어</p>
+												<p>슬리퍼</p>
+												<p>가운</p>
+											</div>
+											<div>
+												<p>배쓰 어메니티(5종)</p>
+												<p>샤워캡</p>
+												<p>머리빗</p>
+											</div>
+											<div>
+												<p>면봉</p>
+												<p>핸드 타월</p>
+												<p>칫솔 세트</p>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="info_sec info_sec_03">
+						<div class="title_box">
+							<p class="info_tit">스페셜 서비스</p>
+						</div>
+
+
+
+
+						<section class="ftco-section bg-light">
+							<div class="container">
+								<div class="row justify-content-center mb-5 pb-3">
+									<div class="col-md-7 heading-section text-center ftco-animate">
+										<h2 class="mb-4">시설 할인 서비스 50% Discount</h2>
+									</div>
+								</div>
+								<div class="row">
+
+
+
+									<div class="col-sm col-md-6 col-lg-4 ftco-animate">
+										<div class="room">
+											<a href="rooms.html"
+												class="img d-flex justify-content-center align-items-center"
+												style="background-image: url(images/health\(1\).jpg)">
+												<div
+													class="icon d-flex justify-content-center align-items-center">
+													<span class="icon-search2"></span>
+												</div>
+											</a>
+											<div class="text p-3 text-center">
+												<h3 class="mb-3">
+													<a href="roomclasic.html">헬스장</a>
+												</h3>
+												&nbsp;
+												<p>
+													<span class="price mr-2 cinzel">$ &nbsp;800</span> <span
+														class="per">일일권</span>
+												</p>
+												<hr />
+												<p class="pt-1">
+													<a href="room_superior.html" class="btn-custom">
+														<ul>
+															<li class="info_list noto-sans">운영 시간 : 주중 06:00 ~ 22:00 | 주말
+																및 공휴일 06:00 ~ 21:30 (매월 두 번째, 네 번째 월요일 정기 휴관) 체련장은 만 19세
+																이상부터 입장 가능합니다.</li>
+														</ul> <span class="icon-long-arrow-right"></span>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm col-md-6 col-lg-4 ftco-animate">
+										<div class="room">
+											<a href="rooms.html"
+												class="img d-flex justify-content-center align-items-center"
+												style="background-image: url(img/swim4.jpg)">
+												<div
+													class="icon d-flex justify-content-center align-items-center">
+													<span class="icon-search2"></span>
+												</div>
+											</a>
+											<div class="text p-3 text-center">
+												<h3 class="mb-3">
+													<a href="facility_pool_reservation.html">수영장</a>
+												</h3>
+												&nbsp;
+												<p>
+													<span class="price mr-2 cinzel">$ &nbsp;3,000</span> <span
+														class="per">일일권</span>
+												</p>
+												<hr />
+												<p class="pt-1">
+													<a href="room_suite.html" class="btn-custom">
+														<ul>
+															<li class="info_list noto-sans">운영 시간 : 주중 및 주말 06:00 ~ 21:30
+																(매월 두 번째, 네 번째 월요일 정기 휴관)</li>
+															<li class="info_list noto-sans">깨끗한 수질관리를 위하여 샤워 후 입수 바라며, 입수
+																시 수영모를 착용하여 주시기 바랍니다.</li>
+															<li class="info_list noto-sans">체크아웃 당일에는 11시까지 이용 가능하며, 이용을
+																원하실 경우 10시 전에 입장하여 주시기 바랍니다.</li>
+															<li class="info_list noto-sans">만 13세 미만 자녀 성인풀 이용 시에는 부모 동반 및
+																자유수영에 한해 이용이 가능합니다.<br> 단, 튜브 및 보호장비 착용은 불가하며 자유수영
+																외 물놀이는 금지합니다.
+															</li>
+
+														</ul> <span class="icon-long-arrow-right"></span>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm col-md-6 col-lg-4 ftco-animate">
+										<div class="room">
+											<a href="rooms.html"
+												class="img d-flex justify-content-center align-items-center"
+												style="background-image: url(img/golf4.jpg)">
+												<div
+													class="icon d-flex justify-content-center align-items-center">
+													<span class="icon-search2"></span>
+												</div>
+											</a>
+											<div class="text p-3 text-center">
+												<h3 class="mb-3">
+													<a href="rooms.html">골프장</a>
+												</h3>
+												&nbsp;
+												<p>
+													<span class="price mr-2 cinzel">$ &nbsp;5,000</span> <span
+														class="per">일일권</span>
+												</p>
+												<hr />
+												<p class="pt-1">
+													<a href="room_luxury.html" class="btn-custom">
+														<ul class=" noto-sans">운영 시간 : 일출 ~ 일몰 (매월 네 번째 월요일 정기 휴관) 선착순으로 입장하며 사전
+															예약은 불가능합니다. 평일 기준 1인 플레이가 가능하며 주말 및 공휴일은 불가능합니다.
+														</ul> <span class="icon-long-arrow-right"></span>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</th:block>
+
+<th:block layout:fragment="script">
+	<script>
+		var offerSlide = "";
+		var currentSlide;
+		var slidesCount;
+
+		var updateSliderCounterOffer = function(slick, currentIndex) {
+			currentSlide = slick.slickCurrentSlide() + 1;
+			slidesCount = slick.slideCount;
+
+			if (currentSlide == slidesCount - 2) {
+				$(
+						'#viewBottom .view_offer .cont_wrap .slide_info .arr_btn.arr_right a')
+						.addClass('slick-disabled');
+			}
+			if (currentSlide < 10) {
+				currentSlide = '0' + currentSlide;
+			}
+			if (slidesCount < 10) {
+				slidesCount = '0' + slidesCount;
+			}
+			$(
+					'#viewBottom .view_offer .cont_wrap .slide_info .slide_info_box .slide_cur')
+					.html(currentSlide);
+			$(
+					'#viewBottom .view_offer .cont_wrap .slide_info .slide_info_box .slide_ea')
+					.html(slidesCount);
+		};
+
+		function slick_start() {
+
+			offerSlide.on('init', function(event, slick) {
+				updateSliderCounterOffer(slick);
+			});
+
+			var $progressBar = $('.view_offer .slide_bar');
+			var $progressBarLabel = $('.view_offer .slide_bar_cont');
+			offerSlide.on('afterChange', function(event, slick, currentSlide,
+					nextSlide) {
+				updateSliderCounterOffer(slick, currentSlide);
+
+				var calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
+				console.log(currentSlide);
+				$progressBarLabel.css('width', calc)
+						.attr('aria-valuenow', calc);
+
+				//$progressBarLabel.text( calc + '% completed' );
+			});
+
+			offerSlide
+					.slick({
+						infinite : false,
+						dots : true,
+						slidesToShow : 3,
+						slidesToScroll : 1,
+						arrows : true,
+						variableWidth : true,
+						prevArrow : $('#viewBottom .view_offer .cont_wrap .slide_info .arr_btn.arr_left a'),
+						nextArrow : $('#viewBottom .view_offer .cont_wrap .slide_info .arr_btn.arr_right a'),
+					});
+		}
+
+		$(document).ready(function() {
+			offerSlide = $('#viewBottom .offer_slide');
+
+			if ($('#wellnessView').length > 0) {
+				$('.view_offer').css('display', 'none');
+			} else {
+				special_include_list();
+			}
+		});
+	</script>
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start' : new Date().getTime(),
+				event : 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l='
+					+ l
+					: '';
+			j.async = true;
+			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-P3GCMXK');
+	</script>
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-35441728-1"></script>
+	<script type="text/javascript" src="/assets/js/jquery-1.12.4.min.js"></script>
+	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script type="text/javascript" src="/assets/js/script.js?ver=1.0"></script>
+	<script type="text/javascript"
+		src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="/assets/js/jquery.simplyscroll.js"></script>
+	<script type="text/javascript"
+		src="/assets/js/moment-with-locales.min.js"></script>
+	<script src="../assets/js/daterangepicker.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+</th:block>
+
+</html>

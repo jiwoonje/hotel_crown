@@ -1,0 +1,111 @@
+<html layout:decorate="~{layout2}">
+
+<th:block layout:fragment="content">
+	<section class="home-slider owl-carousel">
+		<div class="slider-item"
+			style="background-image: url(images/view\(1\).jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div
+					class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate text-center">
+						<div class="text mb-5 pb-3 p111">
+							<h1 class="p111">CROWN HOTEL에 오신 것을 환영합니다</h1>
+							<h2 class="p111">호텔 및 리조트</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider-item"
+			style="background-image: url(images/view\(2\).jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div
+					class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate text-center">
+						<div class="text mb-5 pb-3">
+							<h1 class="p111">CROWN HOTEL에 오신 것을 환영합니다</h1>
+							<h2>레저를 즐기세요</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider-item"
+			style="background-image: url(images/view\(3\).jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div
+					class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate text-center">
+						<div class="text mb-5 pb-3">
+							<h1 class="p111">CROWN HOTEL에 오신 것을 환영합니다</h1>
+							<h2>호텔 및 리조트</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-item"
+			style="background-image: url(images/view\(4\).jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div
+					class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate text-center">
+						<div class="text mb-5 pb-3">
+							<h1 class="p111">CROWN HOTEL에 오신 것을 환영합니다</h1>
+							<h2>고급호텔을 만끽하세요</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<br />
+	<br />
+
+	<div class="container">
+		<h2>문의하기</h2>
+		<form method="post" th:object="${questionForm}">
+
+   
+    	<!-- 
+    	<div class="alert alert-danger" role="alert" th:if ="${#fields.hasAnyErrors()}">
+    		<div th:each ="err : ${#fields.allErrors()}" th:text="${err}"> </div>
+       	</div>
+        -->
+        
+        <div class="mb-3">
+            <label for="title" class="form-label">제목</label>
+            <input type="text" name="title" id="title" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">내용</label>
+            <textarea name="content" id="content" class="form-control" rows="10"></textarea>
+        </div>
+        
+        <input type="submit" value="저장하기" class="btn btn-primary my-2">
+    </form>
+	</div>
+	<!-- Blog Section End -->
+</th:block>
+
+<th:block layout:fragment="script">
+
+	<!-- Js Plugins -->
+	<script th:src="@{/js/jquery-3.3.1.min2.js}"></script>
+	<script th:src="@{/js/bootstrap.min2.js}"></script>
+	<script th:src="@{/js/jquery.magnific-popup.min2.js}"></script>
+	<script th:src="@{/js/jquery-ui.min2.js}"></script>
+	<script th:src="@{/js/jquery.nice-select2.min.js}"></script>
+	<script th:src="@{/js/jquery.slicknav2.js}"></script>
+	<script th:src="@{/js/owl.carousel2.min.js}"></script>
+	<script th:src="@{/js/main2.js}"></script>
+	
+</th:block>
+
+</html>

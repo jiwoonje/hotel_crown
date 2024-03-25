@@ -1,0 +1,110 @@
+<html layout:decorate="~{admin_layout}">
+
+
+<th:block layout:fragment="content">
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<!-- Page Heading -->
+		<h1 class="h3 mb-2 text-gray-800">객실 예약 리스트</h1>
+		<p class="mb-4">
+			DataTables is a third party plugin that is used to generate the demo
+			table below. For more information about DataTables, please visit the
+			<a target="_blank" href="https://datatables.net">official
+				DataTables documentation</a>.
+		</p>
+
+		<!-- DataTales Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<h6 class="m-0 font-weight-bold text-primary">객실 예약 리스트</h6>
+			</div>
+			<div class="card-body">
+				<div class="table-responsive">
+					<table class="table table-bordered" width="100%" cellspacing="0">
+						<thead>
+							<tr>
+								<th>예약번호</th>
+								<th>회원 ID</th>
+								<th>객실 종류</th>
+								<th>체크인</th>
+								<th>체크아웃</th>
+								<th>총 인원</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr th:each="roomReservation, loop:${paging}">
+								<td><a th:href="@{|/roomReservationDetail/${roomReservation.seq}|}"
+									th:text="${roomReservation.seq}"></a></td>
+									
+								<td th:if="${roomReservation.rmember.mid != null}" 
+								th:text="${roomReservation.rmember.mid}"></td>
+								
+								<td th:if="${roomReservation.rroom.rid != null}"
+								th:text="${roomReservation.rroom.rid}"></td>
+								
+								<td th:text="${roomReservation.sdate}"></td>
+								<td th:text="${roomReservation.edate}"></td>
+								<td th:text="${roomReservation.cnt}"></td>
+							</tr>
+						</tbody>
+					</table>
+<!-- --> 
+					<!-- 페이징처리 시작 -->
+					<div th:if="${!paging.isEmpty()}">
+						<ul class="pagination justify-content-center">
+							<li class="page-item"
+								th:classappend="${!paging.hasPrevious} ? 'disabled'"><a
+								href="javascript:void(0)" class="page-link"
+								th:data-page="${paging.number-1}"> <span>이전</span>
+							</a></li>
+
+							<!-- 조건을 적용해서 현재 페이지에서 이전 5개 이후 5개  -->
+							<li th:each="page: ${#numbers.sequence(0, paging.totalPages-1)}"
+								th:if="${page >= paging.number-5 and page <= paging.number+5 }"
+								th:classappend="${page == paging.number} ? 'active'"
+								class="page-item"><a href="javascript:void(0)"
+								th:text="${page}" class="page-link" th:data-page="${page}"></a>
+							</li>
+							<li class="page-item"
+								th:classappend="${!paging.hasNext} ? 'disabled'"><a
+								href="javascript:void(0)" class="page-link"
+								th:data-page="${paging.number+1}"> <span>다음</span>
+							</a></li>
+						</ul>
+					</div>
+					<!-- 페이징처리 끝 -->
+
+					<!-- 검색시 변수 값을 hidden 에 적용해서 서버로 전송  -->
+					<form th:action="@{/roomreservation/getList}" method="get"
+						id="searchForm">
+						<input type="hidden" name="kw" id="kw" th:value="${kw}"> <input
+							type="hidden" name="page" id="page" th:value="${paging.number}">
+					</form>
+					<!-- -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.container-fluid -->
+	<!-- End of Main Content -->
+
+</th:block>
+
+<script layout:fragment="script" type='text/javascript'>
+	const page_elements = document.getElementsByClassName("page-link");
+	Array.from(page_elements).forEach(function(element) {
+		element.addEventListener('click', function() {
+			document.getElementById('page').value = this.dataset.page;
+			document.getElementById('searchForm').submit();
+		});
+	});
+	const btn_search = document.getElementById("btn_search");
+	btn_search.addEventListener('click', function() {
+		document.getElementById('kw').value = document
+				.getElementById('search_kw').value;
+		document.getElementById('page').value = 1; // 검색버튼을 클릭할 경우 1페이지부터 조회한다.
+		document.getElementById('searchForm').submit();
+	});
+</script>
+
+</html>

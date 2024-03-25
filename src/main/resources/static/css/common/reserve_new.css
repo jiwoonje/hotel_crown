@@ -1,0 +1,22 @@
+@import url("../seoul/reserve.css");
+
+/*제주 예약*/
+
+.gnbReservationBox .selRoomOpt dl.room5{ display:block;}
+.ctnReserve .dateBoxC{ border-bottom:none; margin-bottom:0;}
+.ctnReserve .dateBoxC .selRoomOpt{ padding-left:60px; width:640px;}
+.ctnReserve .dateBoxC .selRoomOpt dl.room1{ margin:0 70px 0 0;}
+.ctnReserve .dateBoxC .selRoomOpt dl.room2{ margin:0 70px 0 0;}
+.ctnReserve .dateBoxC .selRoomOpt dl.room3{ margin:0 0px 0 0;}
+.ctnReserve .dateBoxC .selRoomOpt dl.room4{ margin:10px 70px 0 0;}
+.ctnReserve .dateBoxC .selRoomOpt dl.room5{ margin:10px 70px 0 0; display:block;}
+
+.gnbReservationBox{}
+
+.gnbReservationBox label.roomEa{ background-image:url(../../images/ko/seoul/reservation/reserveLayerLb4Jeju.png)}
+
+.gnbReservationBoxMice .selRoomOpt dl.room5{ display:none;}
+
+.ctnReserve .headTit .info .txt{ background-image:url(../../images/ko/seoul/reservation/reserveStepTopMsg1Jeju.gif)}
+
+.ctnReserve .headTit .info .txt_jeju{ background:url(../../images/ko/jeju/reservation/reserveStepTopMsg1.gif) no-repeat; width:248px; height:26px; display:inline-block; line-height:100px; overflow:hidden; vertical-align:middle;}

@@ -1,0 +1,96 @@
+<html layout:decorate="~{admin_layout}">
+
+
+<th:block layout:fragment="content">
+
+	<!-- Begin Page Content -->
+	<div class="container-fluid">
+		<!-- Page Heading -->
+		<h1 class="h3 mb-2 text-gray-800">객실 예약 자세히 보기</h1>
+
+		<!-- DataTales Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<span class="m-0 font-weight-bold text-primary" th:text="${roomReservation.seq}"></span>
+				
+				<!-- 수정, 삭제 버튼
+				<a th:href="@{|/memberModify/${member.seq}|}"
+					class="btn btn-dark">수정</a>
+				
+				<button class="btn btn-dark">수정</button>
+				<button class="btn btn-danger">삭제</button>
+				 -->
+			</div>
+			<div class="card-body">
+				<div class="table-responsive">
+				
+					<table class="table table-bordered" width="100%" cellspacing="0">
+						
+						<tbody>
+							<tr>
+								<th>예약번호</th>
+								<td th:text="${roomReservation.seq}"></td>
+							</tr>
+							<tr>
+								<th>회원ID</th>
+								<td th:text="${roomReservation.rmember.mid}"></td>
+							</tr>
+							<tr>
+								<th>방 타입</th>
+								<td th:text="${roomReservation.rroom.rid}"></td>
+							</tr>
+							<tr>
+								<th>체크인</th>
+								<td th:text="${roomReservation.sdate}"></td>
+							</tr>
+							<tr>
+								<th>체크아웃</th>
+								<td th:text="${roomReservation.edate}"></td>
+							</tr>
+							<tr>
+								<th>인원수</th>
+								<td th:text="${roomReservation.cnt}"></td>
+							</tr>
+						</tbody>
+					</table>
+					
+
+					
+				</div>
+			</div>
+		</div>
+		<a class="btn btn-dark" th:href="@{/getRoomReservationList}">뒤로가기</a>
+		<a th:href="@{|/updateRoomReservation/${roomReservation.seq}|}" 
+        th:if ="${roomReservation.seq != null and 
+        #authentication.getPrincipal().getUsername() == roomReservation.rmember.mid}"           	
+        th:text ="수정"
+        class="btn btn-dark"></a>
+	    
+	    <a href="javascript:void(0)"
+	    th:data-uri="@{|/deleteRoomReservation/${roomReservation.seq}|}"	           		
+        th:if ="${roomReservation.seq != null and 
+        #authentication.getPrincipal().getUsername() == roomReservation.rmember.mid}"
+	    th:text="삭제"
+	    class="delete btn btn-dark"></a>
+	</div>
+	<!-- /.container-fluid -->
+	<!-- End of Main Content -->
+	
+	<script layout:fragment="script" type='text/javascript'>
+const delete_elements = document.getElementsByClassName("delete");
+Array.from(delete_elements).forEach(function(element) {
+    element.addEventListener('click', function() {
+        if(confirm("정말로 삭제하시겠습니까?")) {
+            location.href = this.dataset.uri;
+        };
+    });
+});
+
+</script>
+
+	
+	
+
+</th:block>
+
+</html>

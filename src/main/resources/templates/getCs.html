@@ -1,0 +1,121 @@
+<html layout:decorate="~{layout2}">
+
+<th:block layout:fragment="content">
+	<section class="home-slider owl-carousel">
+		<div class="slider-item"
+			style="background-image: url(images/view\(1\).jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div
+					class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate text-center">
+						<div class="text mb-5 pb-3 p111">
+							<h1 class="p111">CROWN HOTEL에 오신 것을 환영합니다</h1>
+							<h2 class="p111">호텔 및 리조트</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider-item"
+			style="background-image: url(images/view\(2\).jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div
+					class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate text-center">
+						<div class="text mb-5 pb-3">
+							<h1 class="p111">CROWN HOTEL에 오신 것을 환영합니다</h1>
+							<h2>레저를 즐기세요</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider-item"
+			style="background-image: url(images/view\(3\).jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div
+					class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate text-center">
+						<div class="text mb-5 pb-3">
+							<h1 class="p111">CROWN HOTEL에 오신 것을 환영합니다</h1>
+							<h2>호텔 및 리조트</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-item"
+			style="background-image: url(images/view\(4\).jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div
+					class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate text-center">
+						<div class="text mb-5 pb-3">
+							<h1 class="p111">CROWN HOTEL에 오신 것을 환영합니다</h1>
+							<h2>고급호텔을 만끽하세요</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<br />
+	<br />
+
+	<div class="container">
+		<form >
+
+   
+    	<!-- 
+    	<div class="alert alert-danger" role="alert" th:if ="${#fields.hasAnyErrors()}">
+    		<div th:each ="err : ${#fields.allErrors()}" th:text="${err}"> </div>
+       	</div>
+        -->
+        
+        <div class="mb-3">
+            <label for="title" class="form-label">제목</label>
+            <label name="title" id="title" class="form-control" th:utext="${@commonUtil.markdown(question.title)}"></label>
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">내용</label>
+            <label name="content" id="content" class="form-control" th:utext="${@commonUtil.markdown(question.content)}"></label>
+        </div>
+        <br><br>
+        <form method="post" th:action="@{|/answer/create/${question.qid}|}" th:object="${answerForm}">
+        	<div class="mb-3">
+	            <label for="content" class="form-label">답변하기</label>
+	            <textarea name="content" id="content" class="form-control" rows="10"></textarea>
+	            <input type="submit" value="답변하기" class="btn btn-primary my-2">
+       		</div>
+       		<br>
+       		<div th:each="answer : ${question.answerList}">
+       			<a th:id="|answer_${answer.aid}|"> </a>
+       				<div class="card-body">
+       					<div class="card-text" th:utext="${@commonUtil.markdown(answer.content)}"></div>
+       				</div>
+       		</div>
+        </form>
+        
+        <div class="center">
+	        <a class="btn btn-primary my-2" th:href="@{/getCsList}">목록</a>
+	        <a class="btn btn-primary my-2" 
+	        	sec:authorize="isAuthenticated()" th:href="@{|/update/${question.qid}|}"
+	        >수정</a>
+	        <a class="btn btn-primary my-2"
+	        	sec:authorize="isAuthenticated()" th:href="@{/deleteCs}"
+	        >삭제</a>
+	        
+        </div>
+    </form>
+	</div>
+	<!-- Blog Section End -->
+</th:block>
+
+
+</html>

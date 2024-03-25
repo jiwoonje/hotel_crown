@@ -1,0 +1,572 @@
+ <!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Crown hotel</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="index3.css" />
+        <link rel="stylesheet" href="index3.less" />
+        <link rel="stylesheet" href="css/login.css" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+
+        <link rel="stylesheet" href="css/aos.css" />
+
+        <link rel="stylesheet" href="css/ionicons.min.css" />
+
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+        <link rel="stylesheet" href="css/jquery.timepicker.css" />
+
+        <link rel="stylesheet" href="css/flaticon.css" />
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
+        <style>
+    @font-face {
+      font-family: 'SDSamliphopangche_Outline';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    body {
+    font-family: 'SDSamliphopangche_Outline';
+    }	  .p111{
+    font-family: 'SDSamliphopangche_Outline';
+              }
+        </style>
+      </head>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"
+        th:fragment="navbarFragment">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img width="30px" src="/img/logo(footerlogo).png" />
+              &nbsp;Crown hotel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+              aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="col-xl-2 col-lg-2"></div>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="adminindex.html" class="nav-link">관리자</a>
+                </li>
+                <li class="nav-item">
+                  <a href="bookRoom.html" class="nav-link">예약</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" 
+                  id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" 
+                    aria-expanded="false"
+                    >
+                    방 <i class="ti-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="room_list.html"> 방 소개</a>
+    
+                    <a class="dropdown-item" href="room_classic.html">Classic</a>
+                    <a class="dropdown-item" href="room_deluxe.html">Deluxe</a>
+                    <a class="dropdown-item" href="room_family.html">Family</a>
+                    <a class="dropdown-item" href="room_superior.html">Superior</a>
+                    <a class="dropdown-item" href="room_suite.html">Suite</a>
+                    <a class="dropdown-item" href="room_luxury.html">Luxury</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    시설 <i class="ti-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="facility_list.html">시설소개</a>
+    
+                    <a class="dropdown-item" href="facility_pool.html">수영장</a>
+                    <a class="dropdown-item" href="facility_restaurant.html">식당</a>
+                    <a class="dropdown-item" href="facility_golf.html">골프장</a>
+    
+                    <a class="dropdown-item" href="facilityhelth.html">헬스장</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    고객센터 <i class="ti-angle-down"></i>
+                  </a>
+                
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    마이 페이지<i class="ti-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="myPage.html">메인 페이지</a>
+                    <a class="dropdown-item" href="myBookList.html">
+                      예약 리스트 페이지</a>
+                    <a class="dropdown-item" href="getMyRoomBook.html">
+                      예약 자세히보기</a>
+                    
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="login.html" class="nav-link">로그인</a>
+                </li>
+    
+    
+                <li class="nav-item">
+                  <a href="signUp.html" class="nav-link">로그아웃</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+        <body>
+            <div class="info">
+                <img width="100px" src="/img/logo.png" />
+            </div>
+    
+         
+        <!-- END nav -->
+      <body>
+        
+          <div class="info">
+              <img width="100px" src="/img/logo.png" />
+          </div>
+    
+        <!-- END nav -->
+
+        <th:block layout:fragment="content">
+		
+		<br /><br />
+<br><br>
+    <main>
+    
+    <div class="login-wrap">
+   
+ 
+      <div class="login-html">
+        <link rel="stylesheet" href="style.css">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">로그인</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">회원가입</label>
+        <div class="login-form">
+          <div class="sign-in-htm">
+            
+            <div class="group">
+              <input type="submit" class="button" value="로그인">
+            </div>
+            <div class="hr"></div>
+            <div class="foot-lnk">
+              <a href="#forgot">비밀번호를 잊으셨나요?</a>
+            </div>
+          </div>
+          <div class="sign-up-htm">
+            <div class="group">
+              <label for="user" class="label">아이디</label>
+              <input id="user" type="text" class="input">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">비밀번호</label>
+              <input id="pass" type="password" class="input" data-type="password">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">성함</label>
+              <input id="pass" type="text" class="input">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">생년월일</label>
+              <input id="pass" type="text" class="input">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">이메일</label>
+              <input id="pass" type="text" class="input">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">전화번호</label>
+              <input id="pass" type="text" class="input">
+            </div>
+            <div class="group">
+              <input type="submit" class="button" value="회원가입">
+            </div>
+            <div class="hr"></div>
+            <div class="foot-lnk">
+              <label for="tab-1">이미 회원이신가요?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <style>
+        html * {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.login-box {
+    background: #fff;
+    padding: 20px;
+    max-width: 480px;
+    margin: 25vh auto;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.login-box:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.login-box h2 {
+    margin: 20px 0 20px;
+    padding: 0;
+    text-transform: uppercase;
+    color: #4688F1;
+}
+
+.social-button {
+    background-position: 25px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 3px;
+    margin: 10px auto;
+    outline: rgb(255, 255, 255) none 0px;
+    padding-left: 20%;
+    transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#facebook-connect {
+    background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook.svg?sanitize=true') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    border: 1px solid rgb(60, 90, 154);
+}
+
+#facebook-connect:hover {
+    border-color: rgb(60, 90, 154);
+    background: rgb(60, 90, 154) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook-white.svg?sanitize=true') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+}
+
+#facebook-connect span {
+    box-sizing: border-box;
+    color: rgb(60, 90, 154);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(255, 255, 255);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#facebook-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#google-connect {
+    background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+    border: 1px solid rgb(220, 74, 61);
+}
+
+#google-connect:hover {
+    border-color: rgb(220, 74, 61);
+    background: rgb(220, 74, 61) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus-white.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+}
+
+#google-connect span {
+    box-sizing: border-box;
+    color: rgb(220, 74, 61);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(220, 74, 61);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#google-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#twitter-connect {
+    background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/twitter.png') no-repeat scroll 5px 1px / 45px 45px padding-box border-box;
+    border: 1px solid rgb(85, 172, 238);
+}
+
+#twitter-connect:hover {
+    border-color: rgb(85, 172, 238);
+    background: rgb(85, 172, 238) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/twitter-white.png') no-repeat scroll 5px 1px / 45px 45px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+}
+
+#twitter-connect span {
+    box-sizing: border-box;
+    color: rgb(85, 172, 238);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(220, 74, 61);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#twitter-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#linkedin-connect {
+    background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/linkedin.svg?sanitize=true') no-repeat scroll 13px 0px / 28px 45px padding-box border-box;
+    border: 1px solid rgb(0, 119, 181);
+}
+
+#linkedin-connect:hover {
+    border-color: rgb(0, 119, 181);
+    background: rgb(0, 119, 181) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/linkedin-white.svg?sanitize=true') no-repeat scroll 13px 0px / 28px 45px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+}
+
+#linkedin-connect span {
+    box-sizing: border-box;
+    color: rgb(0, 119, 181);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(0, 119, 181);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#linkedin-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+    </style>
+    <div class="login-box">
+        <h2>SNS 계정으로 로그인</h2>
+        <a href="#" class="social-button" id="facebook-connect"> <span>FACEBOOK 으로 로그인</span></a>
+        <a href="#" class="social-button" id="google-connect"> <span>Google 로 로그인</span></a>
+        <a href="#" class="social-button" id="twitter-connect"> <span>Twitter 로 로그인</span></a>
+        <a href="#" class="social-button" id="linkedin-connect"> <span>LinkedIn 으로 로그인</span></a>
+      </div>
+  </main>
+
+  <br><br>
+
+ 
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">크라운 호텔</h2>
+                    <p>
+                        당신이 찾던 호텔 <br>
+                        최고의 서비스와 최고의 대우로 <br>
+                        여러분들의 편의와 만족을 드리는 <br>
+                        CROWN HOTEL.
+                    </p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                        <li class="ftco-animate">
+                            <a href="#"><span class="icon-twitter"></span></a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="#"><span class="icon-facebook"></span></a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="#"><span class="icon-instagram"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-5">
+                  <h2 class="ftco-heading-2">유용한 링크</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="py-2 d-block">블로그</a>
+                    </li>
+                    <li>
+                      <a href="#" class="py-2 d-block">객실</a>
+                    </li>
+                    <li>
+                      <a href="#" class="py-2 d-block">편의 시설</a>
+                    </li>
+                    <li>
+                      <a href="#" class="py-2 d-block">기프트 카드</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">개인정보</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="py-2 d-block">경력</a>
+                    </li>
+                    <li>
+                      <a href="#" class="py-2 d-block">회사 소개</a>
+                    </li>
+                    <li>
+                      <a href="#" class="py-2 d-block">문의하기</a>
+                    </li>
+                    <li>
+                      <a href="#" class="py-2 d-block">서비스</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">질문이 있으신가요?</h2>
+                  <div class="block-23 mb-3">
+                    <ul>
+                      <li>
+                        <span class="icon icon-map-marker"></span
+                        ><span class="text"
+                          >203 Fake St. Mountain View, San Francisco, California,
+                          USA</span
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><span class="icon icon-phone"></span
+                          ><span class="text">+2 392 3929 210</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><span class="icon icon-envelope"></span
+                          ><span class="text">info@yourdomain.com</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center"></div>
+            </div>
+          </div>
+        </footer>
+
+<!-- 로더 -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+    </svg>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
